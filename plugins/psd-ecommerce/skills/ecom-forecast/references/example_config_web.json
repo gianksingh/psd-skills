@@ -1,0 +1,1718 @@
+{
+  "channel": "web",
+  "period_label": "Q3 2026",
+  "dashboard_sheet_name": "Q3 Total",
+  "summary_title": "PSD - WEB Q3 2026 Forecast Summary & Pacing",
+  "summary_subtitle": "Fill YELLOW 'Actual' cells as months close (Polar adjusted metrics, web ex. TikTok Shop). Pacing & Y/Y calculate automatically. Built 6/11/2026.",
+  "months": [
+    {
+      "name": "July",
+      "sheet_name": "WEB Jul-26 Daily Fcst",
+      "daily_title": "PSD - WEB Daily Forecast - July 2026 (DC Labor Planning)",
+      "daily_subtitle": "Polar adjusted metrics, web channel (ex. TikTok Shop / AfterShip). Assumptions on Appendix tab. Built 6/11/2026.",
+      "total_label": "JUL TOTAL",
+      "dashboard_title": "JULY 2026",
+      "net_sales_target": 3200000,
+      "baseline_aov": 80,
+      "baseline_upt": 3.2,
+      "op_attach": 0.65,
+      "expedited_pct": 0.03,
+      "ly_actual": {
+        "net_sales": 2861233,
+        "orders": 42807,
+        "units": 134521,
+        "aov": 66.84,
+        "upt": 3.14
+      },
+      "month_ly": {
+        "orders": 42807.0,
+        "net_sales": 2861233.0,
+        "units": 134521.0,
+        "retail_orders": 45626.0,
+        "retail_net_sales": 3072803.0,
+        "retail_units": 145959.0
+      },
+      "days": [
+        {
+          "date": "2026-07-01",
+          "net_sales": 117345,
+          "aov": 77,
+          "upt": 4.2,
+          "note": "PROMO: July 4th Markdown Push (Day 1)",
+          "cal_ly": {
+            "orders": 1670.0,
+            "net_sales": 109564.0,
+            "units": 6061.0
+          },
+          "retail_ly": {
+            "orders": 1769.0,
+            "net_sales": 109062.0,
+            "units": 6183.0
+          }
+        },
+        {
+          "date": "2026-07-02",
+          "net_sales": 116167,
+          "aov": 77,
+          "upt": 4.2,
+          "note": "PROMO: July 4th Markdown Push",
+          "cal_ly": {
+            "orders": 1769.0,
+            "net_sales": 109062.0,
+            "units": 6183.0
+          },
+          "retail_ly": {
+            "orders": 1736.0,
+            "net_sales": 113957.0,
+            "units": 6423.0
+          }
+        },
+        {
+          "date": "2026-07-03",
+          "net_sales": 128972,
+          "aov": 77,
+          "upt": 4.2,
+          "note": "PROMO: July 4th Markdown Push - pre-holiday Friday",
+          "cal_ly": {
+            "orders": 1736.0,
+            "net_sales": 113957.0,
+            "units": 6423.0
+          },
+          "retail_ly": {
+            "orders": 1629.0,
+            "net_sales": 94703.0,
+            "units": 6447.0
+          }
+        },
+        {
+          "date": "2026-07-04",
+          "net_sales": 97594,
+          "aov": 77,
+          "upt": 4.6,
+          "note": "PROMO: Markdown Push - Independence Day (softest promo day)",
+          "cal_ly": {
+            "orders": 1629.0,
+            "net_sales": 94703.0,
+            "units": 6447.0
+          },
+          "retail_ly": {
+            "orders": 1875.0,
+            "net_sales": 129032.0,
+            "units": 7697.0
+          }
+        },
+        {
+          "date": "2026-07-05",
+          "net_sales": 174172,
+          "aov": 77,
+          "upt": 4.2,
+          "note": "PROMO: July 4th Markdown Push (Final Day - LY final day peaked)",
+          "cal_ly": {
+            "orders": 1875.0,
+            "net_sales": 129032.0,
+            "units": 7697.0
+          },
+          "retail_ly": {
+            "orders": 2256.0,
+            "net_sales": 159213.0,
+            "units": 9175.0
+          }
+        },
+        {
+          "date": "2026-07-06",
+          "net_sales": 87773,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 2256.0,
+            "net_sales": 159213.0,
+            "units": 9175.0
+          },
+          "retail_ly": {
+            "orders": 1599.0,
+            "net_sales": 102454.0,
+            "units": 4868.0
+          }
+        },
+        {
+          "date": "2026-07-07",
+          "net_sales": 83247,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1599.0,
+            "net_sales": 102454.0,
+            "units": 4868.0
+          },
+          "retail_ly": {
+            "orders": 1116.0,
+            "net_sales": 69830.0,
+            "units": 3178.0
+          }
+        },
+        {
+          "date": "2026-07-08",
+          "net_sales": 86922,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1116.0,
+            "net_sales": 69830.0,
+            "units": 3178.0
+          },
+          "retail_ly": {
+            "orders": 1204.0,
+            "net_sales": 80296.0,
+            "units": 3673.0
+          }
+        },
+        {
+          "date": "2026-07-09",
+          "net_sales": 86049,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1204.0,
+            "net_sales": 80296.0,
+            "units": 3673.0
+          },
+          "retail_ly": {
+            "orders": 1125.0,
+            "net_sales": 71739.0,
+            "units": 3076.0
+          }
+        },
+        {
+          "date": "2026-07-10",
+          "net_sales": 92123,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1125.0,
+            "net_sales": 71739.0,
+            "units": 3076.0
+          },
+          "retail_ly": {
+            "orders": 1332.0,
+            "net_sales": 86628.0,
+            "units": 3804.0
+          }
+        },
+        {
+          "date": "2026-07-11",
+          "net_sales": 91209,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1332.0,
+            "net_sales": 86628.0,
+            "units": 3804.0
+          },
+          "retail_ly": {
+            "orders": 1080.0,
+            "net_sales": 72315.0,
+            "units": 3097.0
+          }
+        },
+        {
+          "date": "2026-07-12",
+          "net_sales": 108858,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1080.0,
+            "net_sales": 72315.0,
+            "units": 3097.0
+          },
+          "retail_ly": {
+            "orders": 1152.0,
+            "net_sales": 80470.0,
+            "units": 3357.0
+          }
+        },
+        {
+          "date": "2026-07-13",
+          "net_sales": 87773,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1152.0,
+            "net_sales": 80470.0,
+            "units": 3357.0
+          },
+          "retail_ly": {
+            "orders": 1062.0,
+            "net_sales": 70106.0,
+            "units": 3172.0
+          }
+        },
+        {
+          "date": "2026-07-14",
+          "net_sales": 83247,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1062.0,
+            "net_sales": 70106.0,
+            "units": 3172.0
+          },
+          "retail_ly": {
+            "orders": 1177.0,
+            "net_sales": 80548.0,
+            "units": 3479.0
+          }
+        },
+        {
+          "date": "2026-07-15",
+          "net_sales": 86922,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1177.0,
+            "net_sales": 80548.0,
+            "units": 3479.0
+          },
+          "retail_ly": {
+            "orders": 1189.0,
+            "net_sales": 78125.0,
+            "units": 3384.0
+          }
+        },
+        {
+          "date": "2026-07-16",
+          "net_sales": 86049,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1189.0,
+            "net_sales": 78125.0,
+            "units": 3384.0
+          },
+          "retail_ly": {
+            "orders": 1313.0,
+            "net_sales": 86772.0,
+            "units": 3722.0
+          }
+        },
+        {
+          "date": "2026-07-17",
+          "net_sales": 92123,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1313.0,
+            "net_sales": 86772.0,
+            "units": 3722.0
+          },
+          "retail_ly": {
+            "orders": 1267.0,
+            "net_sales": 80193.0,
+            "units": 3493.0
+          }
+        },
+        {
+          "date": "2026-07-18",
+          "net_sales": 91209,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1267.0,
+            "net_sales": 80193.0,
+            "units": 3493.0
+          },
+          "retail_ly": {
+            "orders": 1180.0,
+            "net_sales": 79114.0,
+            "units": 3292.0
+          }
+        },
+        {
+          "date": "2026-07-19",
+          "net_sales": 108858,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1180.0,
+            "net_sales": 79114.0,
+            "units": 3292.0
+          },
+          "retail_ly": {
+            "orders": 1427.0,
+            "net_sales": 107385.0,
+            "units": 4436.0
+          }
+        },
+        {
+          "date": "2026-07-20",
+          "net_sales": 87773,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1427.0,
+            "net_sales": 107385.0,
+            "units": 4436.0
+          },
+          "retail_ly": {
+            "orders": 1155.0,
+            "net_sales": 78908.0,
+            "units": 3308.0
+          }
+        },
+        {
+          "date": "2026-07-21",
+          "net_sales": 83247,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1155.0,
+            "net_sales": 78908.0,
+            "units": 3308.0
+          },
+          "retail_ly": {
+            "orders": 1264.0,
+            "net_sales": 84452.0,
+            "units": 3699.0
+          }
+        },
+        {
+          "date": "2026-07-22",
+          "net_sales": 86922,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1264.0,
+            "net_sales": 84452.0,
+            "units": 3699.0
+          },
+          "retail_ly": {
+            "orders": 1273.0,
+            "net_sales": 86420.0,
+            "units": 3779.0
+          }
+        },
+        {
+          "date": "2026-07-23",
+          "net_sales": 86049,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1273.0,
+            "net_sales": 86420.0,
+            "units": 3779.0
+          },
+          "retail_ly": {
+            "orders": 1454.0,
+            "net_sales": 95961.0,
+            "units": 4097.0
+          }
+        },
+        {
+          "date": "2026-07-24",
+          "net_sales": 92123,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1454.0,
+            "net_sales": 95961.0,
+            "units": 4097.0
+          },
+          "retail_ly": {
+            "orders": 1448.0,
+            "net_sales": 97588.0,
+            "units": 4074.0
+          }
+        },
+        {
+          "date": "2026-07-25",
+          "net_sales": 91209,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1448.0,
+            "net_sales": 97588.0,
+            "units": 4074.0
+          },
+          "retail_ly": {
+            "orders": 1249.0,
+            "net_sales": 84767.0,
+            "units": 3500.0
+          }
+        },
+        {
+          "date": "2026-07-26",
+          "net_sales": 108858,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1249.0,
+            "net_sales": 84767.0,
+            "units": 3500.0
+          },
+          "retail_ly": {
+            "orders": 1449.0,
+            "net_sales": 107492.0,
+            "units": 4452.0
+          }
+        },
+        {
+          "date": "2026-07-27",
+          "net_sales": 87773,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1449.0,
+            "net_sales": 107492.0,
+            "units": 4452.0
+          },
+          "retail_ly": {
+            "orders": 1233.0,
+            "net_sales": 85233.0,
+            "units": 3551.0
+          }
+        },
+        {
+          "date": "2026-07-28",
+          "net_sales": 83247,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1233.0,
+            "net_sales": 85233.0,
+            "units": 3551.0
+          },
+          "retail_ly": {
+            "orders": 1152.0,
+            "net_sales": 82576.0,
+            "units": 3322.0
+          }
+        },
+        {
+          "date": "2026-07-29",
+          "net_sales": 86922,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1152.0,
+            "net_sales": 82576.0,
+            "units": 3322.0
+          },
+          "retail_ly": {
+            "orders": 1420.0,
+            "net_sales": 93626.0,
+            "units": 4063.0
+          }
+        },
+        {
+          "date": "2026-07-30",
+          "net_sales": 86049,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1420.0,
+            "net_sales": 93626.0,
+            "units": 4063.0
+          },
+          "retail_ly": {
+            "orders": 1552.0,
+            "net_sales": 102704.0,
+            "units": 4659.0
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "net_sales": 313217,
+          "aov": 80,
+          "upt": 4.1,
+          "note": "PROMO: NUD Sale LAUNCH - biggest day of month (LY Fri launch ~$321K)",
+          "cal_ly": {
+            "orders": 1552.0,
+            "net_sales": 102704.0,
+            "units": 4659.0
+          },
+          "retail_ly": {
+            "orders": 4489.0,
+            "net_sales": 321135.0,
+            "units": 17499.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "August",
+      "sheet_name": "WEB Aug-26 Daily Fcst",
+      "daily_title": "PSD - WEB Daily Forecast - August 2026 (DC Labor Planning)",
+      "daily_subtitle": "Polar adjusted metrics, web channel (ex. TikTok Shop / AfterShip). Assumptions on Appendix tab. Built 6/11/2026.",
+      "total_label": "AUG TOTAL",
+      "dashboard_title": "AUGUST 2026",
+      "net_sales_target": 3500000,
+      "baseline_aov": 80,
+      "baseline_upt": 3.2,
+      "op_attach": 0.65,
+      "expedited_pct": 0.03,
+      "ly_actual": {
+        "net_sales": 3432650,
+        "orders": 49736,
+        "units": 165190,
+        "aov": 69.02,
+        "upt": 3.32
+      },
+      "month_ly": {
+        "orders": 49736.0,
+        "net_sales": 3432650.0,
+        "units": 165190.0,
+        "retail_orders": 46868.0,
+        "retail_net_sales": 3229001.0,
+        "retail_units": 152865.0
+      },
+      "days": [
+        {
+          "date": "2026-08-01",
+          "net_sales": 238123,
+          "aov": 80,
+          "upt": 4,
+          "note": "PROMO: NUD Sale Day 2 - Saturday (2nd biggest day of Q3)",
+          "cal_ly": {
+            "orders": 4489.0,
+            "net_sales": 321135.0,
+            "units": 17499.0
+          },
+          "retail_ly": {
+            "orders": 3089.0,
+            "net_sales": 211244.0,
+            "units": 11405.0
+          }
+        },
+        {
+          "date": "2026-08-02",
+          "net_sales": 263147,
+          "aov": 80,
+          "upt": 4,
+          "note": "PROMO: NUD Sale Day 3",
+          "cal_ly": {
+            "orders": 3089.0,
+            "net_sales": 211244.0,
+            "units": 11405.0
+          },
+          "retail_ly": {
+            "orders": 3364.0,
+            "net_sales": 250143.0,
+            "units": 13329.0
+          }
+        },
+        {
+          "date": "2026-08-03",
+          "net_sales": 216421,
+          "aov": 80,
+          "upt": 4,
+          "note": "PROMO: NUD Sale Day 4",
+          "cal_ly": {
+            "orders": 3364.0,
+            "net_sales": 250143.0,
+            "units": 13329.0
+          },
+          "retail_ly": {
+            "orders": 2851.0,
+            "net_sales": 201129.0,
+            "units": 10573.0
+          }
+        },
+        {
+          "date": "2026-08-04",
+          "net_sales": 193187,
+          "aov": 80,
+          "upt": 4,
+          "note": "PROMO: NUD Sale Day 5",
+          "cal_ly": {
+            "orders": 2851.0,
+            "net_sales": 201129.0,
+            "units": 10573.0
+          },
+          "retail_ly": {
+            "orders": 2747.0,
+            "net_sales": 189598.0,
+            "units": 11393.0
+          }
+        },
+        {
+          "date": "2026-08-05",
+          "net_sales": 184907,
+          "aov": 80,
+          "upt": 4,
+          "note": "PROMO: NUD Sale Day 6",
+          "cal_ly": {
+            "orders": 2747.0,
+            "net_sales": 189598.0,
+            "units": 11393.0
+          },
+          "retail_ly": {
+            "orders": 2677.0,
+            "net_sales": 186593.0,
+            "units": 10610.0
+          }
+        },
+        {
+          "date": "2026-08-06",
+          "net_sales": 191371,
+          "aov": 80,
+          "upt": 4,
+          "note": "PROMO: NUD Sale Final Day",
+          "cal_ly": {
+            "orders": 2677.0,
+            "net_sales": 186593.0,
+            "units": 10610.0
+          },
+          "retail_ly": {
+            "orders": 2859.0,
+            "net_sales": 195314.0,
+            "units": 11023.0
+          }
+        },
+        {
+          "date": "2026-08-07",
+          "net_sales": 89077,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 2859.0,
+            "net_sales": 195314.0,
+            "units": 11023.0
+          },
+          "retail_ly": {
+            "orders": 1406.0,
+            "net_sales": 96951.0,
+            "units": 4485.0
+          }
+        },
+        {
+          "date": "2026-08-08",
+          "net_sales": 88194,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1406.0,
+            "net_sales": 96951.0,
+            "units": 4485.0
+          },
+          "retail_ly": {
+            "orders": 1232.0,
+            "net_sales": 85807.0,
+            "units": 3597.0
+          }
+        },
+        {
+          "date": "2026-08-09",
+          "net_sales": 105259,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1232.0,
+            "net_sales": 85807.0,
+            "units": 3597.0
+          },
+          "retail_ly": {
+            "orders": 1232.0,
+            "net_sales": 92015.0,
+            "units": 3839.0
+          }
+        },
+        {
+          "date": "2026-08-10",
+          "net_sales": 84871,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1232.0,
+            "net_sales": 92015.0,
+            "units": 3839.0
+          },
+          "retail_ly": {
+            "orders": 1065.0,
+            "net_sales": 73615.0,
+            "units": 3039.0
+          }
+        },
+        {
+          "date": "2026-08-11",
+          "net_sales": 80495,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1065.0,
+            "net_sales": 73615.0,
+            "units": 3039.0
+          },
+          "retail_ly": {
+            "orders": 1249.0,
+            "net_sales": 85933.0,
+            "units": 3679.0
+          }
+        },
+        {
+          "date": "2026-08-12",
+          "net_sales": 84049,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1249.0,
+            "net_sales": 85933.0,
+            "units": 3679.0
+          },
+          "retail_ly": {
+            "orders": 1119.0,
+            "net_sales": 73450.0,
+            "units": 3120.0
+          }
+        },
+        {
+          "date": "2026-08-13",
+          "net_sales": 83205,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1119.0,
+            "net_sales": 73450.0,
+            "units": 3120.0
+          },
+          "retail_ly": {
+            "orders": 1177.0,
+            "net_sales": 83730.0,
+            "units": 3625.0
+          }
+        },
+        {
+          "date": "2026-08-14",
+          "net_sales": 89077,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1177.0,
+            "net_sales": 83730.0,
+            "units": 3625.0
+          },
+          "retail_ly": {
+            "orders": 1342.0,
+            "net_sales": 94893.0,
+            "units": 4142.0
+          }
+        },
+        {
+          "date": "2026-08-15",
+          "net_sales": 88194,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1342.0,
+            "net_sales": 94893.0,
+            "units": 4142.0
+          },
+          "retail_ly": {
+            "orders": 1172.0,
+            "net_sales": 82043.0,
+            "units": 3360.0
+          }
+        },
+        {
+          "date": "2026-08-16",
+          "net_sales": 105259,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1172.0,
+            "net_sales": 82043.0,
+            "units": 3360.0
+          },
+          "retail_ly": {
+            "orders": 1296.0,
+            "net_sales": 93420.0,
+            "units": 3743.0
+          }
+        },
+        {
+          "date": "2026-08-17",
+          "net_sales": 84871,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1296.0,
+            "net_sales": 93420.0,
+            "units": 3743.0
+          },
+          "retail_ly": {
+            "orders": 1033.0,
+            "net_sales": 70326.0,
+            "units": 2940.0
+          }
+        },
+        {
+          "date": "2026-08-18",
+          "net_sales": 80495,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1033.0,
+            "net_sales": 70326.0,
+            "units": 2940.0
+          },
+          "retail_ly": {
+            "orders": 1073.0,
+            "net_sales": 63854.0,
+            "units": 2704.0
+          }
+        },
+        {
+          "date": "2026-08-19",
+          "net_sales": 84049,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1073.0,
+            "net_sales": 63854.0,
+            "units": 2704.0
+          },
+          "retail_ly": {
+            "orders": 969.0,
+            "net_sales": 67409.0,
+            "units": 2727.0
+          }
+        },
+        {
+          "date": "2026-08-20",
+          "net_sales": 83205,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 969.0,
+            "net_sales": 67409.0,
+            "units": 2727.0
+          },
+          "retail_ly": {
+            "orders": 951.0,
+            "net_sales": 61001.0,
+            "units": 2507.0
+          }
+        },
+        {
+          "date": "2026-08-21",
+          "net_sales": 89077,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 951.0,
+            "net_sales": 61001.0,
+            "units": 2507.0
+          },
+          "retail_ly": {
+            "orders": 1024.0,
+            "net_sales": 57583.0,
+            "units": 2317.0
+          }
+        },
+        {
+          "date": "2026-08-22",
+          "net_sales": 88194,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1024.0,
+            "net_sales": 57583.0,
+            "units": 2317.0
+          },
+          "retail_ly": {
+            "orders": 965.0,
+            "net_sales": 66371.0,
+            "units": 2747.0
+          }
+        },
+        {
+          "date": "2026-08-23",
+          "net_sales": 105259,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 965.0,
+            "net_sales": 66371.0,
+            "units": 2747.0
+          },
+          "retail_ly": {
+            "orders": 1263.0,
+            "net_sales": 92903.0,
+            "units": 3614.0
+          }
+        },
+        {
+          "date": "2026-08-24",
+          "net_sales": 84871,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1263.0,
+            "net_sales": 92903.0,
+            "units": 3614.0
+          },
+          "retail_ly": {
+            "orders": 868.0,
+            "net_sales": 56795.0,
+            "units": 2359.0
+          }
+        },
+        {
+          "date": "2026-08-25",
+          "net_sales": 80495,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 868.0,
+            "net_sales": 56795.0,
+            "units": 2359.0
+          },
+          "retail_ly": {
+            "orders": 836.0,
+            "net_sales": 57131.0,
+            "units": 2405.0
+          }
+        },
+        {
+          "date": "2026-08-26",
+          "net_sales": 84049,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 836.0,
+            "net_sales": 57131.0,
+            "units": 2405.0
+          },
+          "retail_ly": {
+            "orders": 834.0,
+            "net_sales": 52902.0,
+            "units": 2249.0
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "net_sales": 83205,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 834.0,
+            "net_sales": 52902.0,
+            "units": 2249.0
+          },
+          "retail_ly": {
+            "orders": 857.0,
+            "net_sales": 45708.0,
+            "units": 1912.0
+          }
+        },
+        {
+          "date": "2026-08-28",
+          "net_sales": 89077,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 857.0,
+            "net_sales": 45708.0,
+            "units": 1912.0
+          },
+          "retail_ly": {
+            "orders": 1542.0,
+            "net_sales": 105166.0,
+            "units": 4590.0
+          }
+        },
+        {
+          "date": "2026-08-29",
+          "net_sales": 88194,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1542.0,
+            "net_sales": 105166.0,
+            "units": 4590.0
+          },
+          "retail_ly": {
+            "orders": 1703.0,
+            "net_sales": 119177.0,
+            "units": 5315.0
+          }
+        },
+        {
+          "date": "2026-08-30",
+          "net_sales": 105259,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1703.0,
+            "net_sales": 119177.0,
+            "units": 5315.0
+          },
+          "retail_ly": {
+            "orders": 1452.0,
+            "net_sales": 99309.0,
+            "units": 4343.0
+          }
+        },
+        {
+          "date": "2026-08-31",
+          "net_sales": 84871,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1452.0,
+            "net_sales": 99309.0,
+            "units": 4343.0
+          },
+          "retail_ly": {
+            "orders": 1621.0,
+            "net_sales": 117486.0,
+            "units": 5174.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "September",
+      "sheet_name": "WEB Sep-26 Daily Fcst",
+      "daily_title": "PSD - WEB Daily Forecast - September 2026 (DC Labor Planning)",
+      "daily_subtitle": "Polar adjusted metrics, web channel (ex. TikTok Shop / AfterShip). Assumptions on Appendix tab. Built 6/11/2026.",
+      "total_label": "SEP TOTAL",
+      "dashboard_title": "SEPTEMBER 2026",
+      "net_sales_target": 2300000,
+      "baseline_aov": 80,
+      "baseline_upt": 3.2,
+      "op_attach": 0.65,
+      "expedited_pct": 0.03,
+      "ly_actual": {
+        "net_sales": 1932559,
+        "orders": 29433,
+        "units": 85281,
+        "aov": 65.66,
+        "upt": 2.9
+      },
+      "month_ly": {
+        "orders": 29433.0,
+        "net_sales": 1932559.0,
+        "units": 85281.0,
+        "retail_orders": 28848.0,
+        "retail_net_sales": 1873712.0,
+        "retail_units": 82590.0
+      },
+      "days": [
+        {
+          "date": "2026-09-01",
+          "net_sales": 64433,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1621.0,
+            "net_sales": 117486.0,
+            "units": 5174.0
+          },
+          "retail_ly": {
+            "orders": 1213.0,
+            "net_sales": 81940.0,
+            "units": 3693.0
+          }
+        },
+        {
+          "date": "2026-09-02",
+          "net_sales": 50458,
+          "aov": 80,
+          "upt": 3.2,
+          "note": "Pre-sale trough expected (LY day before EOS was lowest of month)",
+          "cal_ly": {
+            "orders": 1213.0,
+            "net_sales": 81940.0,
+            "units": 3693.0
+          },
+          "retail_ly": {
+            "orders": 1267.0,
+            "net_sales": 79602.0,
+            "units": 3547.0
+          }
+        },
+        {
+          "date": "2026-09-03",
+          "net_sales": 86582,
+          "aov": 78,
+          "upt": 3.3,
+          "note": "PROMO: End of Summer Sale LAUNCH (Thu)",
+          "cal_ly": {
+            "orders": 1267.0,
+            "net_sales": 79602.0,
+            "units": 3547.0
+          },
+          "retail_ly": {
+            "orders": 1370.0,
+            "net_sales": 87294.0,
+            "units": 4024.0
+          }
+        },
+        {
+          "date": "2026-09-04",
+          "net_sales": 103388,
+          "aov": 78,
+          "upt": 3.3,
+          "note": "PROMO: EOS Sale - Friday",
+          "cal_ly": {
+            "orders": 1370.0,
+            "net_sales": 87294.0,
+            "units": 4024.0
+          },
+          "retail_ly": {
+            "orders": 791.0,
+            "net_sales": 49319.0,
+            "units": 2164.0
+          }
+        },
+        {
+          "date": "2026-09-05",
+          "net_sales": 112952,
+          "aov": 78,
+          "upt": 3.3,
+          "note": "PROMO: EOS Sale - Saturday (LY EOS Sat was a peak)",
+          "cal_ly": {
+            "orders": 791.0,
+            "net_sales": 49319.0,
+            "units": 2164.0
+          },
+          "retail_ly": {
+            "orders": 854.0,
+            "net_sales": 52864.0,
+            "units": 2316.0
+          }
+        },
+        {
+          "date": "2026-09-06",
+          "net_sales": 101106,
+          "aov": 78,
+          "upt": 3.3,
+          "note": "PROMO: EOS Sale - Sunday",
+          "cal_ly": {
+            "orders": 854.0,
+            "net_sales": 52864.0,
+            "units": 2316.0
+          },
+          "retail_ly": {
+            "orders": 884.0,
+            "net_sales": 61580.0,
+            "units": 2558.0
+          }
+        },
+        {
+          "date": "2026-09-07",
+          "net_sales": 118887,
+          "aov": 78,
+          "upt": 3.3,
+          "note": "PROMO: EOS Sale - LABOR DAY (LY Labor Day in-sale was EOS peak ~$117K LY)",
+          "cal_ly": {
+            "orders": 884.0,
+            "net_sales": 61580.0,
+            "units": 2558.0
+          },
+          "retail_ly": {
+            "orders": 730.0,
+            "net_sales": 48605.0,
+            "units": 2142.0
+          }
+        },
+        {
+          "date": "2026-09-08",
+          "net_sales": 77319,
+          "aov": 78,
+          "upt": 3.3,
+          "note": "PROMO: EOS Sale",
+          "cal_ly": {
+            "orders": 730.0,
+            "net_sales": 48605.0,
+            "units": 2142.0
+          },
+          "retail_ly": {
+            "orders": 799.0,
+            "net_sales": 54238.0,
+            "units": 2334.0
+          }
+        },
+        {
+          "date": "2026-09-09",
+          "net_sales": 87460,
+          "aov": 78,
+          "upt": 3.3,
+          "note": "PROMO: EOS Sale FINAL DAY",
+          "cal_ly": {
+            "orders": 799.0,
+            "net_sales": 54238.0,
+            "units": 2334.0
+          },
+          "retail_ly": {
+            "orders": 700.0,
+            "net_sales": 46498.0,
+            "units": 2022.0
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "net_sales": 83252,
+          "aov": 80,
+          "upt": 3.2,
+          "note": "LAUNCH: Halloween Assortment (day after EOS ends)",
+          "cal_ly": {
+            "orders": 700.0,
+            "net_sales": 46498.0,
+            "units": 2022.0
+          },
+          "retail_ly": {
+            "orders": 1207.0,
+            "net_sales": 79243.0,
+            "units": 3630.0
+          }
+        },
+        {
+          "date": "2026-09-11",
+          "net_sales": 74867,
+          "aov": 80,
+          "upt": 3.2,
+          "note": "Halloween launch carryover",
+          "cal_ly": {
+            "orders": 1207.0,
+            "net_sales": 79243.0,
+            "units": 3630.0
+          },
+          "retail_ly": {
+            "orders": 970.0,
+            "net_sales": 65459.0,
+            "units": 2854.0
+          }
+        },
+        {
+          "date": "2026-09-12",
+          "net_sales": 70595,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 970.0,
+            "net_sales": 65459.0,
+            "units": 2854.0
+          },
+          "retail_ly": {
+            "orders": 846.0,
+            "net_sales": 62465.0,
+            "units": 2531.0
+          }
+        },
+        {
+          "date": "2026-09-13",
+          "net_sales": 84255,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 846.0,
+            "net_sales": 62465.0,
+            "units": 2531.0
+          },
+          "retail_ly": {
+            "orders": 1048.0,
+            "net_sales": 76515.0,
+            "units": 3250.0
+          }
+        },
+        {
+          "date": "2026-09-14",
+          "net_sales": 67935,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1048.0,
+            "net_sales": 76515.0,
+            "units": 3250.0
+          },
+          "retail_ly": {
+            "orders": 787.0,
+            "net_sales": 55624.0,
+            "units": 2348.0
+          }
+        },
+        {
+          "date": "2026-09-15",
+          "net_sales": 64433,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 787.0,
+            "net_sales": 55624.0,
+            "units": 2348.0
+          },
+          "retail_ly": {
+            "orders": 926.0,
+            "net_sales": 61759.0,
+            "units": 2700.0
+          }
+        },
+        {
+          "date": "2026-09-16",
+          "net_sales": 67277,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 926.0,
+            "net_sales": 61759.0,
+            "units": 2700.0
+          },
+          "retail_ly": {
+            "orders": 828.0,
+            "net_sales": 52953.0,
+            "units": 2303.0
+          }
+        },
+        {
+          "date": "2026-09-17",
+          "net_sales": 66602,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 828.0,
+            "net_sales": 52953.0,
+            "units": 2303.0
+          },
+          "retail_ly": {
+            "orders": 979.0,
+            "net_sales": 64347.0,
+            "units": 2722.0
+          }
+        },
+        {
+          "date": "2026-09-18",
+          "net_sales": 71302,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 979.0,
+            "net_sales": 64347.0,
+            "units": 2722.0
+          },
+          "retail_ly": {
+            "orders": 878.0,
+            "net_sales": 50629.0,
+            "units": 2104.0
+          }
+        },
+        {
+          "date": "2026-09-19",
+          "net_sales": 70595,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 878.0,
+            "net_sales": 50629.0,
+            "units": 2104.0
+          },
+          "retail_ly": {
+            "orders": 746.0,
+            "net_sales": 50159.0,
+            "units": 2091.0
+          }
+        },
+        {
+          "date": "2026-09-20",
+          "net_sales": 84255,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 746.0,
+            "net_sales": 50159.0,
+            "units": 2091.0
+          },
+          "retail_ly": {
+            "orders": 1044.0,
+            "net_sales": 71294.0,
+            "units": 2950.0
+          }
+        },
+        {
+          "date": "2026-09-21",
+          "net_sales": 67935,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1044.0,
+            "net_sales": 71294.0,
+            "units": 2950.0
+          },
+          "retail_ly": {
+            "orders": 811.0,
+            "net_sales": 54920.0,
+            "units": 2333.0
+          }
+        },
+        {
+          "date": "2026-09-22",
+          "net_sales": 64433,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 811.0,
+            "net_sales": 54920.0,
+            "units": 2333.0
+          },
+          "retail_ly": {
+            "orders": 883.0,
+            "net_sales": 56677.0,
+            "units": 2418.0
+          }
+        },
+        {
+          "date": "2026-09-23",
+          "net_sales": 67277,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 883.0,
+            "net_sales": 56677.0,
+            "units": 2418.0
+          },
+          "retail_ly": {
+            "orders": 1136.0,
+            "net_sales": 68185.0,
+            "units": 3216.0
+          }
+        },
+        {
+          "date": "2026-09-24",
+          "net_sales": 66602,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1136.0,
+            "net_sales": 68185.0,
+            "units": 3216.0
+          },
+          "retail_ly": {
+            "orders": 1402.0,
+            "net_sales": 79423.0,
+            "units": 4390.0
+          }
+        },
+        {
+          "date": "2026-09-25",
+          "net_sales": 71302,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1402.0,
+            "net_sales": 79423.0,
+            "units": 4390.0
+          },
+          "retail_ly": {
+            "orders": 1168.0,
+            "net_sales": 71666.0,
+            "units": 3718.0
+          }
+        },
+        {
+          "date": "2026-09-26",
+          "net_sales": 70595,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1168.0,
+            "net_sales": 71666.0,
+            "units": 3718.0
+          },
+          "retail_ly": {
+            "orders": 727.0,
+            "net_sales": 48905.0,
+            "units": 2028.0
+          }
+        },
+        {
+          "date": "2026-09-27",
+          "net_sales": 84255,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 727.0,
+            "net_sales": 48905.0,
+            "units": 2028.0
+          },
+          "retail_ly": {
+            "orders": 983.0,
+            "net_sales": 70902.0,
+            "units": 2887.0
+          }
+        },
+        {
+          "date": "2026-09-28",
+          "net_sales": 67935,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 983.0,
+            "net_sales": 70902.0,
+            "units": 2887.0
+          },
+          "retail_ly": {
+            "orders": 807.0,
+            "net_sales": 52401.0,
+            "units": 2120.0
+          }
+        },
+        {
+          "date": "2026-09-29",
+          "net_sales": 64433,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 807.0,
+            "net_sales": 52401.0,
+            "units": 2120.0
+          },
+          "retail_ly": {
+            "orders": 1028.0,
+            "net_sales": 59606.0,
+            "units": 2714.0
+          }
+        },
+        {
+          "date": "2026-09-30",
+          "net_sales": 67277,
+          "aov": 80,
+          "upt": 3.2,
+          "note": null,
+          "cal_ly": {
+            "orders": 1028.0,
+            "net_sales": 59606.0,
+            "units": 2714.0
+          },
+          "retail_ly": {
+            "orders": 1036.0,
+            "net_sales": 58640.0,
+            "units": 2483.0
+          }
+        }
+      ]
+    }
+  ],
+  "appendix": {
+    "title": "Appendix - Forecast Assumptions & Methodology",
+    "note_target": "Targets provided by Gian 6/11/26",
+    "note_aov": "Polar adjusted AOV/UPT, web baseline Mar 30 - Jun 7 2026 (ex. Memorial Day sale)",
+    "note_op": "Per Gian: 60-69% range, midpoint used. Polar shows ~47% since 6/2/26 - monitor & revisit",
+    "note_expedited": "Validated: Express+Next-Day = 3.1% of web orders Apr 1 - Jun 7 2026",
+    "dow_header": "DAY-OF-WEEK BASELINE WEIGHTS (share of week, from 2026 web non-promo dailies Mar 30 - Jun 7)",
+    "promo_header": "PROMO EVENT ASSUMPTIONS (lifts applied to DOW baseline, then month normalized to target)",
+    "dow_weights": {
+      "Monday": 0.137968058571804,
+      "Tuesday": 0.130854253149847,
+      "Wednesday": 0.136631458484759,
+      "Thursday": 0.135259510296239,
+      "Friday": 0.144805706950983,
+      "Saturday": 0.143369690328539,
+      "Sunday": 0.171111322217828
+    },
+    "promo_events": [
+      {
+        "event": "July 4th Markdown Push",
+        "dates": "Jul 1-5",
+        "lift": "1.07x - 1.60x (Jul 4 softest, Sun Jul 5 peak)",
+        "aov": "$77.00",
+        "notes": "UPT 4.20 (4.60 on Jul 4 - LY holiday mystery-pack peak). Source: LY Jul 1-6 2025 ratios"
+      },
+      {
+        "event": "National Underwear Day (NUD) Sale",
+        "dates": "Jul 31 - Aug 6",
+        "lift": "Launch Fri 3.40x; D2-D7 2.20x-2.70x",
+        "aov": "$80.00",
+        "notes": "UPT 4.00-4.10. Source: LY Aug 1-7 2025 (Fri launch $321K = 3.64x)"
+      },
+      {
+        "event": "End of Summer Sale",
+        "dates": "Sep 3 - 9",
+        "lift": "Launch Thu 1.30x; Sat 1.60x; Labor Day Mon 1.75x; final Wed 1.30x",
+        "aov": "$78.00",
+        "notes": "UPT 3.30. Pre-sale trough 0.75x on Sep 2 (LY pattern). Sale shifted vs LY to overlap Labor Day wknd (Labor Day 9/7/26 in-sale, comped to LY Labor Day 9/1/25 1.76x)"
+      },
+      {
+        "event": "Halloween Assortment Launch",
+        "dates": "Sep 10",
+        "lift": "1.25x launch (day after EOS ends), 1.05x next day",
+        "aov": "$80.00",
+        "notes": "UPT 3.20 (full-price launch, no promo effect). Source: LY launch Sep 11 2025"
+      }
+    ],
+    "methodology": [
+      "1. Monthly net sales target allocated by day: 2026 day-of-week baseline weights x promo lift factors, normalized to target.",
+      "2. Orders = Adj Net Sales / Adj AOV. Units = Orders x Adj UPT. OP Units = Orders x attach. Expedited = Orders x 3%, Ground = remainder.",
+      "3. LY daily peaks/valleys NOT comped 1:1 - standardized DOW run rates used outside known promo events.",
+      "4. Calendar Y/Y compares same date LY. Retail Y/Y compares same week # + weekday LY (2025 date + 1 day).",
+      "5. Historic source: Polar Analytics, adjusted metrics, Sales Channel (PSD Unified) excluding TikTok Shop."
+    ]
+  }
+}

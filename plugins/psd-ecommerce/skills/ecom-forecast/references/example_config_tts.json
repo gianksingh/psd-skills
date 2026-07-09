@@ -1,0 +1,543 @@
+{
+  "channel": "tts",
+  "period_label": "Q3 2026",
+  "dashboard_sheet_name": "Q3 Total",
+  "summary_title": "PSD - TikTok Shop Q3 2026 Forecast Summary & Pacing",
+  "summary_subtitle": "Fill YELLOW 'Actual' cells as months close. LY shown for reference only - per Gian, LY TTS not a comparable baseline (scale/inventory). Built 6/12/2026.",
+  "months": [
+    {
+      "name": "July",
+      "sheet_name": "TTS Jul-26 Daily Fcst",
+      "daily_title": "PSD - TikTok Shop Daily Forecast - July 2026 (DC Labor Planning)",
+      "daily_subtitle": "Flat daily run rate per Gian (LY not comparable - business scale/inventory position differ). Polar adjusted metrics, TikTok Shop channel. Built 6/12/2026.",
+      "total_label": "JUL TOTAL",
+      "dashboard_title": "JULY 2026",
+      "net_sales_target": 280000,
+      "baseline_aov": 52,
+      "baseline_upt": 2.1,
+      "ly_actual": {
+        "net_sales": 282892,
+        "orders": 6334,
+        "units": 18880,
+        "aov": 44.66,
+        "upt": 2.98
+      },
+      "days": [
+        {
+          "date": "2026-07-01",
+          "net_sales": 9032,
+          "note": "Flat run rate"
+        },
+        {
+          "date": "2026-07-02",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-03",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-04",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-05",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-06",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-07",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-08",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-09",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-10",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-11",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-12",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-13",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-14",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-15",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-16",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-17",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-18",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-19",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-20",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-21",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-22",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-23",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-24",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-25",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-26",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-27",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-28",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-29",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-30",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-07-31",
+          "net_sales": 9040,
+          "note": null
+        }
+      ]
+    },
+    {
+      "name": "August",
+      "sheet_name": "TTS Aug-26 Daily Fcst",
+      "daily_title": "PSD - TikTok Shop Daily Forecast - August 2026 (DC Labor Planning)",
+      "daily_subtitle": "Flat daily run rate per Gian (LY not comparable - business scale/inventory position differ). Polar adjusted metrics, TikTok Shop channel. Built 6/12/2026.",
+      "total_label": "AUG TOTAL",
+      "dashboard_title": "AUGUST 2026",
+      "net_sales_target": 280000,
+      "baseline_aov": 52,
+      "baseline_upt": 2.1,
+      "ly_actual": {
+        "net_sales": 888853,
+        "orders": 17324,
+        "units": 54913,
+        "aov": 51.31,
+        "upt": 3.17
+      },
+      "days": [
+        {
+          "date": "2026-08-01",
+          "net_sales": 9032,
+          "note": "Flat run rate"
+        },
+        {
+          "date": "2026-08-02",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-03",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-04",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-05",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-06",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-07",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-08",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-09",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-10",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-11",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-12",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-13",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-14",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-15",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-16",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-17",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-18",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-19",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-20",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-21",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-22",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-23",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-24",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-25",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-26",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-27",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-28",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-29",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-30",
+          "net_sales": 9032,
+          "note": null
+        },
+        {
+          "date": "2026-08-31",
+          "net_sales": 9040,
+          "note": null
+        }
+      ]
+    },
+    {
+      "name": "September",
+      "sheet_name": "TTS Sep-26 Daily Fcst",
+      "daily_title": "PSD - TikTok Shop Daily Forecast - September 2026 (DC Labor Planning)",
+      "daily_subtitle": "Flat daily run rate per Gian (LY not comparable - business scale/inventory position differ). Polar adjusted metrics, TikTok Shop channel. Built 6/12/2026.",
+      "total_label": "SEP TOTAL",
+      "dashboard_title": "SEPTEMBER 2026",
+      "net_sales_target": 280000,
+      "baseline_aov": 52,
+      "baseline_upt": 2.1,
+      "ly_actual": {
+        "net_sales": 468577,
+        "orders": 10614,
+        "units": 33715,
+        "aov": 44.15,
+        "upt": 3.18
+      },
+      "days": [
+        {
+          "date": "2026-09-01",
+          "net_sales": 9333,
+          "note": "Flat run rate"
+        },
+        {
+          "date": "2026-09-02",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-03",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-04",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-05",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-06",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-07",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-08",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-09",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-10",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-11",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-12",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-13",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-14",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-15",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-16",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-17",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-18",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-19",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-20",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-21",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-22",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-23",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-24",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-25",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-26",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-27",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-28",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-29",
+          "net_sales": 9333,
+          "note": null
+        },
+        {
+          "date": "2026-09-30",
+          "net_sales": 9343,
+          "note": null
+        }
+      ]
+    }
+  ],
+  "appendix": {
+    "title": "Appendix - TikTok Shop Forecast Assumptions & Methodology",
+    "note_target": "Targets provided by Gian 6/12/26 - flat $280K/month",
+    "note_aov": "Polar adjusted, TikTok Shop channel, Mar 1 - Jun 10 2026 blend: AOV $51.92 (trending up: Mar $49.8 / Apr $49.2 / May $53.5 / Jun MTD $58.5)",
+    "note_upt": "Same period blend: 2.06 (volatile: Mar 2.34 / Apr 1.81 / May 1.72 / Jun MTD 2.84 - mystery pack mix driven)",
+    "methodology": [
+      "1. Per Gian: flat even daily run rate - LY TTS daily patterns NOT used (business scale, growth stage, and inventory position were materially different in 2025).",
+      "2. Daily Adj Net Sales = monthly target / days in month (final day absorbs rounding so months tie exactly).",
+      "3. Orders = Adj Net Sales / Adj AOV; Units = Orders x Adj UPT. AOV/UPT reference the constants above (live-linked).",
+      "4. No OP units or ground/expedited split - not applicable to TikTok Shop fulfillment reporting.",
+      "5. LY monthly actuals shown on Q3 Total for scale reference only; Y/Y comps vs LY Aug ($889K incl LY NUD on TTS) and Sep ($469K) will read sharply negative by design of the $280K targets.",
+      "6. Historic source: Polar Analytics, adjusted metrics, Sales Channel (PSD Unified) = TikTok Shop."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "psd-skills",
+  "owner": {
+    "name": "PSD"
+  },
+  "metadata": {
+    "description": "PSD's shared library of Claude skill plugins, organized by domain. Add this marketplace once, then install the domain plugins your team needs.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "psd-ecommerce",
+      "source": "./plugins/psd-ecommerce",
+      "description": "DTC ecommerce reporting agents. Commands: /ecom-review, /ecom-ads, /ecom-retention, /ecom-merch, /ecom-pricing, /ecom-cro, /ecom-finance, /ecom-forecast, /ecom-sale-recap."
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSD Report — Unified Template &amp; Component Library</title>
+<style>
+  :root{
+    --ink:#161616; --ink2:#333333; --muted:#777777; --paper:#F7F7F7; --card:#FFFFFF;
+    --line:#E7E7E7; --line2:#DADADA;
+    --red:#E31C3D; --purple:#9C00FF; --lime:#CCFF00;
+    --pos:#2E9E63; --pos-fill:#6FCF97; --neg:#EB5757; --warn:#EDB902;
+    --wash-red:#FCE7EA; --wash-purple:#F3E6FF; --wash-pos:#EAF7EF; --wash-neg:#FDECEC; --wash-gray:#F0F0F0;
+    --shadow:0 1px 2px rgba(22,22,22,.06),0 8px 24px rgba(22,22,22,.05);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px 80px}
+  .disp{font-family:"Arial Black","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900;letter-spacing:-.02em;line-height:1}
+  .eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .mono{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+  a{color:var(--purple);text-decoration:none}
+
+  /* HERO */
+  .hero{background:var(--ink);color:#fff;border-radius:0 0 26px 26px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(900px 340px at 88% -30%, rgba(156,0,255,.38), transparent 60%),
+      radial-gradient(700px 300px at 6% 120%, rgba(227,28,61,.34), transparent 60%);}
+  .hero .wrap{position:relative;padding-top:32px;padding-bottom:34px}
+  .flagstrip{height:6px;width:100%;background:linear-gradient(90deg,var(--lime) 0%,var(--lime) 45%,var(--purple) 100%)}
+  .hero-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;color:#B7B7B7}
+  .brandmark{display:flex;align-items:center;gap:12px;font-weight:700;color:#fff}
+  .brandmark img{height:22px;width:auto;display:block}
+  .brandmark .gi{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#B7B7B7;font-weight:800;padding-left:12px;border-left:1px solid rgba(255,255,255,.22)}
+  .hero h1{margin:22px 0 14px;font-size:clamp(34px,6vw,60px)}
+  .hero h1 .pop{color:var(--lime)}
+  .period-pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+  .pill{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:7px 14px;font-size:12.5px;color:#DDD}
+  .pill b{color:#fff}
+
+  /* headline metric row in hero */
+  .headline{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden;margin-top:24px}
+  .hmetric{background:#1F1F1F;padding:16px 18px}
+  .hmetric .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9A9A9A;font-weight:700}
+  .hmetric .v{font-size:26px;margin-top:6px;color:#fff}
+  .hmetric .d{font-size:12.5px;margin-top:4px;font-weight:700}
+  .up{color:var(--pos-fill)}.down{color:#FF8A8A}.flat{color:#EDB902}
+
+  /* SECTIONS */
+  section{margin-top:44px}
+  .sechead{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+  .sechead .no{font-family:"Arial Black",sans-serif;font-size:15px;color:var(--red)}
+  .sechead h2{margin:0;font-size:21px;font-weight:800;letter-spacing:-.01em}
+  .sechead .tag{margin-left:auto;font-size:11.5px;color:var(--muted);font-weight:600}
+  .lead{color:var(--ink2);margin:-2px 0 18px}
+
+  /* CARDS / KPI */
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow)}
+  .kpi .k{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .kpi .v{font-size:24px;font-weight:800;margin-top:7px;letter-spacing:-.01em}
+  .kpi .sub{font-size:12px;color:var(--muted);margin-top:3px}
+  .delta{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;font-weight:800;margin-top:8px;padding:2px 7px;border-radius:6px}
+  .delta.p{color:var(--pos);background:var(--wash-pos)}
+  .delta.n{color:var(--neg);background:var(--wash-neg)}
+  .delta.z{color:#EDB902;background:#FBF4D8}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+  .ptitle{font-size:15px;font-weight:800;margin:0 0 3px}
+  .psub{font-size:12.5px;color:var(--muted);margin:0 0 16px}
+
+  /* TABLES */
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:800;padding:0 10px 9px;border-bottom:1px solid var(--line2)}
+  th.l,td.l{text-align:left}
+  td{padding:10px;border-bottom:1px solid var(--line);text-align:right;vertical-align:middle}
+  td.l{font-weight:600}
+  tr:last-child td{border-bottom:none}
+  .tblwrap{overflow-x:auto}
+  .badge{display:inline-block;font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:5px}
+  .b-red{background:var(--wash-red);color:var(--red)}
+  .b-purple{background:var(--wash-purple);color:var(--purple)}
+  .b-pos{background:var(--wash-pos);color:var(--pos)}
+  .b-gray{background:var(--wash-gray);color:#555}
+
+  .ibar{position:relative;height:9px;border-radius:5px;background:#EDEDED;overflow:hidden;width:100%;min-width:90px}
+  .ibar>span{position:absolute;left:0;top:0;bottom:0;border-radius:5px}
+  .cellbar{position:relative;height:7px;border-radius:4px;background:#EDEDED;overflow:hidden;min-width:70px}
+  .cellbar>span{position:absolute;left:0;top:0;bottom:0;border-radius:4px}
+
+  svg{display:block;width:100%;height:auto}
+
+  /* FUNNEL */
+  .funnel{display:flex;flex-direction:column;gap:9px;margin-top:6px}
+  .fstep{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center}
+  .fstep .lab{font-size:12.5px;font-weight:800;line-height:1.15}
+  .fstep .lab small{display:block;font-weight:600;color:var(--muted);font-size:11px;margin-top:2px}
+  .ftrack{position:relative;height:32px;background:#EDEDED;border-radius:8px;display:flex;align-items:center}
+  .ffill{height:100%;border-radius:8px;background:linear-gradient(90deg,var(--ink2),var(--purple));display:flex;align-items:center;min-width:3px}
+  .ffill .in{color:#fff;font-weight:800;font-size:12.5px;padding-left:12px;white-space:nowrap}
+  .ftrack .out{font-weight:800;font-size:12.5px;padding-left:8px;white-space:nowrap}
+
+  /* WIN/RISK */
+  .cards2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .stack{display:flex;flex-direction:column;gap:12px}
+  .item{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--line2);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+  .item.win{border-left-color:var(--pos-fill)}
+  .item.risk{border-left-color:var(--red)}
+  .item h4{margin:0 0 5px;font-size:14px;display:flex;gap:8px;align-items:center}
+  .item h4 .m{margin-left:auto;font-size:12px;font-weight:800}
+  .item p{margin:0;font-size:13px;color:var(--ink2)}
+
+  /* ACTIONS */
+  .act{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden;box-shadow:var(--shadow)}
+  .actrow{display:grid;grid-template-columns:52px 92px 1fr 210px;gap:0;border-bottom:1px solid var(--line);align-items:stretch}
+  .actrow:last-child{border-bottom:none}
+  .actrow>div{padding:13px 14px}
+  .actrow .pri{font-family:"Arial Black",sans-serif;font-size:13px;display:grid;place-items:center;color:#fff}
+  .p0{background:var(--red)}.p1{background:var(--purple)}.p2{background:#5B5B5B}
+  .actrow .own{border-right:1px solid var(--line);font-weight:800;font-size:12px;display:flex;align-items:center;text-transform:uppercase;letter-spacing:.04em}
+  .actrow .what{font-size:13.5px}
+  .actrow .met{border-left:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;align-items:center}
+  .actrow .met b{color:var(--ink)}
+
+  .callout{background:linear-gradient(180deg,#fff,#FBFBFB);border:1px solid var(--line);border-left:4px solid var(--purple);border-radius:12px;padding:15px 18px;margin-top:16px}
+  .callout b{color:var(--ink)}
+
+  .subhd{display:flex;align-items:center;gap:10px;margin:26px 0 12px}
+  .subhd .n{width:22px;height:22px;border-radius:6px;background:var(--ink);color:#fff;font-family:"Arial Black",sans-serif;font-size:11px;display:grid;place-items:center}
+  .subhd h3{margin:0;font-size:16px;font-weight:800}
+  .subhd .t{margin-left:auto;font-size:11.5px;color:var(--muted);font-weight:600}
+
+  .foot{margin-top:52px;border-top:1px solid var(--line2);padding-top:18px;color:var(--muted);font-size:12px}
+  .foot code{background:#EDEDED;padding:1px 6px;border-radius:5px;font-size:11.5px}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:12px}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .swatch{width:11px;height:11px;border-radius:3px;display:inline-block}
+
+  @media (max-width:900px){
+    .kpi-grid,.headline{grid-template-columns:repeat(2,1fr)}
+    .split,.cards2{grid-template-columns:1fr}
+    .actrow{grid-template-columns:44px 1fr}
+    .actrow .own{border-right:none;border-top:1px solid var(--line)}
+    .actrow .met{border-left:none;border-top:1px solid var(--line)}
+    .fstep{grid-template-columns:120px 1fr}
+  }
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{background:#fff}
+    .hero{border-radius:0}
+    .kpi,.panel,.item,.act{box-shadow:none}
+    /* keep only atomic blocks whole so panels/tables flow and fill the page */
+    .kpi,.item,.actrow,svg{break-inside:avoid}
+    tr{break-inside:avoid}
+    .sechead{break-after:avoid}
+    section{margin-top:26px}
+  }
+  /* 16:9 DECK MODE (screensharing): render with body class "mode-deck" and
+     page.pdf(width='13.333in',height='7.5in',landscape). One section per slide. */
+  @media print{
+    body.mode-deck .flagstrip{display:none}
+    body.mode-deck .hero{min-height:7.28in;border-radius:0;display:flex;align-items:center}
+    body.mode-deck .wrap{padding-bottom:24px}
+    body.mode-deck section{break-before:page;min-height:6.9in;margin-top:0;padding-top:22px}
+    body.mode-deck .foot{break-before:page}
+  }
+
+  /* ============================================================
+     UNIFIED ADD-ONS — components the weekly agents need
+     (manager / finance / merch / ads …), in the same design language.
+     ============================================================ */
+  .kpi-grid.c2{grid-template-columns:repeat(2,1fr)}
+  .kpi-grid.c3{grid-template-columns:repeat(3,1fr)}
+  .kpi-grid.c5{grid-template-columns:repeat(5,1fr)}
+
+  .kpi .src{font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);opacity:.85;margin-top:3px}
+  .src-tag{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);background:var(--wash-gray);padding:1px 6px;border-radius:4px;vertical-align:middle}
+
+  /* Goal / forecast progress bar */
+  .goalbar{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+  .goalbar .gtop{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .goalbar .gtop .lab{font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+  .goalbar .gtop .pct{font-family:"Arial Black",sans-serif;font-size:22px}
+  .goalbar .track{position:relative;height:26px;border-radius:8px;background:#EDEDED;overflow:visible;margin:16px 0 8px}
+  .goalbar .track>span{position:absolute;left:0;top:0;bottom:0;border-radius:8px;background:linear-gradient(90deg,var(--ink2),var(--red))}
+  .goalbar .pace{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--purple);z-index:2}
+  .goalbar .pace:after{content:attr(data-lab);position:absolute;top:-15px;left:50%;transform:translateX(-50%);font-size:9.5px;color:var(--purple);font-weight:800;white-space:nowrap}
+  .goalbar .ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:4px}
+  .goalbar .ends b{color:var(--ink)}
+
+  /* Product grid with thumbnails */
+  .prod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .prod-grid.c1{grid-template-columns:1fr}
+  .prod-row{display:grid;grid-template-columns:24px 52px 1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px;box-shadow:var(--shadow)}
+  .prod-row .rank{font-family:"Arial Black",sans-serif;font-size:12px;color:var(--muted)}
+  .prod-row .img{width:52px;height:52px;border-radius:8px;object-fit:cover;background:var(--wash-gray)}
+  .prod-row .img.ph{display:grid;place-items:center;font-size:8.5px;color:var(--muted);text-transform:uppercase;text-align:center;line-height:1.1}
+  .prod-row .info{min-width:0}
+  .prod-row .info .t{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .prod-row .info .ty{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+  .prod-row .metric{text-align:right;font-size:12.5px;font-weight:700;white-space:nowrap}
+  .prod-row .metric .q{display:block;font-size:10.5px;color:var(--muted);font-weight:600;margin-top:2px}
+
+  /* Bulleted executive summary */
+  .exec-bullets{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+  .exec-bullets li{position:relative;padding-left:20px;font-size:13.5px;color:var(--ink2)}
+  .exec-bullets li:before{content:"";position:absolute;left:3px;top:7px;width:7px;height:7px;border-radius:2px;background:var(--red)}
+
+  @media print{ .goalbar,.prod-row{break-inside:avoid} }
+</style>
+</head>
+<body>
+
+<!--
+  ============================================================================
+  PSD REPORT — UNIFIED CANONICAL TEMPLATE & COMPONENT LIBRARY
+  The shared house style for ALL PSD ecommerce reports (sale-recap AND the
+  weekly agents). The <style> block below is the LOCKED stylesheet — copy it
+  verbatim every run. The body is a component gallery: copy each pattern and
+  replace {{PLACEHOLDER}} tokens with run data. Do not restyle from prose.
+  ============================================================================
+-->
+
+<!-- ===== HERO (always) ===== -->
+<div class="flagstrip"></div>
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="brandmark"><img src="https://www.psd.com/cdn/shop/files/logo-white_a1a0e905-e6cb-408b-a6a3-906e6a371a3c.png" alt="PSD"><span class="gi">{{REPORT_KICKER}}</span></div>
+      <div style="font-size:12px">Prepared by <b style="color:#fff">{{AGENT_NAME}}</b> · {{DATE_UPDATED}}</div>
+    </div>
+    <h1 class="disp" style="margin-top:28px">{{REPORT_TITLE}} <span class="pop">{{ACCENT_WORD}}</span></h1>
+    <!-- ACCENT_WORD = optional lime-popped word; drop the span if the title is one piece -->
+    <div class="period-pills">
+      <span class="pill">Report window <b>{{WINDOW}}</b> · {{WINDOW_DAYS}} days</span>
+      <span class="pill">Comparison <b>{{COMP_WINDOW}}</b> · {{COMP_DAYS}} days</span>
+      <span class="pill">Scope <b>{{SCOPE}}</b></span>
+      <span class="pill">Source <b>{{SOURCE}}</b></span>
+    </div>
+    <div class="headline">
+      <!-- 4 headline metrics; labels per report. delta class: up / down / flat(amber) -->
+      <div class="hmetric"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="d"><span class="flat">≈ flat · {{DELTA}} vs {{COMP}}</span></div></div>
+      <div class="hmetric"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="d"><span class="up">{{DELTA}} vs {{COMP}}</span></div></div>
+      <div class="hmetric"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="d"><span class="up">{{DELTA}} vs {{COMP}}</span></div></div>
+      <div class="hmetric"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="d"><span class="up">{{DELTA}} vs {{COMP}}</span></div></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ===== EXECUTIVE SUMMARY (always) ===== -->
+  <div class="callout" style="margin-top:26px;border-left-color:var(--red)">
+    <div class="eyebrow" style="color:var(--red)">Executive Summary</div>
+    <p style="margin:8px 0 0">{{ONE_TIGHT_PARAGRAPH — thesis (volume vs AOV vs mix), full-period comp, secondary sale-day read if padded}}</p>
+  </div>
+
+  <!-- ===== SECTION HEADER pattern (renumber 01..NN sequentially) ===== -->
+  <section id="{{id}}">
+    <div class="sechead"><span class="no">01</span><h2>{{SECTION TITLE}}</h2><span class="tag">{{right-aligned tag}}</span></div>
+    <p class="lead">{{full-width intro — no max-width cap}}</p>
+
+    <!-- ---- KPI GRID (4-col; wraps) ---- -->
+    <div class="kpi-grid">
+      <div class="kpi"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="sub">{{sub}}</div><span class="delta p">▲ {{+x%}} vs {{COMP}}</span></div>  <!-- positive -->
+      <div class="kpi"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="sub">{{sub}}</div><span class="delta n">▼ {{-x%}} vs {{COMP}}</span></div>  <!-- negative -->
+      <div class="kpi"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="sub">{{sub}}</div><span class="delta z">≈ {{~x%}} vs {{COMP}}</span></div>  <!-- neutral/flat = amber -->
+    </div>
+  </section>
+
+  <!-- ===== PANEL + DUAL COLUMN (split) ===== -->
+  <div class="split">
+    <div class="panel">
+      <div class="ptitle">{{Panel title}}</div>
+      <div class="psub">{{panel subtitle}}</div>
+      <!-- TABLE pattern: right-aligned numerics, .l = left; delta cells colored inline -->
+      <div class="tblwrap"><table>
+        <thead><tr><th class="l">Metric</th><th>2026</th><th>2025</th><th>Δ</th></tr></thead>
+        <tbody>
+          <tr><td class="l">{{row}}</td><td class="mono">{{cy}}</td><td class="mono">{{ly}}</td><td class="mono" style="color:var(--pos);font-weight:800">{{+x%}}</td></tr>
+          <tr><td class="l">{{row}}</td><td class="mono">{{cy}}</td><td class="mono">{{ly}}</td><td class="mono" style="color:var(--neg);font-weight:800">{{-x%}}</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="panel">{{...second column...}}</div>
+  </div>
+
+  <!-- ===== TABLE WITH INLINE BARS (traffic / landing / sale-page) ===== -->
+  <!-- volume bar: width = value / MAX_IN_COLUMN * 100%. ratio bar: width = cvr / BEST_CVR * 100%, color by perf -->
+  <div class="panel">
+    <div class="tblwrap"><table>
+      <thead><tr><th class="l">{{dim}}</th><th>Sessions</th><th class="l" style="width:26%">Volume</th><th>CVR</th><th class="l" style="width:22%">vs best CVR</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="l">{{row}} <span class="badge b-red">{{optional badge}}</span></td>
+          <td class="mono">{{n}}</td>
+          <td><div class="ibar"><span style="width:{{vol%}};background:var(--ink2)"></span></div></td>
+          <td class="mono" style="color:var(--neg);font-weight:800">{{cvr}}</td>
+          <td><div class="ibar"><span style="width:{{cvr%}};background:var(--red)"></span></div></td>
+        </tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><p style="margin:0"><b>Read:</b> {{tie to narrative}}</p></div>
+  </div>
+
+  <!-- ===== DAILY GROUPED BAR CHART (CY colored + PY gray, positional) =====
+       baseline y=210, top=20, range=185; h = value/MAX*185; y = 210-h.
+       6 bands @126px; per band: PY bar x=band+16, CY bar x=band+66, width 44.
+       CY: BAU day lighter red #E8899A, sale days var(--red), finale var(--purple). PY: #D5D5D5.
+       value labels BOTH series font-size 10.5 (CY bold #161616, PY #8A8A8A). Add legend + per-band date/comp labels. -->
+  <div class="panel">
+    <div class="ptitle">Daily Adjusted Demand $ · {{CY_WINDOW}}</div>
+    <div class="psub">Colored bars = {{CY}}; gray bars = prior year, aligned positionally. {{note}}</div>
+    <svg viewBox="0 0 760 262" role="img" aria-label="Daily Adjusted Demand dollars, CY vs PY">
+      <line x1="8" y1="210" x2="752" y2="210" stroke="#DADADA" stroke-width="1"/>
+      <!-- per band (repeat x6): -->
+      <rect x="{{PYx}}" y="{{PYy}}" width="44" height="{{PYh}}" rx="3" fill="#D5D5D5"/>
+      <rect x="{{CYx}}" y="{{CYy}}" width="44" height="{{CYh}}" rx="3" fill="var(--red)"/>
+      <text x="{{CYcx}}" y="{{CYy-8}}" text-anchor="middle" font-size="10.5" font-weight="800" fill="#161616">{{CY$}}</text>
+      <text x="{{PYcx}}" y="{{PYy-8}}" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8A8A8A">{{PY$}}</text>
+      <text x="{{bandc}}" y="228" text-anchor="middle" font-size="12" font-weight="800" fill="#161616">{{CY_date}}</text>
+      <text x="{{bandc}}" y="242" text-anchor="middle" font-size="9.5" fill="#999">vs {{PY_date}}</text>
+    </svg>
+    <div class="legend"><span><span class="swatch" style="background:var(--red)"></span> {{CY}} (sale)</span><span><span class="swatch" style="background:#E8899A"></span> {{CY}} (BAU)</span><span><span class="swatch" style="background:var(--purple)"></span> {{CY}} finale</span><span><span class="swatch" style="background:#D5D5D5"></span> {{PY}} (positional)</span></div>
+    <div class="callout"><p style="margin:0;font-size:13px">{{finale + sale-day daily-avg read}}</p></div>
+  </div>
+
+  <!-- ===== FUNNEL (bars scaled to TRUE value; wide steps label inside, narrow steps label outside) ===== -->
+  <div class="panel">
+    <div class="funnel">
+      <div class="fstep"><div class="lab">Sessions<small>100%</small></div><div class="ftrack"><div class="ffill" style="width:100%"><span class="in">{{n}}</span></div></div></div>
+      <div class="fstep"><div class="lab">Viewed product<small>{{%}} of sessions</small></div><div class="ftrack"><div class="ffill" style="width:{{%}}"><span class="in">{{n}}</span></div></div></div>
+      <div class="fstep"><div class="lab">Added to cart<small>{{%}} of sessions</small></div><div class="ftrack"><div class="ffill" style="width:{{%}}"></div><span class="out">{{n}}</span></div></div>
+      <div class="fstep"><div class="lab">Checkout started<small>{{%}} of sessions</small></div><div class="ftrack"><div class="ffill" style="width:{{%}}"></div><span class="out">{{n}}</span></div></div>
+      <div class="fstep"><div class="lab">Checkout completed<small>{{CVR}} CVR</small></div><div class="ftrack"><div class="ffill" style="width:{{%}}"></div><span class="out">{{n}}</span></div></div>
+    </div>
+    <div class="callout"><p style="margin:0"><b>YoY (GA4):</b> {{note — pixel not live LY}}</p></div>
+  </div>
+
+  <!-- ===== DONUT (small, ~160 viewBox) + PACK/RATIO BARS in a split =====
+       C = 2*pi*58 = 364.42; segment dash = share * 364.42; second segment stroke-dashoffset = -firstDash. -->
+  <div class="split">
+    <div class="panel">
+      <div class="ptitle">{{title}}</div><div class="psub">{{sub}}</div>
+      <svg viewBox="0 0 160 160" role="img" style="max-width:190px;margin:6px auto 10px">
+        <circle cx="80" cy="80" r="58" fill="none" stroke="#EDEDED" stroke-width="22"/>
+        <circle cx="80" cy="80" r="58" fill="none" stroke="var(--red)" stroke-width="22" stroke-dasharray="{{d1}} {{364.42-d1}}" transform="rotate(-90 80 80)"/>
+        <circle cx="80" cy="80" r="58" fill="none" stroke="var(--purple)" stroke-width="22" stroke-dasharray="{{d2}} {{364.42-d2}}" stroke-dashoffset="-{{d1}}" transform="rotate(-90 80 80)"/>
+        <text x="80" y="76" text-anchor="middle" font-size="22" font-weight="800" fill="#161616">{{total}}</text>
+        <text x="80" y="94" text-anchor="middle" font-size="9.5" fill="#777">{{label}}</text>
+      </svg>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:12.5px">
+        <div style="display:flex;justify-content:space-between"><span><span class="swatch" style="background:var(--red)"></span> <b>{{A}}</b></span><span class="mono"><b>{{val}}</b> · {{%}}</span></div>
+        <div style="display:flex;justify-content:space-between"><span><span class="swatch" style="background:var(--purple)"></span> <b>{{B}}</b></span><span class="mono"><b>{{val}}</b> · {{%}}</span></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="ptitle">{{ratio-bar title}}</div><div class="psub">{{sub}}</div>
+      <div style="display:flex;flex-direction:column;gap:11px;margin-top:4px">
+        <div><div style="display:flex;justify-content:space-between;font-size:12.5px;font-weight:700"><span>{{row}}</span><span class="mono">{{val}} · {{%}}</span></div><div class="cellbar" style="height:15px;margin-top:5px"><span style="width:{{%}};background:var(--red)"></span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LINE CHART (e.g., attach rate daily) — honest y-scale ===== -->
+  <div class="panel">
+    <div class="ptitle">{{title}}</div><div class="psub">{{sub}}</div>
+    <svg viewBox="0 0 760 210" role="img">
+      <line x1="30" y1="47.5" x2="730" y2="47.5" stroke="#EDEDED" stroke-width="1"/><text x="30" y="43" font-size="10" fill="#BDBDBD">{{ymax}}</text>
+      <line x1="30" y1="175" x2="730" y2="175" stroke="#DADADA" stroke-width="1"/><text x="30" y="190" font-size="10" fill="#BDBDBD">0%</text>
+      <polygon points="{{pts}} 700,175 60,175" fill="rgba(156,0,255,.10)"/>
+      <polyline points="{{pts}}" fill="none" stroke="var(--purple)" stroke-width="3"/>
+      <g fill="var(--purple)">{{<circle> per point}}</g>
+      <g font-size="11.5" font-weight="800" fill="#161616" text-anchor="middle">{{value labels}}</g>
+      <g font-size="11.5" font-weight="700" fill="#777" text-anchor="middle">{{date labels}}</g>
+    </svg>
+  </div>
+
+  <!-- ===== SUB-SECTION + DRILL-DOWN (e.g., Aftersell 8a) ===== -->
+  <div class="subhd"><span class="n">A</span><h3>{{sub title}}</h3><span class="t">{{tag}}</span></div>
+  <div class="panel"><div class="psub" style="margin-top:-2px">{{overview note}}</div>
+    <div class="kpi-grid" style="margin-bottom:0">{{...cards...}}</div>
+  </div>
+  <div class="panel" style="margin-top:16px;border-left:4px solid var(--red)">  <!-- drill-down: red left border -->
+    <div class="ptitle">Drill-down · {{offer}}</div><div class="psub">{{sub}}</div>
+    <div class="kpi-grid" style="margin-bottom:0">{{...cards...}}</div>
+    <div class="callout"><p style="margin:0;font-size:13px">{{drill-down read + reconciliation}}</p></div>
+  </div>
+
+  <!-- ===== WINS & RISKS (2 columns; 3-4 each) ===== -->
+  <div class="cards2">
+    <div class="stack">
+      <div style="font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--pos)">Wins</div>
+      <div class="item win"><h4>{{headline}} <span class="m" style="color:var(--pos)">{{metric chip}}</span></h4><p>{{one sentence + driver}}</p></div>
+    </div>
+    <div class="stack">
+      <div style="font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)">Risks &amp; Caveats</div>
+      <div class="item risk"><h4>{{headline}} <span class="m" style="color:var(--neg)">{{metric chip}}</span></h4><p>{{one sentence + driver/caveat}}</p></div>
+    </div>
+  </div>
+
+  <!-- ===== KEY LEARNING / ACTIONS (5-7 rows) ===== -->
+  <div class="act">
+    <div class="actrow"><div class="pri p0">P0</div><div class="own" style="color:var(--red)">{{Owner}}</div><div class="what"><b>{{action}}</b> {{detail}}</div><div class="met">Moves&nbsp;<b>&nbsp;{{metric}}</b></div></div>
+    <div class="actrow"><div class="pri p1">P1</div><div class="own" style="color:var(--purple)">{{Owner}}</div><div class="what"><b>{{action}}</b> {{detail}}</div><div class="met">Moves&nbsp;<b>&nbsp;{{metric}}</b></div></div>
+    <div class="actrow"><div class="pri p2">P2</div><div class="own" style="color:#5B5B5B">{{Owner}}</div><div class="what"><b>{{action}}</b> {{detail}}</div><div class="met">Moves&nbsp;<b>&nbsp;{{metric}}</b></div></div>
+  </div>
+
+  <!-- ===== [UNIFIED] GOAL / FORECAST PROGRESS BAR (e.g. % to monthly forecast) =====
+       fill width = actual/goal (cap 100%); .pace left = (day-of-month / days-in-month) as % (pace-to-date). -->
+  <div class="goalbar">
+    <div class="gtop"><span class="lab">{{LABEL — e.g. DTC Adj Net Sales · MTD vs {{Month}} forecast}}</span><span class="pct mono">{{PCT}}%</span></div>
+    <div class="track"><span style="width:{{PCT_CAPPED}}"></span><i class="pace" style="left:{{PACE%}}" data-lab="pace {{PACE%}}"></i></div>
+    <div class="ends"><span>MTD <b class="mono">{{ACTUAL}}</b></span><span>Run-rate <b class="mono">{{PROJECTION}}</b></span><span>Goal <b class="mono">{{GOAL}}</b></span></div>
+  </div>
+
+  <!-- ===== [UNIFIED] KPI CARD WITH SOURCE TAG + grid variants (.c2 / .c3 / .c5) ===== -->
+  <div class="kpi-grid c3" style="margin-top:16px">
+    <div class="kpi"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="src">{{Polar / GA4 / Shopify}}</div><span class="delta p">&#9650; {{+x%}} vs {{comp}}</span></div>
+    <div class="kpi"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="src">{{source}}</div><span class="delta n">&#9660; {{-x%}} vs {{comp}}</span></div>
+    <div class="kpi"><div class="k">{{LABEL}}</div><div class="v mono">{{VAL}}</div><div class="src">{{source}}</div><span class="delta z">&#8776; {{~x%}} vs {{comp}}</span></div>
+  </div>
+
+  <!-- ===== [UNIFIED] PRODUCT GRID w/ THUMBNAILS (top sellers / movers; add .c1 for single column) =====
+       img src = product image URL; use <div class="img ph"> placeholder if none. metric = net sales · %, units in .q -->
+  <div class="prod-grid" style="margin-top:16px">
+    <div class="prod-row">
+      <div class="rank mono">01</div>
+      <img class="img" src="{{IMG_URL}}" alt="">
+      <div class="info"><div class="t">{{PRODUCT TITLE}}</div><div class="ty">{{PRODUCT TYPE}}</div></div>
+      <div class="metric mono">{{NET_SALES}} &middot; {{%}}<span class="q">{{UNITS}} units</span></div>
+    </div>
+    <div class="prod-row">
+      <div class="rank mono">02</div>
+      <div class="img ph">No image</div>
+      <div class="info"><div class="t">{{PRODUCT TITLE}}</div><div class="ty">{{PRODUCT TYPE}}</div></div>
+      <div class="metric mono">{{NET_SALES}} &middot; {{%}}<span class="q">{{UNITS}} units</span></div>
+    </div>
+  </div>
+
+  <!-- ===== [UNIFIED] BULLETED EXEC SUMMARY (alt to the single-paragraph exec callout) ===== -->
+  <div class="callout" style="margin-top:16px;border-left-color:var(--red)">
+    <div class="eyebrow" style="color:var(--red)">Executive Summary</div>
+    <ul class="exec-bullets">
+      <li>{{bullet 1 — headline + driver}}</li>
+      <li>{{bullet 2}}</li>
+      <li>{{bullet 3}}</li>
+    </ul>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="foot">
+    <p style="margin:0 0 8px"><b>Data coverage.</b> {{sources, scope, comparison basis, leading metric}}</p>
+    <p style="margin:0 0 8px"><b>Method notes.</b> {{padding, tracking caveats, pixel-vs-GA4, dimension defs, external-source caveats}}</p>
+    <p style="margin:12px 0 0;color:#9a9a9a">Generated by <b style="color:#5B5B5B">{{AGENT_NAME}}</b> · {{date}} · Report path <code>{{filename}}</code></p>
+  </div>
+
+</div>
+
+</body>
+</html>

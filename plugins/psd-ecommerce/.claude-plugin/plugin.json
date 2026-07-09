@@ -1,0 +1,17 @@
+{
+  "name": "psd-ecommerce",
+  "version": "0.8.0",
+  "description": "PSD's ecommerce reporting agents (DTC growth suite). Fire any /ecom-* agent to pull Polar Analytics data, produce a skimmable report in the house style as HTML + PDF, save copies to the project reports folder, and (if you opt in) log action items to Asana. Includes review, ads, retention, merch, pricing, cro, finance, forecast, and sale-recap.",
+  "author": {
+    "name": "PSD"
+  },
+  "keywords": [
+    "ecommerce",
+    "analytics",
+    "polar",
+    "reporting",
+    "dtc",
+    "shopify",
+    "psd"
+  ]
+}
