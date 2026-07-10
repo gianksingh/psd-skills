@@ -46,23 +46,38 @@ prompted) log action items to Asana.
 
 ---
 
-## Install (one-time, ~2 minutes)
+## Install — Cowork desktop (step by step)
 
-1. **Use Claude Code or the Cowork desktop app** to install. (Once installed, the
-   commands also surface in the claude.ai web/mobile chat via your account.)
-2. **Add this repo as a plugin marketplace** — point Claude at this repository's
-   URL.
-3. **Install the plugin(s) you want**, e.g. `psd-ecommerce`.
-4. **Connect the data sources** the agents use (see Requirements below).
+Most people install from the **Cowork desktop app**. Once it's installed here, the
+commands also appear in the claude.ai web/mobile chat via your account. You do
+**not** download, unzip, or build anything — installing pulls straight from this repo.
 
-You do **not** need to download, unzip, or build anything — installing pulls the
-plugin straight from this repo.
+*(Annotated screenshots for each step are in `docs/install/` — `1.png` through `8.png`.)*
 
-> The exact install commands depend on your surface and can change between
-> releases. For current syntax see the Claude Code docs
-> (https://docs.anthropic.com/en/docs/claude-code/claude_code_docs_map.md) or, for
-> the desktop app, https://support.claude.com. As a guide, the flow is generally:
-> add the marketplace (this repo) → install `psd-ecommerce` from it.
+1. In the left sidebar, click **Customize**. *(image 1)*
+2. In Settings, under the **Customize** heading, click **Plugins**. *(image 2)*
+3. Top right, click **Add**, then **Add marketplace**. *(image 3)*
+4. In the **URL** field, type the repo and choose the **Use "…"** option that appears:
+   `https://github.com/gianksingh/psd-skills` *(image 4)*
+5. Click **Sync**. *(image 5)*
+6. Open the **Personal** tab → under **Local uploads → psd-skills**, find
+   **PSD ecommerce** and click the **+** to install it. *(image 6)*
+7. You'll see the confirmation *"PSD ecommerce is installed and ready to use."* *(image 7)*
+8. **Turn on auto-updates — don't skip this.** Next to `psd-skills` under **Local
+   uploads**, click the **…** menu and switch **Sync automatically** ON. This is what
+   makes future updates arrive on their own (the marketplace tracks the repo's latest
+   commit). If it's left off you will **not** get new versions automatically — you'd
+   have to reopen this menu and click **Check for updates** every time. *(image 8)*
+9. **Connect the data sources** the agents need (see Requirements) — at minimum
+   **Polar**, or the reports run empty.
+
+**Verify:** type `/ecom` in a chat and confirm the commands appear (`/ecom-review`,
+`/ecom-ads`, … `/ecom-sale-recap`).
+
+> **Claude Code (technical users):** same two steps from the CLI — add the marketplace
+> (`/plugin marketplace add gianksingh/psd-skills`), then install
+> (`/plugin install psd-ecommerce@psd-skills`). Exact syntax can change between
+> releases; see https://docs.anthropic.com/en/docs/claude-code/claude_code_docs_map.md.
 
 ---
 
@@ -79,12 +94,17 @@ plugin straight from this repo.
 
 ## Update
 
-- **Maintainers:** make changes in this repo and bump the affected plugin's
-  `version` in its `plugin.json` (see `MAINTAINERS.md`).
-- **Users:** pull the latest via your marketplace's **update** command. Same
-  caveat as install — check the docs links above for the exact command on your
-  surface. The flow is generally: update the marketplace → the newer plugin
-  version installs.
+- **Maintainers:** make changes in this repo, bump the affected plugin's `version`
+  in its `plugin.json`, and push (see `MAINTAINERS.md`).
+- **Users with Sync automatically ON** (install step 8): new commits pull in on
+  their own — nothing to do.
+- **To pull an update immediately:** click the **…** menu next to `psd-skills` under
+  **Local uploads** and choose **Check for updates**. That menu also shows the
+  currently synced commit and a **Remove** option.
+
+> If a teammate's version looks stale, it's almost always because **Sync
+> automatically was left off**. Have them open the **…** menu and either switch it on
+> or click **Check for updates** — waiting won't help on its own.
 
 ---
 
