@@ -90,8 +90,8 @@ classes:
 - `.cards2` + `.item.win|.risk` for wins/risks; `.act` / `.actrow` for the
   prioritized action table; `.callout` for reads; `.foot` for the footer.
 - For geographic breakdowns (e.g. orders by US state), use the **map module**
-  (`.psd-map-module`) — run its generator in
-  `${CLAUDE_PLUGIN_ROOT}/shared/psd-map-module.html` and paste the
+  (`.psd-map-module`, built into the template) — run the embedded Python generator
+  from the comment above its markup in `report-template.html`, then paste the
   `{{MAP_SVG}}` / `{{STATE_ROWS}}` / rest outputs; its styles are already in the template.
 
 Fonts: the template loads **Inter** (Aktiv Grotesk substitute) via a Google Fonts
