@@ -1,14 +1,13 @@
 ---
 name: ecom-sale-recap
 description: >
-  This skill should be used to produce PSD's single-page executive recap of a
-  sale/promo event — the "Sale Recap" agent. Trigger when the user says
-  "/ecom-sale-recap", "sale recap", "sale event recap", "event post-mortem",
-  "promo recap", "post-mortem for the <event> sale", or asks for a recap/wrap-up
-  of a specific sale window vs a comparison period. Use this whenever the user
-  wants the event-level recap dashboard, not the recurring weekly reviews.
+  Use this skill to produce PSD's single-page executive recap of a sale or promo
+  event (the Sale Recap agent). Trigger when the user types /ecom-sale-recap or
+  asks for a sale recap, sale event recap, event post-mortem, promo recap, or a
+  wrap-up of a specific sale window versus a comparison period. Use this for the
+  event-level recap dashboard, not the recurring weekly reviews.
 metadata:
-  version: "0.6.0"
+  version: "0.6.1"
   agent_handle: ecom-sale-recap
 ---
 
