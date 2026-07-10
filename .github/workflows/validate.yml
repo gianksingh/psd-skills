@@ -1,0 +1,36 @@
+name: validate
+
+# Runs the repo's own checks on every push to main and every pull request.
+# validate.py uses only the Python standard library, so there are no deps to install.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 1) Manifest + skill checks: valid plugin.json, kebab-case names,
+      #    SKILL.md frontmatter present, and no duplicate slash-commands.
+      - name: Validate plugins
+        run: python3 scripts/validate.py
+
+      # 2) Shared-asset drift guard: re-run the sync and fail if anything changed,
+      #    i.e. someone edited shared-assets/ but didn't commit the synced copies
+      #    (or edited a plugin's copy directly). Enforces the single source of truth.
+      - name: Check shared assets are in sync
+        run: |
+          bash scripts/sync-shared.sh
+          if ! git diff --quiet; then
+            echo "::error::shared-assets are out of sync with plugin copies. Run 'bash scripts/sync-shared.sh' locally and commit the result."
+            git --no-pager diff --stat
+            exit 1
+          fi
