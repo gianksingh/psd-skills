@@ -52,22 +52,44 @@ Most people install from the **Cowork desktop app**. Once it's installed here, t
 commands also appear in the claude.ai web/mobile chat via your account. You do
 **not** download, unzip, or build anything — installing pulls straight from this repo.
 
-*(Annotated screenshots for each step are in `docs/install/` — `1.png` through `8.png`.)*
+1. In the left sidebar, click **Customize**.
 
-1. In the left sidebar, click **Customize**. *(image 1)*
-2. In Settings, under the **Customize** heading, click **Plugins**. *(image 2)*
-3. Top right, click **Add**, then **Add marketplace**. *(image 3)*
+   <img src="docs/install/1.png" alt="Click Customize in the sidebar" width="720">
+
+2. In Settings, under the **Customize** heading, click **Plugins**.
+
+   <img src="docs/install/2.png" alt="Open Plugins under Customize" width="720">
+
+3. Top right, click **Add**, then **Add marketplace**.
+
+   <img src="docs/install/3.png" alt="Add, then Add marketplace" width="720">
+
 4. In the **URL** field, type the repo and choose the **Use "…"** option that appears:
-   `https://github.com/gianksingh/psd-skills` *(image 4)*
-5. Click **Sync**. *(image 5)*
+   `https://github.com/gianksingh/psd-skills`
+
+   <img src="docs/install/4.png" alt="Enter the repo URL and choose Use" width="720">
+
+5. Click **Sync**.
+
+   <img src="docs/install/5.png" alt="Click Sync" width="720">
+
 6. Open the **Personal** tab → under **Local uploads → psd-skills**, find
-   **PSD ecommerce** and click the **+** to install it. *(image 6)*
-7. You'll see the confirmation *"PSD ecommerce is installed and ready to use."* *(image 7)*
+   **PSD ecommerce** and click the **+** to install it.
+
+   <img src="docs/install/6.png" alt="Install PSD ecommerce from Local uploads" width="720">
+
+7. You'll see the confirmation *"PSD ecommerce is installed and ready to use."*
+
+   <img src="docs/install/7.png" alt="Installed and ready to use confirmation" width="720">
+
 8. **Turn on auto-updates — don't skip this.** Next to `psd-skills` under **Local
    uploads**, click the **…** menu and switch **Sync automatically** ON. This is what
    makes future updates arrive on their own (the marketplace tracks the repo's latest
    commit). If it's left off you will **not** get new versions automatically — you'd
-   have to reopen this menu and click **Check for updates** every time. *(image 8)*
+   have to reopen this menu and click **Check for updates** every time.
+
+   <img src="docs/install/8.png" alt="Toggle Sync automatically on" width="720">
+
 9. **Connect the data sources** the agents need (see Requirements) — at minimum
    **Polar**, or the reports run empty.
 
