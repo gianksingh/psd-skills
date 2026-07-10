@@ -89,8 +89,14 @@ classes:
   grouped bars / donut / line.
 - `.cards2` + `.item.win|.risk` for wins/risks; `.act` / `.actrow` for the
   prioritized action table; `.callout` for reads; `.foot` for the footer.
+- For geographic breakdowns (e.g. orders by US state), use the **map module**
+  (`.psd-map-module`) — run its generator in
+  `${CLAUDE_PLUGIN_ROOT}/shared/psd-map-module.html` and paste the
+  `{{MAP_SVG}}` / `{{STATE_ROWS}}` / rest outputs; its styles are already in the template.
 
-Fonts are self-contained (system stack + Arial Black) — no external font link.
+Fonts: the template loads **Inter** (Aktiv Grotesk substitute) via a Google Fonts
+`@import` inside the copied `<style>` block, with a system-stack fallback — copying
+the `<style>` verbatim keeps HTML and PDF in sync (no separate `<link>` needed).
 Render the exec summary as a single `.callout` paragraph or the `.exec-bullets`
 list, per the agent's spec.
 
