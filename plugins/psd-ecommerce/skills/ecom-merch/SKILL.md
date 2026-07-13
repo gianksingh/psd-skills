@@ -12,10 +12,11 @@ metadata:
   agent_handle: ecom-merch
 ---
 
-> **OUTPUT RULE (non-negotiable):** Build the report strictly from
-> `${CLAUDE_PLUGIN_ROOT}/shared/report-template.html` per run-protocol §4 — copy its
-> `<style>` verbatim, reuse only its classes, invent no CSS. Sections and their order
-> vary by agent; the design system does not.
+> **OUTPUT RULE (non-negotiable):** Write a BODY fragment from the module gallery in
+> `${CLAUDE_PLUGIN_ROOT}/shared/report-template.html` (fill each `{{token}}`) plus a
+> `tokens.json`, then run `${CLAUDE_PLUGIN_ROOT}/shared/assemble_report.py` per
+> run-protocol §4. Never author CSS or the report header/footer. Sections and their
+> order vary by agent; the design system does not.
 
 # Agent: Merchandiser / Product Analyst
 

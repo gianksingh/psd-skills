@@ -63,28 +63,44 @@ says otherwise (some expand to 30-day or YoY). Use Polar's `comparisonPeriod:
 previousPeriod`. Always state the exact date ranges compared in the report header,
 anchored to today's date.
 
-## 4. Build the report (unified house style — non-negotiable)
+## 4. Build the report (deterministic assembly — non-negotiable)
 
-The report's look is FIXED by the shared template. You choose which sections appear
-and their order for this agent; you do NOT choose the styling.
+The stylesheet and the flagstrip/hero/footer are LOCKED and welded on by a script —
+you cannot author or re-author them. You write ONLY a body fragment (which modules,
+in what order) plus a small tokens file; the assembler produces the HTML. The design
+system is not yours to change, and there is no "copy the CSS" step anymore.
 
-STEP 1 — Copy the stylesheet verbatim. Open
-`${CLAUDE_PLUGIN_ROOT}/shared/report-template.html` and copy everything between
-`<style>` and `</style>` verbatim into a single `<style>` in the report `<head>`.
-Do NOT write, edit, "improve", or add any CSS. Do NOT introduce class names or CSS
-variables that aren't already in that block. If you cannot open the file, STOP and
-tell the user — never improvise a stylesheet.
+STEP 1 — Write a BODY fragment (`body.html`). Pick the modules this agent needs from
+the gallery in `${CLAUDE_PLUGIN_ROOT}/shared/report-template.html`, copy their markup,
+and fill every `{{token}}` with run data. Reuse ONLY the gallery's classes: sechead,
+lead, kpi-grid/kpi + delta p|n|z, split/panel, tables with ibar/cellbar, funnel/fstep,
+prod-grid, goalbar, cards2 + item win|risk, act/actrow, callout, and the map module
+(.psd-map-module). Add, drop, or reorder SECTIONS to fit this agent. Do NOT write any
+CSS, `<head>`, `<style>`, `<link>`, flagstrip, hero, or footer — the fragment is body
+markup only; everything else is injected.
 
-STEP 2 — Build from the template's components. Copy component markup from the same
-file's gallery and fill the {{...}} tokens, reusing its classes only: flagstrip,
-hero + period-pills + headline, sechead, lead, kpi-grid/kpi + delta p|n|z, split +
-panel, tables with ibar/cellbar, funnel/fstep, prod-grid, goalbar, cards2 + item
-win|risk, act/actrow, callout, foot, and the map module (.psd-map-module). Add,
-drop, or reorder SECTIONS to fit this agent — but never create new component styling.
+STEP 2 — Write header/footer values (`tokens.json`). A flat JSON object of string
+values — no markup structure, just the values the fixed shell needs:
+`REPORT_TITLE`, `ACCENT_WORD` (or `""` if the title is one piece), `REPORT_KICKER`,
+`AGENT_NAME` (this agent's display name), `DATE_UPDATED`, `WINDOW`, `WINDOW_DAYS`,
+`COMP_WINDOW`, `COMP_DAYS`, `SCOPE`, `SOURCE`, `HEADLINE_METRICS` (the four `.hmetric`
+cells' HTML, using the gallery's hmetric pattern — values vary, classes are locked),
+`DATA_COVERAGE`, `METHOD_NOTES`, `FILENAME`.
 
-STEP 3 — Self-check before finishing. Confirm the report contains, at minimum,
-`.flagstrip`, `.hero`, `.sechead`, and `.kpi`. If any are missing you did not use
-the template — redo Step 1. Then produce the PDF per the existing recipe.
+STEP 3 — Assemble (never hand-assemble). Run:
+
+    python3 ${CLAUDE_PLUGIN_ROOT}/shared/assemble_report.py \
+      --css   ${CLAUDE_PLUGIN_ROOT}/shared/report.css \
+      --shell ${CLAUDE_PLUGIN_ROOT}/shared/report-shell.html \
+      --body  body.html --tokens tokens.json --out <agent-handle>-<YYYY-MM-DD>.html
+
+It injects the canonical CSS (fingerprint `/* PSD-REPORT-CSS */`) and the fixed
+flagstrip/hero/footer, substitutes the tokens, and EXITS 1 if any `{{...}}` is left
+unfilled (in the body or tokens) or the header/CSS is missing. If it exits non-zero,
+read the error, fix `body.html`/`tokens.json`, and re-run — do NOT hand-assemble the
+HTML, hand-write CSS, or paste your own `<head>`/header/footer.
+
+STEP 4 — Produce the PDF from the assembled HTML per the recipe below (unchanged).
 
 Name the files `[agent-handle]-[YYYY-MM-DD].html` / `.pdf` using the report's end
 date. **PDF — render the finished HTML with headless Chromium (not WeasyPrint),
