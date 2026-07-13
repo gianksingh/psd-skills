@@ -41,8 +41,8 @@ P&L) is intentionally separate from a future `/fin-…` (corporate finance).
 **Outputs & side effects:** the weekly reporting agents produce a styled HTML
 report + PDF, save it to the project reports folder, and (if you opt in when
 prompted) log action items to Asana.
-`/ecom-forecast` produces an Excel workbook. `/ecom-sale-recap` is in-chat only
-(in-chat only). All reports share one house style (`shared-assets/report-template.html`).
+`/ecom-forecast` produces an Excel workbook. `/ecom-sale-recap` is in-chat only.
+All reports share one house style (`shared-assets/report-template.html`).
 
 ---
 
@@ -118,15 +118,34 @@ commands also appear in the claude.ai web/mobile chat via your account. You do
 
 - **Maintainers:** make changes in this repo, bump the affected plugin's `version`
   in its `plugin.json`, and push (see `MAINTAINERS.md`).
-- **Users with Sync automatically ON** (install step 8): new commits pull in on
-  their own — nothing to do.
-- **To pull an update immediately:** click the **…** menu next to `psd-skills` under
-  **Local uploads** and choose **Check for updates**. That menu also shows the
-  currently synced commit and a **Remove** option.
+- **Users:** with **Sync automatically** on (install step 8), new commits are
+  *meant* to pull in on their own.
 
-> If a teammate's version looks stale, it's almost always because **Sync
-> automatically was left off**. Have them open the **…** menu and either switch it on
-> or click **Check for updates** — waiting won't help on its own.
+**Heads-up — don't fully trust the auto-updater.** Even with Sync automatically on,
+Cowork can be slow to notice a new version, and sometimes it won't detect or apply
+the update at all. So periodically refresh manually. There are two ways, quickest
+first:
+
+**Quick nudge — Check for updates.** Click the **…** menu next to `psd-skills` under
+**Local uploads** and choose **Check for updates**. That menu also shows the
+currently synced commit and a **Remove** option.
+
+**Most reliable — reinstall (recommended periodically).** If Check for updates
+doesn't move it, or you want to be certain you're on the newest version, uninstall
+and reinstall — it takes about 20 seconds and always pulls the current commit:
+
+1. In the sidebar, click **Customize**.
+2. In the modal that opens, click **Plugins** in the sidebar.
+3. Click the plugin in question (e.g. **PSD ecommerce**).
+4. Click the **⋯** (three dots) to the right, then click **Uninstall**.
+5. Once it's uninstalled, click **Browse plugins**.
+6. Open the **Personal** tab and find **psd-skills**.
+7. Click the **+** next to the plugin you want (e.g. **PSD ecommerce**) inside
+   `psd-skills`.
+8. It reinstalls at the latest version and works exactly as it did before.
+
+> Rule of thumb: if a report looks off or a teammate seems a version behind, don't
+> wait on the auto-updater — do the reinstall above.
 
 ---
 
