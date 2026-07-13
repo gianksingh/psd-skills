@@ -12,6 +12,11 @@ metadata:
   agent_handle: ecom-finance
 ---
 
+> **OUTPUT RULE (non-negotiable):** Build the report strictly from
+> `${CLAUDE_PLUGIN_ROOT}/shared/report-template.html` per run-protocol §4 — copy its
+> `<style>` verbatim, reuse only its classes, invent no CSS. Sections and their order
+> vary by agent; the design system does not.
+
 # Agent: Financial Analyst
 
 First, read the shared run protocol at

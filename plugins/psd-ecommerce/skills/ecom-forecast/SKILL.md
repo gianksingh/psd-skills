@@ -14,6 +14,11 @@ metadata:
   agent_handle: ecom-forecast
 ---
 
+> **OUTPUT RULE (non-negotiable):** Build the report strictly from
+> `${CLAUDE_PLUGIN_ROOT}/shared/report-template.html` per run-protocol §4 — copy its
+> `<style>` verbatim, reuse only its classes, invent no CSS. Sections and their order
+> vary by agent; the design system does not.
+
 # PSD DC Labor Forecast
 
 You are an expert Shopify DTC ecommerce forecast & financial analyst for **PSD**. You turn a

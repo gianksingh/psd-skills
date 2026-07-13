@@ -63,42 +63,28 @@ says otherwise (some expand to 30-day or YoY). Use Polar's `comparisonPeriod:
 previousPeriod`. Always state the exact date ranges compared in the report header,
 anchored to today's date.
 
-## 4. Build the report (unified house style)
+## 4. Build the report (unified house style — non-negotiable)
 
-Output is always a self-contained **HTML** report plus a **PDF** — sharp and
-skimmable: scannable tables, KPI cards, deltas with direction, minimal prose.
+The report's look is FIXED by the shared template. You choose which sections appear
+and their order for this agent; you do NOT choose the styling.
 
-**Start from the unified template — do not restyle from prose.** Read
-`${CLAUDE_PLUGIN_ROOT}/shared/report-template.html`: copy its `<style>` block
-**verbatim** into a `<style>` in the report `<head>` (do not `<link>` to it), then
-copy each component's markup from the gallery and replace its `{{PLACEHOLDER}}`
-tokens with run data. Reuse the template's class vocabulary rather than inventing
-classes:
+STEP 1 — Copy the stylesheet verbatim. Open
+`${CLAUDE_PLUGIN_ROOT}/shared/report-template.html` and copy everything between
+`<style>` and `</style>` verbatim into a single `<style>` in the report `<head>`.
+Do NOT write, edit, "improve", or add any CSS. Do NOT introduce class names or CSS
+variables that aren't already in that block. If you cannot open the file, STOP and
+tell the user — never improvise a stylesheet.
 
-- Hero + `.period-pills` + `.headline` hmetrics; fill `{{AGENT_NAME}}` (this
-  agent's display name), `{{REPORT_TITLE}}`, `{{REPORT_KICKER}}`, `{{SCOPE}}`,
-  `{{SOURCE}}`, and the window/comparison pills per report.
-- `.sechead` section headers with a full-width `.lead` intro.
-- `.kpi-grid` (with `.c2/.c3/.c5` variants) of `.kpi` cards; `.delta p|n|z` for
-  direction; `.kpi .src` / `.src-tag` to tag a figure's source (Polar / GA4 /
-  Shopify).
-- `.split` + `.panel` for dual columns; tables with `.ibar` / `.cellbar` inline
-  bars for volume/ratio breakdowns (use these for channel and traffic mixes).
-- `.funnel` / `.fstep` for the onsite funnel; `.prod-grid` product rows with
-  thumbnails; `.goalbar` for a %-to-forecast progress bar; the SVG patterns for
-  grouped bars / donut / line.
-- `.cards2` + `.item.win|.risk` for wins/risks; `.act` / `.actrow` for the
-  prioritized action table; `.callout` for reads; `.foot` for the footer.
-- For geographic breakdowns (e.g. orders by US state), use the **map module**
-  (`.psd-map-module`, built into the template) — run the embedded Python generator
-  from the comment above its markup in `report-template.html`, then paste the
-  `{{MAP_SVG}}` / `{{STATE_ROWS}}` / rest outputs; its styles are already in the template.
+STEP 2 — Build from the template's components. Copy component markup from the same
+file's gallery and fill the {{...}} tokens, reusing its classes only: flagstrip,
+hero + period-pills + headline, sechead, lead, kpi-grid/kpi + delta p|n|z, split +
+panel, tables with ibar/cellbar, funnel/fstep, prod-grid, goalbar, cards2 + item
+win|risk, act/actrow, callout, foot, and the map module (.psd-map-module). Add,
+drop, or reorder SECTIONS to fit this agent — but never create new component styling.
 
-Fonts: the template loads **Inter** (Aktiv Grotesk substitute) via a Google Fonts
-`@import` inside the copied `<style>` block, with a system-stack fallback — copying
-the `<style>` verbatim keeps HTML and PDF in sync (no separate `<link>` needed).
-Render the exec summary as a single `.callout` paragraph or the `.exec-bullets`
-list, per the agent's spec.
+STEP 3 — Self-check before finishing. Confirm the report contains, at minimum,
+`.flagstrip`, `.hero`, `.sechead`, and `.kpi`. If any are missing you did not use
+the template — redo Step 1. Then produce the PDF per the existing recipe.
 
 Name the files `[agent-handle]-[YYYY-MM-DD].html` / `.pdf` using the report's end
 date. **PDF — render the finished HTML with headless Chromium (not WeasyPrint),

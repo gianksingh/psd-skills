@@ -11,6 +11,11 @@ metadata:
   agent_handle: ecom-sale-recap
 ---
 
+> **OUTPUT RULE (non-negotiable):** Build the report strictly from
+> `${CLAUDE_PLUGIN_ROOT}/shared/report-template.html` per run-protocol §4 — copy its
+> `<style>` verbatim, reuse only its classes, invent no CSS. Sections and their order
+> vary by agent; the design system does not.
+
 # Agent: Sale-Event Recap
 
 Produce a single-page executive recap of a PSD sale event, uniform in data rules,
