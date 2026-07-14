@@ -67,20 +67,46 @@ month so the reader can judge pace); a run-rate projection alongside is helpful.
 **Start with:**
 1. **Data coverage** (1 line): connected sources used, and any missing sources
    you could not include.
-2. **KPI scorecard** (table): Adjusted Net Sales (or Revenue), Orders, Adjusted
-   AOV, Sessions/Traffic, Overall CVR, Total Ad Spend, MER (Revenue ÷ total
-   marketing/ad spend), Email/SMS revenue share (% of total), Order Protection
-   Attach Rate, Returned Revenue (Loop). Mark any unavailable metric "N/A".
+2. **KPI scorecard** — render as metric CARDS, not a table. Use the template's
+   `.kpi-grid` / `.kpi` component (pick the `.c3` or `.c5` grid variant so the full
+   scorecard fits); each card shows the metric label, its value, and its delta vs the
+   comparison window (`.delta p|n|z`), with a `.src` source tag where relevant. Metrics:
+   Adjusted Net Sales (or Revenue), Orders, Adjusted AOV, Sessions/Traffic, Overall CVR,
+   Total Ad Spend, MER (Revenue ÷ total marketing/ad spend), Email/SMS revenue share
+   (% of total), Order Protection Attach Rate, Returned Revenue (Loop). Mark any
+   unavailable metric "N/A".
+   Immediately BELOW the cards, add a **daily sales line chart** using the template's
+   canonical line-chart SVG module (a `.panel` wrapping the line-chart `<svg>`): daily
+   net sales across the report window, honest y-scale.
 
-**Then tables:**
-- Sales by Method — adjusted units, adjusted net sales (values and % of total).
-- Sales by Channel — orders, adjusted net sales (values and % of total).
-- Top 20 Products — product image, title, type, units, net sales (values and %
-  of total). Use the `.prod-grid` style.
-- Traffic by channel grouping.
+**Then, section by section:**
+- **Sales by Method** — render as a BAR CHART, not a plain table. Use the template's
+  canonical bar module (the `.ibar` inline-bar table, or the SVG bar chart) with each
+  bar's length = that method's **share of total sales (% of adjusted net sales)**. Keep
+  the underlying numbers visible as labels (adjusted units, adjusted net sales, %).
+- **Sales by Channel** — same treatment: a BAR CHART where each bar's length = the
+  channel's **% of total sales**, with orders, adjusted net sales, and % shown as
+  labels. Not a plain table.
+- **Top 20 Products** — product image, title, type, units, net sales (values and % of
+  total). Use the `.prod-grid` style.
+- **Traffic by channel** — a channel-grouping table showing sessions and % of traffic.
+  **Always split the Direct channel into two lines:**
+    - **True Direct** — direct sessions that land on the homepage / root (`/`).
+    - **Misattributed Direct (Dark Social, iMessage, etc.)** — direct sessions that land
+      on deep pages (PDPs, PLPs, collections, campaign URLs — anything other than the
+      homepage), or that show other misattribution clues in the landing link.
+  Show both lines with sessions and % of traffic. Heuristic (repeatable): homepage/root
+  landing ⇒ True Direct; any deeper landing page ⇒ Misattributed Direct.
 
-**Delivery experience.** For the period, show average time from ordered →
-fulfilled, and average time fulfilled → delivered.
+**Delivery experience (conditional).** There is no direct MCP for delivery timing,
+so **only include this section if the data is provided**. If none is provided, SKIP
+the section entirely — do not render an empty or placeholder section, and renumber the
+remaining sections accordingly. When data IS available, show average time from ordered
+→ fulfilled and average time fulfilled → delivered for the period.
+
+After delivering the report, ask the user ONCE whether they have delivery data (avg
+ordered → fulfilled, fulfilled → delivered) to include; if they provide it, update the
+report to add the section. Mirror the opt-in pattern used for Asana (shared protocol §8).
 
 **Then deliver:**
 - **3 biggest wins** — each with the key metric change and the driver (volume vs
