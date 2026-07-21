@@ -35,6 +35,7 @@ P&L) is intentionally separate from a future `/fin-…` (corporate finance).
 | `/ecom-pricing` | Pricing | Pricing & profitability: AOV, revenue per visitor, discount/promo impact, and top-revenue vs top-margin mismatches. |
 | `/ecom-cro` | CRO | Onsite conversion funnel: KPI snapshot, view→cart→checkout→purchase funnel, source/device segments, page-type leaks, and prioritized A/B tests. |
 | `/ecom-finance` | Finance | Weekly financial overview: topline, blended ROAS / MER / CAC, revenue mix, profitability, and a run-rate monthly projection. |
+| `/ecom-returns` | Returns Analyst | Monthly returns operations & economics: settled return rate, exchange-vs-refund and net return cost, a returned-value waterfall (kept vs lost), an 8-week trend + return reasons, top return-driving products, and the open-returns backlog & ops queue (Loop). |
 | `/ecom-forecast` | DC Forecast | Turns a net-sales target or growth rate into a **daily** DC labor plan (orders/units/net sales); outputs an Excel workbook + pacing dashboard. |
 | `/ecom-sale-recap` | Sale Recap | Single-page executive recap of a specific sale/promo event; intake-first, **in-chat only** (HTML + continuous-page PDF + optional 16:9 deck). |
 
