@@ -15,9 +15,10 @@ Enable these in your Claude app (Settings → Connectors).
 | **Polar Analytics** | **Required** | All quantitative report data for every agent. If Polar isn't connected/activated, the agents can't run. |
 | **Asana** | Optional (opt-in) | After a weekly report, the agent *asks* whether to log its action items as "Needs Human Review" tasks — only creates them if you say yes. Never used by `/ecom-sale-recap` or `/ecom-forecast`. |
 | **Loop Returns** | Required for `/ecom-returns` §5 | The in-flight / open-returns lens (created-date): requested / open / completed counts, backlog location, quality queue, and policy. §5 is **skipped with a note** if it isn't connected; §1–4 still run from Polar's `loop-returns` connector. |
-| **Shopify** | Optional | Backfill for `/ecom-review` and `/ecom-cro` (store/catalog/order detail beyond Polar). |
+| **Shopify** | Optional; **required for the `/ecom-*-audit` agents** | Config / product / inventory ground truth for the audits (Okendo review metafields, compare-at price, stock, payment & shipping config). Also backfill for `/ecom-review` and `/ecom-cro`. |
 | **Klaviyo** | Optional | Backfill for `/ecom-retention` (flow/campaign detail). |
-| **Microsoft Clarity** | Optional | Qualitative input for `/ecom-cro` (session/behavior signal). |
+| **Microsoft Clarity** | Optional; **required for the `/ecom-*-audit` agents** | Real-user behavioral + field-performance data (dead/rage/quickback clicks, scroll depth, session recordings, field LCP/CLS) that grounds the audits. Also qualitative input for `/ecom-cro`. |
+| **Chrome** (claude-in-chrome) | **Required for the `/ecom-*-audit` agents** | Live-render observation of psd.com — above-the-fold/layout and tap-target checks, and the network waterfall / render-blocking / image-weight read for `/ecom-site-speed-audit`. |
 | **Mounted project folder** | Required for local saves/logs | Not a connector, but the weekly agents save report copies and run-logs here. |
 
 ---
@@ -64,6 +65,12 @@ to upload them (screenshot or export) and skips the section if you don't have th
   + the **Loop Returns MCP** for the in-flight/open lens (§5, skipped with a note if it
   isn't connected); a mounted folder for saves/logs; Asana only if there are actionable
   ops items. Monthly/MTD, not weekly.
+- **`/ecom-*-audit` (ad-hoc deep dives — page, cart, PDP merchandising, site speed):**
+  Polar + **Microsoft Clarity** (behavioral / field CWV), **Shopify** (config / product /
+  inventory ground truth), and **Chrome** (live render) — all required. Each source
+  **degrades to labeled heuristics** if it's absent: the audit still runs, but every
+  affected finding is marked an inference and the report says what to connect. Output is
+  the unified HTML + PDF report.
 - **`/ecom-forecast`:** Polar + the "PSD - Polar Targets" sheet; outputs Excel (no Asana).
 - **`/ecom-sale-recap`:** Polar + user-supplied AfterSell/Rokt/Tapcart; in-chat only
   (no Asana).

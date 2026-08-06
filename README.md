@@ -38,11 +38,19 @@ P&L) is intentionally separate from a future `/fin-…` (corporate finance).
 | `/ecom-forecast` | DC Forecast | Turns a net-sales target or growth rate into a **daily** DC labor plan (orders/units/net sales); outputs an Excel workbook + pacing dashboard. |
 | `/ecom-sale-recap` | Sale Recap | Single-page executive recap of a specific sale/promo event; intake-first, **in-chat only** (HTML + continuous-page PDF + optional 16:9 deck). |
 | `/ecom-returns` | Returns | Monthly returns economics & operations: settled return rate, exchange-vs-refund, and net return cost (Polar `loop-returns`); a returned-value waterfall; an 8-week settled trend + return-reason breakdown; top return-driving products; and open-returns backlog / quality ops (Loop Returns MCP). Monthly/MTD, not weekly. |
+| `/ecom-cro-page-audit` | Page Friction Audit | Ad-hoc conversion-**friction** audit of any page (PDP / PLP / cart / checkout / home): pulls Microsoft Clarity behavior (+ optional live Chrome render), ranks friction points by revenue impact with specific fixes and A/B tests. |
+| `/ecom-cro-cart-audit` | Cart & Checkout Audit | Ad-hoc cart→checkout→post-purchase **funnel** audit (web + Tapcart): finds where shoppers drop from the real Shopify Plus funnel, why (Clarity), and what's configured (Shopify), ranked by recovered revenue & AOV in USD. |
+| `/ecom-pdp-merchandising-audit` | PDP Merchandising Audit | Ad-hoc PDP **merchandising** audit: checks the persuasion architecture (Okendo social proof, price anchor, imagery, trust, CTA) against Shopify ground truth + Clarity seen-ness; ranks missing/buried levers. |
+| `/ecom-site-speed-audit` | Site Speed Audit | Ad-hoc **Core Web Vitals** / speed audit: real-user LCP/INP/CLS from Clarity + live Chrome observation → prioritized, Shopify-specific fixes with USD revenue sizing. |
 
 **Outputs & side effects:** the weekly reporting agents (plus the monthly
 `/ecom-returns`) produce a styled HTML report + PDF, save it to the project reports
 folder, and (if you opt in when prompted) log action items to Asana.
 `/ecom-forecast` produces an Excel workbook. `/ecom-sale-recap` is in-chat only.
+The four `/ecom-*-audit` agents are **ad-hoc diagnostic deep-dives** (run on demand,
+not on a weekly cadence) and output the same unified HTML + PDF report. Note
+`/ecom-cro` is the **weekly** conversion report, while `/ecom-cro-page-audit` and
+`/ecom-cro-cart-audit` are **on-demand** deep dives.
 All reports share one house style (`shared-assets/report-template.html`).
 
 ---
