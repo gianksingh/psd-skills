@@ -71,6 +71,10 @@ to upload them (screenshot or export) and skips the section if you don't have th
   **degrades to labeled heuristics** if it's absent: the audit still runs, but every
   affected finding is marked an inference and the report says what to connect. Output is
   the unified HTML + PDF report.
+- **`/ecom-web-daily-flash`:** Polar + **Shopify** (incl. **ShopifyQL** for the freshness
+  cross-check) + **GA4 via Polar** (for the onsite YoY, since the Polar Pixel has no last
+  year) — **no new connector beyond what's already listed**. Daily (T-1), **files-only**:
+  it hands back HTML + PDF into the chat and never pushes, publishes, or emails; no Asana.
 - **`/ecom-forecast`:** Polar + the "PSD - Polar Targets" sheet; outputs Excel (no Asana).
 - **`/ecom-sale-recap`:** Polar + user-supplied AfterSell/Rokt/Tapcart; in-chat only
   (no Asana).

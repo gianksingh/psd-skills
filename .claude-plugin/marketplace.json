@@ -11,7 +11,7 @@
     {
       "name": "psd-ecommerce",
       "source": "./plugins/psd-ecommerce",
-      "description": "DTC ecommerce reporting agents. Commands: /ecom-review, /ecom-ads, /ecom-retention, /ecom-merch, /ecom-pricing, /ecom-cro, /ecom-finance, /ecom-returns, /ecom-forecast, /ecom-sale-recap, /ecom-cro-page-audit, /ecom-cro-cart-audit, /ecom-pdp-merchandising-audit, /ecom-site-speed-audit."
+      "description": "DTC ecommerce reporting agents. Commands: /ecom-review, /ecom-ads, /ecom-retention, /ecom-merch, /ecom-pricing, /ecom-cro, /ecom-finance, /ecom-returns, /ecom-forecast, /ecom-sale-recap, /ecom-web-daily-flash, /ecom-cro-page-audit, /ecom-cro-cart-audit, /ecom-pdp-merchandising-audit, /ecom-site-speed-audit."
     }
   ]
 }
