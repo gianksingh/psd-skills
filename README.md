@@ -31,7 +31,7 @@ P&L) is intentionally separate from a future `/fin-…` (corporate finance).
 | `/ecom-review` | Weekly Exec Review | Company-wide weekly rollup (Head of Growth): business-snapshot KPIs, % -to-forecast pacing, KPI scorecard, sales by method & channel, top-20 products, traffic mix, delivery times, 3 wins / 3 risks, and a prioritized action list. |
 | `/ecom-ads` | Paid Ads | Weekly paid-media review across Meta, Google, and TikTok: per-platform snapshots, top/bottom campaigns, CPA/fatigue risk flags, and scale / cut / test recommendations. |
 | `/ecom-retention` | Retention | Email/SMS + lifecycle review: revenue impact, top flows vs campaigns, deliverability/list health (7d), plus repeat-customer / LTV / cohort health (30d). |
-| `/ecom-merch` | Merchandiser | Product performance: top sellers, biggest movers up/down, high-traffic/low-CVR PDP flags, and restock/velocity alerts. |
+| `/ecom-merch` | Merchandiser | Weekly **Ecom Merch Weekly** deck (.pptx, opens in Google Slides) for the site merchandising manager: week summary, site/email/SMS changes, sitewide traffic, top PLPs + featured collections (landed vs visited), top products with thumbnails, product signals, homepage, Clarity module clicks, onsite search (Searchspring), current campaign, new drops (when there was one), post-purchase (AfterSell), and the next two weeks. Intake-first; three blank What changed / Why / Next steps boxes per slide; no recommendations. |
 | `/ecom-pricing` | Pricing | Pricing & profitability: AOV, revenue per visitor, discount/promo impact, and top-revenue vs top-margin mismatches. |
 | `/ecom-cro` | CRO | Onsite conversion funnel: KPI snapshot, view→cart→checkout→purchase funnel, source/device segments, page-type leaks, and prioritized A/B tests. |
 | `/ecom-finance` | Finance | Weekly financial overview: topline, blended ROAS / MER / CAC, revenue mix, profitability, and a run-rate monthly projection. |
@@ -47,7 +47,7 @@ P&L) is intentionally separate from a future `/fin-…` (corporate finance).
 **Outputs & side effects:** the weekly reporting agents (plus the monthly
 `/ecom-returns`) produce a styled HTML report + PDF, save it to the project reports
 folder, and (if you opt in when prompted) log action items to Asana.
-`/ecom-forecast` produces an Excel workbook. `/ecom-sale-recap` is in-chat only.
+`/ecom-merch` produces a PowerPoint deck. `/ecom-forecast` produces an Excel workbook. `/ecom-sale-recap` is in-chat only.
 `/ecom-web-daily-flash` runs daily (T-1), is **files-only** (hands back HTML + PDF and
 publishes nothing), and is a daily companion to the weekly `/ecom-review`.
 The four `/ecom-*-audit` agents are **ad-hoc diagnostic deep-dives** (run on demand,

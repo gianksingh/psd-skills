@@ -1,0 +1,6 @@
+{
+  "name": "ecom-merch-deck",
+  "private": true,
+  "description": "Renderer dependency for the /ecom-merch weekly deck",
+  "dependencies": { "pptxgenjs": "4.0.1" }
+}

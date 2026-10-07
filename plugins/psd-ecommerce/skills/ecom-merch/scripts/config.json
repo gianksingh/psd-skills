@@ -1,0 +1,60 @@
+{
+ "polar_view": "31552-mpfv58vy",
+ "bots": "include",
+ "featured_collections": {
+  "count": 5,
+  "min_sessions": 1000,
+  "rule": "Top N /collections/ pages by visited sessions this week, excluding the evergreen list, pages under the current campaign's parent collection or containing its key, and child pages of a collection already picked. A list from Jamie replaces this rule.",
+  "evergreen": [
+   "/collections/mens",
+   "/collections/womens",
+   "/collections/youth",
+   "/collections/new",
+   "/collections/sale",
+   "/collections/sale/*",
+   "/collections/*-packs",
+   "/collections/standard-length",
+   "/collections/mid-length",
+   "/collections/boy-short",
+   "/collections/thong",
+   "/collections/trunk",
+   "/collections/luxe-modal",
+   "/collections/womens-modal",
+   "/collections/mens-underwear",
+   "/collections/mens-best-sellers",
+   "/collections/mens-new-arrival",
+   "/collections/youth-best-sellers",
+   "/collections/youth-new-arrivals",
+   "/collections/all"
+  ]
+ },
+ "top_plps": 10,
+ "clarity_top_modules": 8,
+ "low_confidence": {
+  "min_sessions": 100,
+  "min_conversions": 30
+ },
+ "top_products": 10,
+ "product_signals": {
+  "low_atc_rate": 0.03,
+  "low_atc_min_views": 500,
+  "traffic_x_median": 3,
+  "high_x_median": 2,
+  "low_x_median": 0.5,
+  "mover_min_prior": 10,
+  "riser_x": 2,
+  "faller_min_prior": 30,
+  "faller_x": 0.6,
+  "max_cards": 8,
+  "riser_min_units": 30,
+  "generic_search_terms": [
+   "underwear",
+   "youth",
+   "cotton",
+   "3 pack",
+   "halloween",
+   "men's underwear",
+   "sports bra"
+  ]
+ }
+}

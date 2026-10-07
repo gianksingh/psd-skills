@@ -1,0 +1,124 @@
+{
+ "cover": {
+  "headline": "Keep A Breast and BIGFACE SMS drove the two biggest days; 92% of Jaxson Dart landings bounced"
+ },
+ "summary": {
+  "headline": "Traffic rose 3.3% and conversion edged up 0.06 pts, but GA4 has conversion 0.42 pts below last year"
+ },
+ "changes": {
+  "headline": "Two homepage refreshes and ten sends in seven days; the three biggest traffic days were SMS send days",
+  "observations": [
+   "The 10/1 refresh moved the secondary slot from Jaxson Dart to Keep A Breast // BIGFACE, on the same day as the Keep A Breast SMS and email.",
+   "The homepage heat map shows Jaxson Dart in the top banner, but the input lists Halloween Shop as the hero. Jamie to confirm which layout Clarity captured.",
+   "Email sessions can't be tied to a send because Klaviyo tags them 'campaign', so only SMS shows session counts."
+  ]
+ },
+ "site": {
+  "headline": "Sessions rose 3.3% to 333K, and the two biggest days were the Keep A Breast and BIGFACE SMS days",
+  "observations": [
+   "Thu 10/1 and Fri 10/2 had 51.4K and 51.8K sessions, against 41.6K and 47.1K on the same days last week.",
+   "Add-to-cart rate rose 0.2 pts to 5.0% and conversion rose 0.06 pts to 1.16%.",
+   "GA4 sessions are up 24.4% on last year. Paid Social added 61,317 of the 70,570 extra sessions and converts at 0.71%."
+  ]
+ },
+ "plps": {
+  "headline": "Keep A Breast entered the top 10 at #4, and Jaxson Dart stayed #3 with 92% of its landings bouncing",
+  "observations": [
+   "Keep A Breast had 9,499 visits, up from 26 last week, and 87% came from the 10/1 SMS.",
+   "Jaxson Dart: 70% of visits came from Paid Social, 16,609 sessions landed there and 28 sessions converted (0.16%).",
+   "Keep A Breast converted 1.14% and BIGFACE 0.93%. The BIGFACE collection has 3 products in stock."
+  ]
+ },
+ "homepage": {
+  "headline": "Shoppers who visited the homepage converted at 3.53% and those who landed there at 2.56%, both up week over week",
+  "observations": [
+   "Landed sessions fell 1.7% and bounce rose 2.7 pts to 43.5%.",
+   "After the 10/1 refresh, landed conversion rose from 2.32% to 2.80% over 3 days. Paid Search accounts for 74 of the 129 extra orders, so the lift isn't attributed to the refresh.",
+   "After the 9/28 refresh, conversion fell from 2.48% to 2.32% and bounce rose 4.6 pts, comparing Fri–Sun with Mon–Wed."
+  ]
+ },
+ "hp_modules": {
+  "headline": "Navigation took 78% of mobile homepage clicks, and the Women's tab led the content modules at 4.5%",
+  "observations": [
+   "The two Halloween modules drew 81 clicks (0.4%). The top banner, shown as Jaxson Dart in the map, drew 536 (2.6%).",
+   "The Men's, Women's and Youth tabs drew 10.4% of clicks combined.",
+   "The export covers mobile only and spans both homepage layouts (refresh on 10/1)."
+  ]
+ },
+ "campaign": {
+  "headline": "Halloween Shop page visits rose 60% to 6,276; visitors converted at 4.83% and landers at 1.10%",
+  "observations": [
+   "SMS visits rose from 171 to 792 and Paid Search from 2,291 to 2,669 while the page held the homepage hero, so the lift isn't tied to one change.",
+   "Of 2,002 landings, 55.5% bounced and 14.2% viewed a product. The ordered step is low confidence at 22 orders.",
+   "GA4 shows 31.6% fewer landings than last year, when Halloween ran on separate category collections instead of one landing page."
+  ]
+ },
+ "campaign_engagement": {
+  "headline": "Spooky Staples visits more than tripled to 2,837 in the week of its 10/3 SMS and email",
+  "observations": [
+   "Killer Fits is still the top category at 6,186 visits but fell 21.9%, despite the 9/29 Ghost Face SMS.",
+   "Shop-all had 3,215 visits (+5.3%), and only Killer Fits had more.",
+   "The Packs tag view fell from 1,255 visits to 73. The 10/4 Multi-packs SMS linked to the separate Halloween Shop Packs collection."
+  ]
+ },
+ "lp_modules": {
+  "headline": "The Killer Fits tile took 18.5% of mobile clicks on the Halloween Shop page, and the hero took 0.9%",
+  "observations": [
+   "The six category tiles took 55.8% of clicks and navigation took 23.7%.",
+   "The three product carousels took 4.6% of clicks combined.",
+   "Clarity counts mobile page views (9,619) and Polar counts sessions on all devices (6,276), so the two aren't compared."
+  ]
+ },
+ "postpurchase": {
+  "headline": "69% of Online Store orders were eligible for a post-purchase offer, and 19.9% of offers shown were accepted",
+  "observations": [
+   "TikTok Shop (2,369), Tapcart (1,427) and Shop App (260) made up 4,056 of the 4,278 orders outside the Online Store.",
+   "After channel, unsupported gateway (2,618) and wallet (1,973) are the top ineligible reasons. AfterSell lists 1,470 orders with no offer set up.",
+   "Order browser revenue ($6,584) is below the analytics export ($7,886) for the same dates."
+  ]
+ },
+ "ahead": {
+  "headline": "Sends go out on 10 of the next 14 days, and the homepage hero moves to NBA Tip Off on 10/13",
+  "observations": [
+   "Seven Halloween themes go out from 10/6 to 10/17, ending with IT on 10/17.",
+   "Cult Classics (10/15) and Western (10/16) are SMS and push only."
+  ]
+ },
+ "run_notes": {
+  "contradictions": [
+   "Homepage heat map shows Jaxson Dart in the top banner; the what's-live input lists Halloween Shop (Ghostface) as the hero for both refreshes.",
+   "AfterSell order browser revenue ($6,584.27) differs from the analytics export ($7,886) for the same dates. Acceptance rate uses accepted offers from the export and offers shown from the order browser.",
+   "Searchspring shows 7.27K unique searches for the week of 9/28, while the pixel shows 11,690 sessions that viewed /search. The two count different things (unique queries vs sessions) and aren't compared."
+  ],
+  "assumptions": [
+   "The AfterSell order browser screenshot covers 9/28–10/4 (the date picker reads 'Custom').",
+   "Featured collections were inferred from traffic: top 5 non-core collections by visited sessions.",
+   "Unlabeled Clarity areas were named from the click-map images, top to bottom.",
+   "Bot sessions are included in every pixel metric, matching the Daily Flash.",
+   "Eligible ÷ Online Store orders assumes every eligible order came through the Online Store. AfterSell's 'unsupported channel' count (2,376) matches TikTok Shop (2,369), so Tapcart and Shop App ineligibility isn't confirmed by the order browser.",
+   "Looking ahead comes from the Asana calendar screenshot; the 10/18 SMS and push are read as NBA Tip Off.",
+   "Top products exclude Exclusive Mystery Style (502 web units), since the shopper doesn't choose the style.",
+   "The Searchspring zero-result terms table is read as 9/28–10/4, the same range as the zero-result chart; its date picker isn't in the screenshot.",
+   "Inventory on the product signals slide is today's Shopify snapshot (10/7), not week-end stock."
+  ]
+ },
+ "products": {
+  "headline": "Ghost Face - Dark (youth) led web units at 117, and Halloween products made up 43% of web units",
+  "observations": [
+   "Outside the top 10, PSD Sinner Black (Jaxson Dart, 76 units) had 7,436 PDP views, the most of any top seller, and 1.1% of its 7,108 sessions ordered it.",
+   "The two Keep A Breast styles sold 180 units after the 10/1 SMS and homepage slot, with none the week before.",
+   "Jason Lives fell from 154 to 108 units (-29.9%), and Halloween product units fell 5.3% to 5,605."
+  ]
+ },
+ "search": {
+  "headline": "Searchers converted at 6.12% against 0.98% for everyone else, and \"hooters\" and \"mystery\" led 3.14K no-result searches",
+  "observations": [
+   "11,690 sessions used search (3.5% of sessions) and accounted for 715 of the week's 3,850 pixel orders.",
+   "Searchspring logged 3.14K zero-result searches, about 449 a day.",
+   "SpongeBob and Playboy led both top searches and most-refined searches in the Searchspring panel."
+  ]
+ },
+ "product_signals": {
+  "headline": "PSD Sinner Black drew 7,436 PDP views and converted 1.1%, and four youth prints had under 3% add-to-cart"
+ }
+}

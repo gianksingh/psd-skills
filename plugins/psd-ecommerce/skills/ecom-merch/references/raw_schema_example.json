@@ -1,0 +1,2661 @@
+{
+ "meta": {
+  "week_start": "2026-09-28",
+  "week_end": "2026-10-04",
+  "wow_start": "2026-09-21",
+  "wow_end": "2026-09-27",
+  "yoy_start": "2025-09-29",
+  "yoy_end": "2025-10-05",
+  "run_date": "2026-10-05",
+  "first_deck_of_month": true,
+  "polar_view": "Business Channel – PSD Web (31552-mpfv58vy)",
+  "generated_at": "2026-10-07",
+  "bots": "included (matches Daily Flash)"
+ },
+ "inputs": {
+  "whats_live": [
+   {
+    "surface": "Homepage",
+    "date": "2026-09-28",
+    "change": "Homepage refresh. Hero: Halloween Shop (Ghostface). Secondary: Jaxson Dart",
+    "short": "Homepage refresh: hero Halloween Shop (Ghostface), secondary Jaxson Dart"
+   },
+   {
+    "surface": "Homepage",
+    "date": "2026-10-01",
+    "change": "Homepage refresh. Hero: Halloween Shop (Ghostface). Secondary: Keep A Breast // Big Face",
+    "short": "Homepage refresh: hero Halloween Shop (Ghostface), secondary Keep A Breast // BIGFACE"
+   }
+  ],
+  "whats_live_missing": [
+   "Campaign landing page (Halloween Shop) changes",
+   "Top PLP changes"
+  ],
+  "followups": [],
+  "followups_status": "provided_empty",
+  "featured_collections_status": "inferred_from_traffic",
+  "featured": [
+   {
+    "name": "Jaxson Dart",
+    "path": "/collections/jaxson-dart",
+    "handle": "jaxson-dart",
+    "merch": "Homepage secondary 9/28–9/30"
+   },
+   {
+    "name": "Keep A Breast",
+    "path": "/collections/breast-cancer-awareness",
+    "handle": "breast-cancer-awareness",
+    "merch": "Homepage secondary from 10/1"
+   },
+   {
+    "name": "Doritos & Cheetos",
+    "path": "/collections/doritos-cheetos",
+    "handle": "doritos-cheetos",
+    "merch": "Not listed in what's live"
+   },
+   {
+    "name": "BIGFACE",
+    "path": "/collections/bigface",
+    "handle": "bigface",
+    "merch": "Homepage secondary from 10/1"
+   },
+   {
+    "name": "7-Eleven",
+    "path": "/collections/7-eleven",
+    "handle": "7-eleven",
+    "merch": "Not listed in what's live"
+   }
+  ],
+  "campaign": {
+   "name": "Halloween Shop",
+   "lp_path": "/pages/halloween-shop",
+   "launch_date": null,
+   "ly_equivalent": null,
+   "shop_all": {
+    "name": "Halloween Shop",
+    "path": "/collections/halloween",
+    "handle": "halloween"
+   }
+  },
+  "clarity_files": {
+   "homepage": "inputs/clarity_homepage.csv",
+   "campaign_lp": "inputs/clarity_halloween_lp.csv"
+  },
+  "clarity_labels": {
+   "homepage": [
+    "Promo bar",
+    "Header / navigation",
+    "Reviews strip",
+    "Hero (Jaxson Dart in map)",
+    "Jaxson Dart tile grid",
+    "Halloween banner",
+    "Halloween shop carousel",
+    "Tab: Men's",
+    "Tab: Women's",
+    "Tab: Youth",
+    "Men's Packs",
+    "Men's New Arrivals",
+    "Men's Bestsellers",
+    "Men's Underwear",
+    "Unlabeled area (not visible in map)",
+    "Text club sign-up",
+    "Footer"
+   ],
+   "campaign_lp": [
+    "Promo bar",
+    "Header / navigation",
+    "Hero (Midnight Showing)",
+    "Killer Fits",
+    "Costume Ready",
+    "Spooky Staples",
+    "Sugar Rush",
+    "Cult Classics",
+    "Wanted: Dead or Alive",
+    "Blank block",
+    "Shop Men's banner",
+    "Men's product carousel",
+    "Shop Women's banner",
+    "Women's product carousel",
+    "Shop Youth Styles banner",
+    "Youth product carousel",
+    "Text club sign-up",
+    "Footer"
+   ]
+  },
+  "aftersell_file": "inputs/aftersell.xlsx",
+  "aftersell_missing": [
+   "Active tests (sample, lift, confidence, decision date)",
+   "September monthly export (first deck of October)"
+  ],
+  "ahead_missing": [],
+  "featured_rule": "Top 5 /collections/ pages by sessions, excluding core navigation collections (config evergreen list), pages under the current campaign, and child pages of a featured collection",
+  "ahead_items": [
+   {
+    "date": "2026-10-06",
+    "tags": [
+     "Email",
+     "SMS",
+     "Push"
+    ],
+    "text": "Halloween: Spooky Staples"
+   },
+   {
+    "date": "2026-10-08",
+    "tags": [
+     "Email",
+     "SMS",
+     "Push"
+    ],
+    "text": "Halloween: Costume Ready"
+   },
+   {
+    "date": "2026-10-09",
+    "tags": [
+     "Email",
+     "SMS",
+     "Push"
+    ],
+    "text": "DC (Email 2)"
+   },
+   {
+    "date": "2026-10-10",
+    "tags": [
+     "Email",
+     "SMS",
+     "Push"
+    ],
+    "text": "Halloween: Jason"
+   },
+   {
+    "date": "2026-10-11",
+    "tags": [
+     "Email",
+     "SMS",
+     "Push"
+    ],
+    "text": "Halloween: GhostFace (After Hours)"
+   },
+   {
+    "date": "2026-10-13",
+    "tags": [
+     "Site"
+    ],
+    "text": "Homepage hero: NBA Tip Off"
+   },
+   {
+    "date": "2026-10-13",
+    "tags": [
+     "Email",
+     "SMS",
+     "Push"
+    ],
+    "text": "NBA Tip Off"
+   },
+   {
+    "date": "2026-10-15",
+    "tags": [
+     "SMS",
+     "Push"
+    ],
+    "text": "Halloween: Cult Classics (Fandom)"
+   },
+   {
+    "date": "2026-10-16",
+    "tags": [
+     "SMS",
+     "Push"
+    ],
+    "text": "Halloween: Western"
+   },
+   {
+    "date": "2026-10-17",
+    "tags": [
+     "Email",
+     "SMS",
+     "Push"
+    ],
+    "text": "Halloween: IT"
+   },
+   {
+    "date": "2026-10-18",
+    "tags": [
+     "Email",
+     "SMS",
+     "Push"
+    ],
+    "text": "NBA Tip Off (Email 2)"
+   }
+  ],
+  "ahead_source": "Asana marketing calendar (screenshot)",
+  "drop": null
+ },
+ "pixel": {
+  "sitewide": {
+   "cy": {
+    "sessions": 333081,
+    "bounced": 224591,
+    "pdp": 101337,
+    "atc": 16702,
+    "cs": 8519,
+    "cc": 3850
+   },
+   "wow": {
+    "sessions": 322312,
+    "bounced": 216343,
+    "pdp": 85166,
+    "atc": 15368,
+    "cs": 8095,
+    "cc": 3544
+   },
+   "daily_cy": [
+    {
+     "date": "2026-09-28",
+     "sessions": 43917,
+     "atc": 2119,
+     "cc": 494
+    },
+    {
+     "date": "2026-09-29",
+     "sessions": 48693,
+     "atc": 2338,
+     "cc": 458
+    },
+    {
+     "date": "2026-09-30",
+     "sessions": 44205,
+     "atc": 2098,
+     "cc": 472
+    },
+    {
+     "date": "2026-10-01",
+     "sessions": 51365,
+     "atc": 2560,
+     "cc": 597
+    },
+    {
+     "date": "2026-10-02",
+     "sessions": 51807,
+     "atc": 2539,
+     "cc": 660
+    },
+    {
+     "date": "2026-10-03",
+     "sessions": 46934,
+     "atc": 2472,
+     "cc": 583
+    },
+    {
+     "date": "2026-10-04",
+     "sessions": 46160,
+     "atc": 2576,
+     "cc": 586
+    }
+   ],
+   "daily_wow": [
+    {
+     "date": "2026-09-21",
+     "sessions": 47113
+    },
+    {
+     "date": "2026-09-22",
+     "sessions": 46446
+    },
+    {
+     "date": "2026-09-23",
+     "sessions": 42791
+    },
+    {
+     "date": "2026-09-24",
+     "sessions": 41579
+    },
+    {
+     "date": "2026-09-25",
+     "sessions": 47110
+    },
+    {
+     "date": "2026-09-26",
+     "sessions": 50008
+    },
+    {
+     "date": "2026-09-27",
+     "sessions": 47265
+    }
+   ],
+   "by_channel_cy": [
+    {
+     "ch": "Paid Social",
+     "sessions": 115705,
+     "atc": 2551,
+     "cc": 341
+    },
+    {
+     "ch": "Direct",
+     "sessions": 89760,
+     "atc": 4073,
+     "cc": 1181
+    },
+    {
+     "ch": "Paid Search",
+     "sessions": 53396,
+     "atc": 5490,
+     "cc": 1295
+    },
+    {
+     "ch": "Organic Search",
+     "sessions": 26880,
+     "atc": 1773,
+     "cc": 249
+    },
+    {
+     "ch": "SMS",
+     "sessions": 22858,
+     "atc": 1056,
+     "cc": 241
+    },
+    {
+     "ch": "Email",
+     "sessions": 10089,
+     "atc": 684,
+     "cc": 196
+    },
+    {
+     "ch": "Unassigned",
+     "sessions": 9780,
+     "atc": 468,
+     "cc": 111
+    },
+    {
+     "ch": "Affiliates",
+     "sessions": 3759,
+     "atc": 543,
+     "cc": 223
+    },
+    {
+     "ch": "Display",
+     "sessions": 602,
+     "atc": 60,
+     "cc": 13
+    },
+    {
+     "ch": "Organic Social",
+     "sessions": 249,
+     "atc": 1,
+     "cc": 0
+    },
+    {
+     "ch": "Referral",
+     "sessions": 3,
+     "atc": 3,
+     "cc": 0
+    }
+   ]
+  }
+ },
+ "ga4": {
+  "sitewide": {
+   "cy": {
+    "sessions": 360070,
+    "engaged": 185889,
+    "atc_events": 76792,
+    "purchases": 5123
+   },
+   "ly": {
+    "sessions": 289500,
+    "engaged": 182237,
+    "atc_events": 74359,
+    "purchases": 5328
+   },
+   "paid_social_cy": {
+    "sessions": 139092,
+    "purchases": 990
+   },
+   "paid_social_ly": {
+    "sessions": 77775,
+    "purchases": 677
+   }
+  },
+  "homepage_landing": {
+   "cy": {
+    "sessions": 76256,
+    "engaged": 57767,
+    "purchases": 1318
+   },
+   "ly": {
+    "sessions": 47801,
+    "engaged": 41042,
+    "purchases": 1697
+   }
+  },
+  "campaign_lp_landing": {
+   "cy": {
+    "sessions": 4378,
+    "engaged": 2959,
+    "purchases": 38
+   },
+   "ly": {
+    "sessions": 6404,
+    "engaged": 3466,
+    "purchases": 14
+   }
+  },
+  "campaign_all_landing": {
+   "rule": "GA4 landingPage contains 'halloween', excluding /products/, pages with >=415 sessions in the week (same cut-off both years)",
+   "cy": {
+    "sessions": 34663,
+    "purchases": 282,
+    "pages": 13
+   },
+   "ly": {
+    "sessions": 46232,
+    "purchases": 275,
+    "pages": 9
+   },
+   "ly_structure": "2025: separate category collections (/collections/halloween, -horror, -costumes, -womens, -youth, -basics, -mens) plus /pages/halloween-shop",
+   "cy_structure": "2026: /pages/halloween-shop landing page + tag views under /collections/halloween/<category> + -horror and -shop-packs collections"
+  }
+ },
+ "sales": {
+  "cy": {
+   "net": 485866.39,
+   "orders": 6649,
+   "units": 19413,
+   "aov": 76.4
+  },
+  "wow": {
+   "net": 469806.44,
+   "orders": 6221,
+   "units": 18800,
+   "aov": 79.21
+  },
+  "yoy": {
+   "net": 441696.6,
+   "orders": 7113,
+   "units": 18906,
+   "aov": 71.37
+  },
+  "by_channel_cy": [
+   {
+    "ch": "Online Store",
+    "orders": 4740
+   },
+   {
+    "ch": "Mobile App",
+    "orders": 1427
+   },
+   {
+    "ch": "Shop App",
+    "orders": 260
+   },
+   {
+    "ch": "Other",
+    "orders": 222
+   }
+  ]
+ },
+ "homepage": {
+  "viewed": {
+   "cy": {
+    "sessions": 59972,
+    "pdp": 16026,
+    "atc": 7170,
+    "cc": 2118
+   },
+   "wow": {
+    "sessions": 60593,
+    "pdp": 15426,
+    "atc": 6960,
+    "cc": 1999
+   }
+  },
+  "landing": {
+   "cy": {
+    "sessions": 54869,
+    "bounced": 23884,
+    "pdp": 12592,
+    "atc": 5443,
+    "cs": 2587,
+    "cc": 1407
+   },
+   "wow": {
+    "sessions": 55818,
+    "bounced": 22807,
+    "pdp": 12401,
+    "atc": 5311,
+    "cs": 2472,
+    "cc": 1334
+   }
+  },
+  "landing_daily": [
+   {
+    "date": "2026-09-21",
+    "sessions": 8097,
+    "bounced": 3377,
+    "pdp": 1765,
+    "atc": 787,
+    "cs": 355,
+    "cc": 193
+   },
+   {
+    "date": "2026-09-22",
+    "sessions": 7425,
+    "bounced": 2982,
+    "pdp": 1677,
+    "atc": 695,
+    "cs": 315,
+    "cc": 168
+   },
+   {
+    "date": "2026-09-23",
+    "sessions": 7819,
+    "bounced": 3363,
+    "pdp": 1664,
+    "atc": 719,
+    "cs": 332,
+    "cc": 173
+   },
+   {
+    "date": "2026-09-24",
+    "sessions": 7659,
+    "bounced": 3169,
+    "pdp": 1630,
+    "atc": 730,
+    "cs": 347,
+    "cc": 185
+   },
+   {
+    "date": "2026-09-25",
+    "sessions": 8205,
+    "bounced": 3436,
+    "pdp": 1768,
+    "atc": 755,
+    "cs": 396,
+    "cc": 217
+   },
+   {
+    "date": "2026-09-26",
+    "sessions": 7845,
+    "bounced": 2965,
+    "pdp": 1849,
+    "atc": 776,
+    "cs": 386,
+    "cc": 204
+   },
+   {
+    "date": "2026-09-27",
+    "sessions": 8768,
+    "bounced": 3515,
+    "pdp": 2048,
+    "atc": 849,
+    "cs": 341,
+    "cc": 194
+   },
+   {
+    "date": "2026-09-28",
+    "sessions": 8216,
+    "bounced": 3518,
+    "pdp": 1798,
+    "atc": 786,
+    "cs": 395,
+    "cc": 199
+   },
+   {
+    "date": "2026-09-29",
+    "sessions": 7683,
+    "bounced": 3623,
+    "pdp": 1529,
+    "atc": 647,
+    "cs": 317,
+    "cc": 158
+   },
+   {
+    "date": "2026-09-30",
+    "sessions": 6944,
+    "bounced": 3045,
+    "pdp": 1528,
+    "atc": 686,
+    "cs": 322,
+    "cc": 174
+   },
+   {
+    "date": "2026-10-01",
+    "sessions": 7461,
+    "bounced": 3078,
+    "pdp": 1870,
+    "atc": 824,
+    "cs": 364,
+    "cc": 204
+   },
+   {
+    "date": "2026-10-02",
+    "sessions": 7895,
+    "bounced": 3353,
+    "pdp": 1887,
+    "atc": 813,
+    "cs": 403,
+    "cc": 237
+   },
+   {
+    "date": "2026-10-03",
+    "sessions": 8177,
+    "bounced": 3692,
+    "pdp": 1893,
+    "atc": 787,
+    "cs": 378,
+    "cc": 219
+   },
+   {
+    "date": "2026-10-04",
+    "sessions": 8493,
+    "bounced": 3575,
+    "pdp": 2087,
+    "atc": 900,
+    "cs": 408,
+    "cc": 216
+   }
+  ],
+  "landing_by_channel": {
+   "cy": [
+    {
+     "ch": "Paid Search",
+     "sessions": 21016,
+     "bounced": 6529,
+     "atc": 2591,
+     "cc": 609
+    },
+    {
+     "ch": "Direct",
+     "sessions": 15639,
+     "bounced": 9807,
+     "atc": 1094,
+     "cc": 362
+    },
+    {
+     "ch": "Organic Search",
+     "sessions": 13106,
+     "bounced": 5142,
+     "atc": 1055,
+     "cc": 149
+    },
+    {
+     "ch": "Affiliates",
+     "sessions": 2643,
+     "bounced": 1220,
+     "atc": 405,
+     "cc": 182
+    },
+    {
+     "ch": "SMS",
+     "sessions": 941,
+     "bounced": 514,
+     "atc": 158,
+     "cc": 59
+    },
+    {
+     "ch": "Other",
+     "sessions": 1524,
+     "bounced": 672,
+     "atc": 140,
+     "cc": 46
+    }
+   ],
+   "wow": [
+    {
+     "ch": "Paid Search",
+     "sessions": 22971,
+     "bounced": 5997,
+     "atc": 2783,
+     "cc": 660
+    },
+    {
+     "ch": "Direct",
+     "sessions": 16255,
+     "bounced": 10555,
+     "atc": 1009,
+     "cc": 323
+    },
+    {
+     "ch": "Organic Search",
+     "sessions": 12249,
+     "bounced": 4175,
+     "atc": 950,
+     "cc": 115
+    },
+    {
+     "ch": "Affiliates",
+     "sessions": 2570,
+     "bounced": 1191,
+     "atc": 368,
+     "cc": 155
+    },
+    {
+     "ch": "SMS",
+     "sessions": 836,
+     "bounced": 443,
+     "atc": 129,
+     "cc": 47
+    },
+    {
+     "ch": "Other",
+     "sessions": 937,
+     "bounced": 446,
+     "atc": 72,
+     "cc": 34
+    }
+   ]
+  },
+  "before_after_sources": {
+   "change": "2026-10-01",
+   "before": "2026-09-28..2026-09-30",
+   "after": "2026-10-01..2026-10-03",
+   "before_rows": [
+    {
+     "ch": "Paid Search",
+     "sessions": 8634,
+     "cc": 221
+    },
+    {
+     "ch": "Direct",
+     "sessions": 7136,
+     "cc": 135
+    },
+    {
+     "ch": "Organic Search",
+     "sessions": 4929,
+     "cc": 52
+    },
+    {
+     "ch": "Affiliates",
+     "sessions": 993,
+     "cc": 82
+    },
+    {
+     "ch": "SMS",
+     "sessions": 346,
+     "cc": 21
+    }
+   ],
+   "after_rows": [
+    {
+     "ch": "Paid Search",
+     "sessions": 8939,
+     "cc": 295
+    },
+    {
+     "ch": "Direct",
+     "sessions": 6307,
+     "cc": 174
+    },
+    {
+     "ch": "Organic Search",
+     "sessions": 6135,
+     "cc": 66
+    },
+    {
+     "ch": "Affiliates",
+     "sessions": 1172,
+     "cc": 78
+    },
+    {
+     "ch": "SMS",
+     "sessions": 471,
+     "cc": 30
+    }
+   ]
+  }
+ },
+ "plps": {
+  "top_cy": [
+   {
+    "path": "/collections/mens",
+    "sessions": 23154
+   },
+   {
+    "path": "/collections/new",
+    "sessions": 17870
+   },
+   {
+    "path": "/collections/jaxson-dart",
+    "sessions": 17247
+   },
+   {
+    "path": "/collections/breast-cancer-awareness",
+    "sessions": 9499
+   },
+   {
+    "path": "/collections/youth",
+    "sessions": 8981
+   },
+   {
+    "path": "/collections/womens",
+    "sessions": 8407
+   },
+   {
+    "path": "/collections/mens-packs",
+    "sessions": 6685
+   },
+   {
+    "path": "/collections/standard-length",
+    "sessions": 6491
+   },
+   {
+    "path": "/collections/halloween/killer-fits",
+    "sessions": 6186
+   },
+   {
+    "path": "/collections/doritos-cheetos",
+    "sessions": 5121
+   }
+  ],
+  "top_prior": [
+   {
+    "path": "/collections/mens",
+    "sessions": 26543
+   },
+   {
+    "path": "/collections/jaxson-dart",
+    "sessions": 20530
+   },
+   {
+    "path": "/collections/new",
+    "sessions": 16505
+   },
+   {
+    "path": "/collections/youth",
+    "sessions": 9910
+   },
+   {
+    "path": "/collections/womens",
+    "sessions": 9082
+   },
+   {
+    "path": "/collections/halloween/killer-fits",
+    "sessions": 7920
+   },
+   {
+    "path": "/collections/mens-packs",
+    "sessions": 6574
+   },
+   {
+    "path": "/collections/standard-length",
+    "sessions": 5643
+   },
+   {
+    "path": "/collections/doritos-cheetos",
+    "sessions": 5552
+   },
+   {
+    "path": "/collections/jaxson-dart/jd-night-out",
+    "sessions": 4123
+   }
+  ],
+  "prior_lookup": {
+   "/collections/breast-cancer-awareness": 26
+  },
+  "landing_cy": {
+   "/collections/jaxson-dart": {
+    "sessions": 16609,
+    "bounced": 15252,
+    "atc": 29,
+    "cc": 1
+   },
+   "/collections/new": {
+    "sessions": 14575,
+    "bounced": 11416,
+    "atc": 441,
+    "cc": 73
+   },
+   "/collections/mens": {
+    "sessions": 12088,
+    "bounced": 6757,
+    "atc": 935,
+    "cc": 190
+   },
+   "/collections/breast-cancer-awareness": {
+    "sessions": 8871,
+    "bounced": 6209,
+    "atc": 395,
+    "cc": 70
+   },
+   "/collections/doritos-cheetos": {
+    "sessions": 4897,
+    "bounced": 3801,
+    "atc": 128,
+    "cc": 5
+   },
+   "/collections/bigface": {
+    "sessions": 4396,
+    "bounced": 3124,
+    "atc": 148,
+    "cc": 29
+   },
+   "/collections/womens": {
+    "sessions": 4057,
+    "bounced": 2128,
+    "atc": 316,
+    "cc": 52
+   },
+   "/collections/halloween/killer-fits": {
+    "sessions": 4025,
+    "bounced": 2791,
+    "atc": 186,
+    "cc": 39
+   },
+   "/collections/youth": {
+    "sessions": 3963,
+    "bounced": 1958,
+    "atc": 399,
+    "cc": 112
+   },
+   "/collections/mens-packs": {
+    "sessions": 2798,
+    "bounced": 2115,
+    "atc": 115,
+    "cc": 23
+   },
+   "/collections/halloween": {
+    "sessions": 2163,
+    "bounced": 1612,
+    "atc": 102,
+    "cc": 23
+   },
+   "/collections/standard-length": {
+    "sessions": 1587,
+    "bounced": 1017,
+    "atc": 167,
+    "cc": 26
+   },
+   "/collections/7-eleven": {
+    "sessions": 1141,
+    "bounced": 891,
+    "atc": 5,
+    "cc": 0
+   }
+  },
+  "landing_wow": {
+   "/collections/jaxson-dart": {
+    "sessions": 19549,
+    "bounced": 17997,
+    "atc": 72,
+    "cc": 9
+   },
+   "/collections/new": {
+    "sessions": 13165,
+    "bounced": 11639,
+    "atc": 225,
+    "cc": 40
+   },
+   "/collections/mens": {
+    "sessions": 12958,
+    "bounced": 6972,
+    "atc": 1064,
+    "cc": 170
+   },
+   "/collections/breast-cancer-awareness": {
+    "sessions": 21,
+    "bounced": 5,
+    "atc": 2,
+    "cc": 1
+   },
+   "/collections/doritos-cheetos": {
+    "sessions": 5235,
+    "bounced": 4276,
+    "atc": 113,
+    "cc": 16
+   },
+   "/collections/bigface": {
+    "sessions": 0,
+    "bounced": 0,
+    "atc": 0,
+    "cc": 0
+   },
+   "/collections/womens": {
+    "sessions": 3999,
+    "bounced": 1909,
+    "atc": 353,
+    "cc": 49
+   },
+   "/collections/halloween/killer-fits": {
+    "sessions": 6924,
+    "bounced": 4881,
+    "atc": 313,
+    "cc": 51
+   },
+   "/collections/youth": {
+    "sessions": 4077,
+    "bounced": 1965,
+    "atc": 367,
+    "cc": 106
+   },
+   "/collections/mens-packs": {
+    "sessions": 2438,
+    "bounced": 1717,
+    "atc": 119,
+    "cc": 25
+   },
+   "/collections/halloween": {
+    "sessions": 1915,
+    "bounced": 1281,
+    "atc": 118,
+    "cc": 21
+   },
+   "/collections/standard-length": {
+    "sessions": 1391,
+    "bounced": 849,
+    "atc": 147,
+    "cc": 31
+   },
+   "/collections/7-eleven": {
+    "sessions": 1172,
+    "bounced": 788,
+    "atc": 4,
+    "cc": 1
+   }
+  }
+ },
+ "collections": {
+  "/collections/jaxson-dart": {
+   "cy": {
+    "sessions": 17244,
+    "pdp": 419,
+    "atc": 148,
+    "cc": 28
+   },
+   "wow": {
+    "sessions": 20517,
+    "pdp": 584,
+    "atc": 218,
+    "cc": 46
+   },
+   "page_path_sessions": 17247,
+   "sales_cy": 36419.6,
+   "sales_wow": 43219.79,
+   "top_channel": {
+    "ch": "Paid Social",
+    "sessions": 12100,
+    "atc": 19
+   },
+   "products_in_stock": null
+  },
+  "/collections/breast-cancer-awareness": {
+   "cy": {
+    "sessions": 9499,
+    "pdp": 1645,
+    "atc": 554,
+    "cc": 108
+   },
+   "wow": {
+    "sessions": 26,
+    "pdp": 12,
+    "atc": 3,
+    "cc": 1
+   },
+   "page_path_sessions": 9499,
+   "sales_cy": 10918.17,
+   "sales_wow": 331.81,
+   "top_channel": {
+    "ch": "SMS",
+    "sessions": 8273,
+    "atc": 341
+   }
+  },
+  "/collections/doritos-cheetos": {
+   "cy": {
+    "sessions": 5120,
+    "pdp": 554,
+    "atc": 167,
+    "cc": 14
+   },
+   "wow": {
+    "sessions": 5552,
+    "pdp": 375,
+    "atc": 152,
+    "cc": 23
+   },
+   "page_path_sessions": 5121,
+   "sales_cy": 3845.95,
+   "sales_wow": 4394.75,
+   "top_channel": null
+  },
+  "/collections/bigface": {
+   "cy": {
+    "sessions": 4733,
+    "pdp": 669,
+    "atc": 233,
+    "cc": 44
+   },
+   "wow": {
+    "sessions": 0,
+    "pdp": 0,
+    "atc": 0,
+    "cc": 0
+   },
+   "page_path_sessions": 4732,
+   "sales_cy": 1160.46,
+   "sales_wow": 0,
+   "top_channel": {
+    "ch": "SMS",
+    "sessions": 3979,
+    "atc": 105
+   }
+  },
+  "/collections/7-eleven": {
+   "cy": {
+    "sessions": 1478,
+    "pdp": 205,
+    "atc": 89,
+    "cc": 24
+   },
+   "wow": {
+    "sessions": 1577,
+    "pdp": 180,
+    "atc": 95,
+    "cc": 16
+   },
+   "page_path_sessions": 1479,
+   "sales_cy": 4513.21,
+   "sales_wow": 4719.01,
+   "top_channel": null
+  },
+  "/collections/halloween": {
+   "cy": {
+    "sessions": 3125,
+    "pdp": 829,
+    "atc": 400,
+    "cc": 79
+   },
+   "wow": {
+    "sessions": 3010,
+    "pdp": 874,
+    "atc": 460,
+    "cc": 79
+   },
+   "page_path_sessions": 3215,
+   "sales_cy": 220515.33,
+   "sales_wow": 232188.11,
+   "top_channel": null
+  }
+ },
+ "campaign": {
+  "lp_landing": {
+   "cy": {
+    "sessions": 2002,
+    "bounced": 1111,
+    "pdp": 285,
+    "atc": 121,
+    "cs": 40,
+    "cc": 22
+   },
+   "wow": {
+    "sessions": 1593,
+    "bounced": 842,
+    "pdp": 244,
+    "atc": 96,
+    "cs": 38,
+    "cc": 16
+   }
+  },
+  "lp_page": {
+   "cy": {
+    "sessions": 6276,
+    "pdp": 2555,
+    "atc": 1310,
+    "cs": 536,
+    "cc": 303
+   },
+   "wow": {
+    "sessions": 3933,
+    "pdp": 1392,
+    "atc": 711,
+    "cs": 298,
+    "cc": 153
+   }
+  },
+  "lp_by_channel": {
+   "cy": [
+    {
+     "ch": "Paid Search",
+     "sessions": 2669,
+     "atc": 511,
+     "cc": 120
+    },
+    {
+     "ch": "Direct",
+     "sessions": 1086,
+     "atc": 235,
+     "cc": 64
+    },
+    {
+     "ch": "SMS",
+     "sessions": 792,
+     "atc": 122,
+     "cc": 21
+    },
+    {
+     "ch": "Organic Search",
+     "sessions": 631,
+     "atc": 151,
+     "cc": 27
+    },
+    {
+     "ch": "Paid Social",
+     "sessions": 482,
+     "atc": 135,
+     "cc": 26
+    },
+    {
+     "ch": "Email",
+     "sessions": 247,
+     "atc": 77,
+     "cc": 22
+    },
+    {
+     "ch": "Other",
+     "sessions": 369,
+     "atc": 79,
+     "cc": 23
+    }
+   ],
+   "wow": [
+    {
+     "ch": "Paid Search",
+     "sessions": 2291,
+     "atc": 340,
+     "cc": 74
+    },
+    {
+     "ch": "Direct",
+     "sessions": 655,
+     "atc": 139,
+     "cc": 35
+    },
+    {
+     "ch": "SMS",
+     "sessions": 171,
+     "atc": 35,
+     "cc": 12
+    },
+    {
+     "ch": "Organic Search",
+     "sessions": 526,
+     "atc": 105,
+     "cc": 12
+    },
+    {
+     "ch": "Paid Social",
+     "sessions": 97,
+     "atc": 30,
+     "cc": 5
+    },
+    {
+     "ch": "Email",
+     "sessions": 87,
+     "atc": 31,
+     "cc": 11
+    },
+    {
+     "ch": "Other",
+     "sessions": 106,
+     "atc": 31,
+     "cc": 4
+    }
+   ]
+  },
+  "categories": {
+   "shop_all": {
+    "path": "/collections/halloween",
+    "cy": 3215,
+    "wow": 3052
+   },
+   "rows": [
+    {
+     "name": "Killer Fits",
+     "path": "/collections/halloween/killer-fits",
+     "cy": 6186,
+     "wow": 7920
+    },
+    {
+     "name": "Spooky Staples",
+     "path": "/collections/halloween/spooky-staples",
+     "cy": 2837,
+     "wow": 838
+    },
+    {
+     "name": "Men's (2026)",
+     "path": "/collections/halloween/halloween-mens-2026",
+     "cy": 1935,
+     "wow": 2455
+    },
+    {
+     "name": "Women's (2026)",
+     "path": "/collections/halloween/halloween-womens-2026",
+     "cy": 1395,
+     "wow": 2503
+    },
+    {
+     "name": "Costume Ready",
+     "path": "/collections/halloween/costume-ready",
+     "cy": 1287,
+     "wow": 958
+    },
+    {
+     "name": "Youth (2026)",
+     "path": "/collections/halloween/halloween-youth-2026",
+     "cy": 1090,
+     "wow": 1488
+    },
+    {
+     "name": "Sugar Rush",
+     "path": "/collections/halloween/sugar-rush",
+     "cy": 1014,
+     "wow": 775
+    },
+    {
+     "name": "Cult Classics",
+     "path": "/collections/halloween/cult-classics",
+     "cy": 853,
+     "wow": 916
+    },
+    {
+     "name": "Wanted: Dead or Alive",
+     "path": "/collections/halloween/wanted-dead-alive",
+     "cy": 823,
+     "wow": 758
+    },
+    {
+     "name": "Packs (tag view)",
+     "path": "/collections/halloween/packs",
+     "cy": 73,
+     "wow": 1255
+    }
+   ],
+   "case_variants_wow": [
+    {
+     "path": "/collections/halloween/Men",
+     "wow": 138
+    },
+    {
+     "path": "/collections/halloween/Youth",
+     "wow": 108
+    },
+    {
+     "path": "/collections/halloween/Women",
+     "wow": 74
+    }
+   ],
+   "separate_collections": [
+    {
+     "name": "Halloween Horror",
+     "path": "/collections/halloween-horror",
+     "cy": 4524,
+     "wow": 3527
+    },
+    {
+     "name": "Halloween Shop Packs",
+     "path": "/collections/halloween-shop-packs",
+     "cy": 1439,
+     "wow": null
+    }
+   ]
+  }
+ },
+ "sends": {
+  "email": [
+   {
+    "date": "2026-09-29",
+    "name": "Ghost Face Body Count",
+    "time_pt": "11:30"
+   },
+   {
+    "date": "2026-10-01",
+    "name": "Keep A Breast",
+    "time_pt": "15:14"
+   },
+   {
+    "date": "2026-10-02",
+    "name": "BIGFACE",
+    "time_pt": "16:00"
+   },
+   {
+    "date": "2026-10-03",
+    "name": "Halloween Half Skelly",
+    "time_pt": "09:30"
+   },
+   {
+    "date": "2026-10-04",
+    "name": "Halloween Multipacks",
+    "time_pt": "09:30"
+   }
+  ],
+  "sms": [
+   {
+    "date": "2026-09-29",
+    "name": "Ghost Face – Body Count",
+    "landing": "/collections/halloween/killer-fits",
+    "sessions": 2384,
+    "atc": 83,
+    "cc": 12
+   },
+   {
+    "date": "2026-10-01",
+    "name": "Keep A Breast",
+    "landing": "/collections/breast-cancer-awareness",
+    "sessions": 8747,
+    "atc": 367,
+    "cc": 60
+   },
+   {
+    "date": "2026-10-02",
+    "name": "BIGFACE – Core Logo, Many Faces, Face Hunter",
+    "landing": "/collections/bigface",
+    "sessions": 4151,
+    "atc": 112,
+    "cc": 18
+   },
+   {
+    "date": "2026-10-03",
+    "name": "Halloween Shop – Half Skelly",
+    "landing": "/collections/halloween/spooky-staples",
+    "sessions": 1888,
+    "atc": 69,
+    "cc": 18
+   },
+   {
+    "date": "2026-10-04",
+    "name": "Ghost Face – Multi-packs",
+    "landing": "/collections/halloween-shop-packs",
+    "sessions": 1164,
+    "atc": 62,
+    "cc": 13
+   }
+  ],
+  "sms_note": "SMS sessions = all pixel sessions with that Postscript utm_campaign (all audience segments, all landing pages)."
+ },
+ "ahead": {
+  "email": [
+   {
+    "date": "2026-10-06",
+    "name": "Halloween Spooky Staples",
+    "status": "Sent"
+   }
+  ],
+  "scheduled_found": 0
+ },
+ "aftersell": {
+  "daily_cy": [
+   {
+    "date": "2026-09-28",
+    "revenue": 1194.27,
+    "impressions": 814,
+    "accepted": 86
+   },
+   {
+    "date": "2026-09-29",
+    "revenue": 1129.91,
+    "impressions": 838,
+    "accepted": 92
+   },
+   {
+    "date": "2026-09-30",
+    "revenue": 1068.19,
+    "impressions": 871,
+    "accepted": 87
+   },
+   {
+    "date": "2026-10-01",
+    "revenue": 1148.59,
+    "impressions": 1059,
+    "accepted": 94
+   },
+   {
+    "date": "2026-10-02",
+    "revenue": 932.56,
+    "impressions": 1027,
+    "accepted": 76
+   },
+   {
+    "date": "2026-10-03",
+    "revenue": 1078.14,
+    "impressions": 975,
+    "accepted": 95
+   },
+   {
+    "date": "2026-10-04",
+    "revenue": 1334.26,
+    "impressions": 1225,
+    "accepted": 103
+   }
+  ],
+  "daily_wow": [
+   {
+    "date": "2026-09-21",
+    "revenue": 1504.88,
+    "impressions": 816,
+    "accepted": 114
+   },
+   {
+    "date": "2026-09-22",
+    "revenue": 1307.46,
+    "impressions": 846,
+    "accepted": 98
+   },
+   {
+    "date": "2026-09-23",
+    "revenue": 1035.41,
+    "impressions": 827,
+    "accepted": 77
+   },
+   {
+    "date": "2026-09-24",
+    "revenue": 802.12,
+    "impressions": 849,
+    "accepted": 66
+   },
+   {
+    "date": "2026-09-25",
+    "revenue": 950.7,
+    "impressions": 868,
+    "accepted": 76
+   },
+   {
+    "date": "2026-09-26",
+    "revenue": 1121.68,
+    "impressions": 923,
+    "accepted": 97
+   },
+   {
+    "date": "2026-09-27",
+    "revenue": 1313.13,
+    "impressions": 1039,
+    "accepted": 102
+   }
+  ],
+  "order_browser": {
+   "source": "AfterSell Order browser screenshot (post-purchase), dates assumed 9/28–10/4",
+   "total_orders": 9033,
+   "eligible": 3290,
+   "shown": 3177,
+   "not_shown": 113,
+   "ineligible": 5743,
+   "revenue": 6584.27,
+   "ineligible_reasons": [
+    [
+     "Unsupported gateway",
+     2618
+    ],
+    [
+     "Unsupported channel",
+     2376
+    ],
+    [
+     "Unsupported wallet",
+     1973
+    ],
+    [
+     "Installments",
+     688
+    ],
+    [
+     "Skipped by Shopify",
+     530
+    ],
+    [
+     "Below minimum",
+     215
+    ],
+    [
+     "Has duties",
+     66
+    ],
+    [
+     "Multi-currency",
+     64
+    ]
+   ],
+   "opportunities": [
+    [
+     "Offer not set up",
+     1470
+    ],
+    [
+     "All products filtered",
+     2
+    ],
+    [
+     "No matching line item",
+     2
+    ]
+   ]
+  },
+  "orders_by_channel": {
+   "source": "Shopify via Polar, all views (custom_5794), 9/28–10/4",
+   "total": 9018,
+   "rows": [
+    [
+     "Online Store",
+     4740
+    ],
+    [
+     "TikTok Shop",
+     2369
+    ],
+    [
+     "Tapcart app",
+     1427
+    ],
+    [
+     "Shop App",
+     260
+    ],
+    [
+     "Other channels",
+     222
+    ]
+   ],
+   "other_detail": "Fermat 71, Other 51, Loop 38, Gorgias 31, Draft Order 28, Recharge 3"
+  }
+ },
+ "issues": [
+  {
+   "issue": "Jaxson Dart: 16,609 sessions landed on the collection and 92% bounced; 70% of visits came from Paid Social and 29 landers added to cart",
+   "type": "Site"
+  },
+  {
+   "issue": "BIGFACE collection has 3 in-stock products (rule: tag BIGFACE + inventory > 0) against 4,733 sessions",
+   "type": "Site"
+  },
+  {
+   "issue": "Halloween tag pages split by URL case: /Men, /Youth, /Women carried 320 sessions last week, separate from /mens, /youth, /womens",
+   "type": "Site"
+  },
+  {
+   "issue": "Klaviyo emails reach Polar as utm_campaign 'campaign' or 'flow', so sessions can't be tied to a specific email",
+   "type": "Tracking"
+  },
+  {
+   "issue": "The Email channel includes order-tracking flow traffic (4,554 sessions landed on /pages/track-your-order)",
+   "type": "Tracking"
+  },
+  {
+   "issue": "AfterSell order browser revenue ($6,584) is lower than the analytics export ($7,886) for the same dates",
+   "type": "Data"
+  },
+  {
+   "issue": "Clarity exports are mobile only, and the homepage export spans two layouts (refreshes 9/28 and 10/1)",
+   "type": "Input"
+  },
+  {
+   "issue": "GA4 property runs on America/Juneau time (1 hour off PT); YoY rows inherit the offset",
+   "type": "Tracking"
+  },
+  {
+   "issue": "Four 3-packs with 680–1,110 PDP views each record no web units under their own title (Blow Me Flavor Pack, Doritos & Cheetos Snack Pack, Candy Haul, Fright Night). They appear to be virtual bundles whose sales land on component products",
+   "type": "Data"
+  },
+  {
+   "issue": "Product thumbnails couldn't be downloaded: this session's network blocks cdn.shopify.com. The deck shows a placeholder tile until the host is allowed",
+   "type": "Input"
+  },
+  {
+   "issue": "Marvel - Miles Morales Pop: 97% of its 1,485 PDP views came from Direct and 65% of those sessions landed on the PDP, with 17 add-to-carts and 31 units in stock. Untagged links or non-shopper traffic are possible",
+   "type": "Tracking"
+  },
+  {
+   "issue": "Benji Heat, Blue Cash and Pixel Bills: 93–98% of PDP views came from Paid Search landing on the PDP, while each has 25–116 units in stock today and under 3% add-to-cart",
+   "type": "Site"
+  }
+ ],
+ "titles": {
+  "/collections/mens-packs": "Men's Packs",
+  "/collections/jaxson-dart": "Jaxson Dart",
+  "/collections/breast-cancer-awareness": "Keep A Breast",
+  "/collections/doritos-cheetos": "Doritos & Cheetos",
+  "/collections/bigface": "BIGFACE",
+  "/collections/7-eleven": "7-Eleven",
+  "/collections/halloween": "Halloween Shop",
+  "/collections/halloween/killer-fits": "Halloween Shop · Killer Fits",
+  "/collections/jaxson-dart/jd-night-out": "Jaxson Dart · Night Out"
+ },
+ "products": {
+  "source": "Shopify via Polar (custom_60206, custom_60202, total_orders) by product_title × product_type, custom_5794 = Online Store; Polar pixel product_pageviews, add_to_cart, sessions by product_title × product_type",
+  "excluded": [
+   {
+    "title": "Exclusive Mystery Style - 2 Pack Standard Length 7\"",
+    "units": 502,
+    "why": "style not chosen by the shopper"
+   }
+  ],
+  "web_units": {
+   "cy": 13135,
+   "wow": 12838,
+   "note": "Online Store, excl. Mystery"
+  },
+  "campaign_units": {
+   "handle": "halloween",
+   "cy": 5605,
+   "wow": 5917,
+   "net_cy": 157790.93,
+   "net_wow": 165841.02
+  },
+  "top": [
+   {
+    "title": "Ghost Face - Dark",
+    "type": "Youth Underwear",
+    "units": 117,
+    "units_wow": 108,
+    "net": 1707.03,
+    "orders": 101,
+    "pdp_views": 442,
+    "atc": 237,
+    "sessions": 439,
+    "collection": "halloween"
+   },
+   {
+    "title": "Solids - Black",
+    "type": "Standard Length",
+    "units": 115,
+    "units_wow": 93,
+    "net": 2256.44,
+    "orders": 62,
+    "pdp_views": 436,
+    "atc": 143,
+    "sessions": 396,
+    "collection": "halloween"
+   },
+   {
+    "title": "Solids 3 Pack - Black",
+    "type": "Standard Length - Cotton",
+    "units": 112,
+    "units_wow": 107,
+    "net": 4569.51,
+    "orders": 94,
+    "pdp_views": 1615,
+    "atc": 426,
+    "sessions": 1511,
+    "collection": "halloween"
+   },
+   {
+    "title": "Ghost Face - After Hours",
+    "type": "Standard Length",
+    "units": 109,
+    "units_wow": 99,
+    "net": 2834.41,
+    "orders": 110,
+    "pdp_views": 1566,
+    "atc": 620,
+    "sessions": 1611,
+    "collection": "halloween"
+   },
+   {
+    "title": "Friday the 13th - Jason Lives",
+    "type": "Standard Length",
+    "units": 108,
+    "units_wow": 154,
+    "net": 2792.15,
+    "orders": 107,
+    "pdp_views": 908,
+    "atc": 390,
+    "sessions": 928,
+    "collection": "halloween"
+   },
+   {
+    "title": "Ghost Face - Dark",
+    "type": "Standard Length",
+    "units": 102,
+    "units_wow": 83,
+    "net": 2453.97,
+    "orders": 104,
+    "pdp_views": 631,
+    "atc": 377,
+    "sessions": 692,
+    "collection": "halloween"
+   },
+   {
+    "title": "Keep a Breast - I Heart Boobies",
+    "type": "Standard Length",
+    "units": 96,
+    "units_wow": 0,
+    "net": 2161.12,
+    "orders": 91,
+    "pdp_views": 1048,
+    "atc": 307,
+    "sessions": 992,
+    "collection": "breast-cancer-awareness"
+   },
+   {
+    "title": "Ghost Face - After Hours",
+    "type": "Youth Underwear",
+    "units": 89,
+    "units_wow": 87,
+    "net": 1305.5,
+    "orders": 83,
+    "pdp_views": 424,
+    "atc": 246,
+    "sessions": 438,
+    "collection": "halloween"
+   },
+   {
+    "title": "Half Skelly",
+    "type": "Standard Length",
+    "units": 85,
+    "units_wow": 71,
+    "net": 1760.78,
+    "orders": 84,
+    "pdp_views": 481,
+    "atc": 136,
+    "sessions": 454,
+    "collection": "halloween"
+   },
+   {
+    "title": "Keep a Breast - Haute Hearted",
+    "type": "Standard Length",
+    "units": 84,
+    "units_wow": 0,
+    "net": 2135.08,
+    "orders": 78,
+    "pdp_views": 1320,
+    "atc": 294,
+    "sessions": 1197,
+    "collection": "breast-cancer-awareness"
+   },
+   {
+    "title": "6 Pack - Tropic Rush",
+    "type": "Youth Underwear",
+    "units": 81,
+    "units_wow": 67,
+    "net": 5111.85,
+    "orders": 81,
+    "pdp_views": 1015,
+    "atc": 190,
+    "sessions": 910,
+    "collection": null
+   },
+   {
+    "title": "PSD Sinner Black",
+    "type": "Standard Length",
+    "units": 76,
+    "units_wow": 81,
+    "net": 1754.01,
+    "orders": 80,
+    "pdp_views": 7436,
+    "atc": 545,
+    "sessions": 7108,
+    "collection": "jaxson-dart"
+   }
+  ],
+  "pool": {
+   "note": "Top 40 product × style rows by PDP views (pixel), joined to Online Store units/orders. Inventory is today's snapshot (10/7), not week-end.",
+   "rows": [
+    {
+     "title": "PSD Sinner Black",
+     "type": "Standard Length",
+     "pdp_views": 7436,
+     "atc": 545,
+     "sessions": 7108,
+     "units": 76,
+     "units_wow": 81,
+     "orders": 80,
+     "net": 1754.01,
+     "inventory_today": 5195
+    },
+    {
+     "title": "Solids 3 Pack - Black",
+     "type": "Standard Length - Cotton",
+     "pdp_views": 1615,
+     "atc": 426,
+     "sessions": 1511,
+     "units": 112,
+     "units_wow": 107,
+     "orders": 94,
+     "net": 4569.51,
+     "inventory_today": null
+    },
+    {
+     "title": "Money Blossom",
+     "type": "Standard Length",
+     "pdp_views": 1584,
+     "atc": 126,
+     "sessions": 1531,
+     "units": 34,
+     "units_wow": 69,
+     "orders": 35,
+     "net": 731.93,
+     "inventory_today": 832
+    },
+    {
+     "title": "Ghost Face - After Hours",
+     "type": "Standard Length",
+     "pdp_views": 1566,
+     "atc": 620,
+     "sessions": 1611,
+     "units": 109,
+     "units_wow": 99,
+     "orders": 110,
+     "net": 2834.41,
+     "inventory_today": null
+    },
+    {
+     "title": "SpongeBob SquarePants - SpongeBob Fit",
+     "type": "Boy Short",
+     "pdp_views": 1514,
+     "atc": 241,
+     "sessions": 1439,
+     "units": 44,
+     "units_wow": 13,
+     "orders": 42,
+     "net": 894.87,
+     "inventory_today": null
+    },
+    {
+     "title": "Marvel - Miles Morales Pop",
+     "type": "Standard Length",
+     "pdp_views": 1485,
+     "atc": 17,
+     "sessions": 1126,
+     "units": 3,
+     "units_wow": 3,
+     "orders": 3,
+     "net": 62.67,
+     "inventory_today": 31
+    },
+    {
+     "title": "3 Pack - Ghost Face",
+     "type": "Standard Length",
+     "pdp_views": 1394,
+     "atc": 332,
+     "sessions": 1345,
+     "units": 69,
+     "units_wow": 56,
+     "orders": 67,
+     "net": 4496.7,
+     "inventory_today": null
+    },
+    {
+     "title": "Keep a Breast - Haute Hearted",
+     "type": "Standard Length",
+     "pdp_views": 1320,
+     "atc": 294,
+     "sessions": 1197,
+     "units": 84,
+     "units_wow": 0,
+     "orders": 78,
+     "net": 2135.08,
+     "inventory_today": null
+    },
+    {
+     "title": "4 Pack - Realtree",
+     "type": "Thong",
+     "pdp_views": 1311,
+     "atc": 139,
+     "sessions": 1197,
+     "units": 40,
+     "units_wow": 23,
+     "orders": 39,
+     "net": 2121.73,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Blow Me Flavor Pack",
+     "type": "Standard Length",
+     "pdp_views": 1106,
+     "atc": 82,
+     "sessions": 975,
+     "units": 0,
+     "units_wow": 0,
+     "orders": 0,
+     "net": 0,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Spider-Man",
+     "type": "Standard Length",
+     "pdp_views": 1084,
+     "atc": 85,
+     "sessions": 705,
+     "units": 16,
+     "units_wow": 0,
+     "orders": 16,
+     "net": 725.26,
+     "inventory_today": 63
+    },
+    {
+     "title": "Modal 4 Pack - Fright",
+     "type": "Thong - Modal",
+     "pdp_views": 1056,
+     "atc": 154,
+     "sessions": 985,
+     "units": 32,
+     "units_wow": 21,
+     "orders": 32,
+     "net": 1471.43,
+     "inventory_today": null
+    },
+    {
+     "title": "Keep a Breast - I Heart Boobies",
+     "type": "Standard Length",
+     "pdp_views": 1048,
+     "atc": 307,
+     "sessions": 992,
+     "units": 96,
+     "units_wow": 0,
+     "orders": 91,
+     "net": 2161.12,
+     "inventory_today": null
+    },
+    {
+     "title": "Realtree - Edge Blue",
+     "type": "Standard Length",
+     "pdp_views": 1021,
+     "atc": 123,
+     "sessions": 995,
+     "units": 24,
+     "units_wow": 47,
+     "orders": 24,
+     "net": 610.21,
+     "inventory_today": null
+    },
+    {
+     "title": "6 Pack - Tropic Rush",
+     "type": "Youth Underwear",
+     "pdp_views": 1015,
+     "atc": 190,
+     "sessions": 910,
+     "units": 81,
+     "units_wow": 67,
+     "orders": 81,
+     "net": 5111.85,
+     "inventory_today": null
+    },
+    {
+     "title": "Benji Heat",
+     "type": "Youth Underwear",
+     "pdp_views": 972,
+     "atc": 19,
+     "sessions": 886,
+     "units": 4,
+     "units_wow": 2,
+     "orders": 4,
+     "net": 33.0,
+     "inventory_today": 116
+    },
+    {
+     "title": "Solids 6 Pack - Dark Tones",
+     "type": "Standard Length - Cotton",
+     "pdp_views": 929,
+     "atc": 202,
+     "sessions": 899,
+     "units": 56,
+     "units_wow": 72,
+     "orders": 61,
+     "net": 4159.8,
+     "inventory_today": null
+    },
+    {
+     "title": "Blue Cash",
+     "type": "Youth Underwear",
+     "pdp_views": 926,
+     "atc": 16,
+     "sessions": 807,
+     "units": 4,
+     "units_wow": 2,
+     "orders": 4,
+     "net": 34.14,
+     "inventory_today": 101
+    },
+    {
+     "title": "Pixel Bills",
+     "type": "Youth Underwear",
+     "pdp_views": 924,
+     "atc": 7,
+     "sessions": 827,
+     "units": 3,
+     "units_wow": 1,
+     "orders": 3,
+     "net": 23.39,
+     "inventory_today": 25
+    },
+    {
+     "title": "Solids 6 Pack - Chrome",
+     "type": "Standard Length - Cotton",
+     "pdp_views": 915,
+     "atc": 206,
+     "sessions": 897,
+     "units": 52,
+     "units_wow": 60,
+     "orders": 54,
+     "net": 3987.28,
+     "inventory_today": null
+    },
+    {
+     "title": "Friday the 13th - Jason Lives",
+     "type": "Standard Length",
+     "pdp_views": 908,
+     "atc": 390,
+     "sessions": 928,
+     "units": 108,
+     "units_wow": 154,
+     "orders": 107,
+     "net": 2792.15,
+     "inventory_today": null
+    },
+    {
+     "title": "Jackpot",
+     "type": "Standard Length",
+     "pdp_views": 864,
+     "atc": 47,
+     "sessions": 843,
+     "units": 7,
+     "units_wow": 7,
+     "orders": 7,
+     "net": 167.5,
+     "inventory_today": 2624
+    },
+    {
+     "title": "4 Pack - Ghost Face",
+     "type": "Thong",
+     "pdp_views": 794,
+     "atc": 107,
+     "sessions": 735,
+     "units": 23,
+     "units_wow": 17,
+     "orders": 23,
+     "net": 1172.86,
+     "inventory_today": null
+    },
+    {
+     "title": "Keep a Breast",
+     "type": "Standard Length",
+     "pdp_views": 791,
+     "atc": 178,
+     "sessions": 707,
+     "units": 64,
+     "units_wow": 0,
+     "orders": 62,
+     "net": 1479.6,
+     "inventory_today": null
+    },
+    {
+     "title": "Ghost Face - Body Count",
+     "type": "Standard Length",
+     "pdp_views": 764,
+     "atc": 244,
+     "sessions": 792,
+     "units": 40,
+     "units_wow": 31,
+     "orders": 40,
+     "net": 1017.97,
+     "inventory_today": null
+    },
+    {
+     "title": "Blow Me",
+     "type": "Standard Length",
+     "pdp_views": 756,
+     "atc": 276,
+     "sessions": 749,
+     "units": 66,
+     "units_wow": 63,
+     "orders": 72,
+     "net": 1485.86,
+     "inventory_today": null
+    },
+    {
+     "title": "Playboy - Polaroids",
+     "type": "Standard Length",
+     "pdp_views": 746,
+     "atc": 114,
+     "sessions": 688,
+     "units": 30,
+     "units_wow": 36,
+     "orders": 32,
+     "net": 749.0,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Doritos & Cheetos Snack Pack",
+     "type": "Standard Length",
+     "pdp_views": 733,
+     "atc": 43,
+     "sessions": 652,
+     "units": 0,
+     "units_wow": 0,
+     "orders": 0,
+     "net": 0,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Sport",
+     "type": "Youth Underwear",
+     "pdp_views": 727,
+     "atc": 187,
+     "sessions": 674,
+     "units": 63,
+     "units_wow": 55,
+     "orders": 63,
+     "net": 2227.54,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Candy Haul",
+     "type": "Standard Length",
+     "pdp_views": 693,
+     "atc": 86,
+     "sessions": 603,
+     "units": 0,
+     "units_wow": 0,
+     "orders": 0,
+     "net": 0,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Lure Life",
+     "type": "Standard Length",
+     "pdp_views": 689,
+     "atc": 129,
+     "sessions": 664,
+     "units": 19,
+     "units_wow": 5,
+     "orders": 20,
+     "net": 1087.03,
+     "inventory_today": null
+    },
+    {
+     "title": "Modal Solids - Black",
+     "type": "Thong - Modal",
+     "pdp_views": 682,
+     "atc": 37,
+     "sessions": 657,
+     "units": 13,
+     "units_wow": 6,
+     "orders": 14,
+     "net": 173.17,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Fright Night",
+     "type": "Standard Length",
+     "pdp_views": 681,
+     "atc": 125,
+     "sessions": 586,
+     "units": 0,
+     "units_wow": 0,
+     "orders": 0,
+     "net": 0,
+     "inventory_today": null
+    },
+    {
+     "title": "6 Pack - Midnight Tropics",
+     "type": "Standard Length",
+     "pdp_views": 673,
+     "atc": 102,
+     "sessions": 601,
+     "units": 29,
+     "units_wow": 0,
+     "orders": 29,
+     "net": 3077.07,
+     "inventory_today": null
+    },
+    {
+     "title": "Ghost Face - Dark",
+     "type": "Standard Length",
+     "pdp_views": 631,
+     "atc": 377,
+     "sessions": 692,
+     "units": 102,
+     "units_wow": 83,
+     "orders": 104,
+     "net": 2453.97,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Boo Crew",
+     "type": "Youth Underwear",
+     "pdp_views": 616,
+     "atc": 192,
+     "sessions": 578,
+     "units": 68,
+     "units_wow": 67,
+     "orders": 58,
+     "net": 2368.22,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Island Vibes",
+     "type": "Youth Underwear",
+     "pdp_views": 596,
+     "atc": 102,
+     "sessions": 513,
+     "units": 42,
+     "units_wow": 42,
+     "orders": 46,
+     "net": 1503.84,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - Realtree",
+     "type": "Standard Length",
+     "pdp_views": 594,
+     "atc": 137,
+     "sessions": 552,
+     "units": 42,
+     "units_wow": 40,
+     "orders": 43,
+     "net": 2777.55,
+     "inventory_today": null
+    },
+    {
+     "title": "3 Pack - The Blues",
+     "type": "Standard Length",
+     "pdp_views": 584,
+     "atc": 151,
+     "sessions": 555,
+     "units": 21,
+     "units_wow": 46,
+     "orders": 27,
+     "net": 1258.6,
+     "inventory_today": null
+    },
+    {
+     "title": "6 Pack - Baby Blues",
+     "type": "Youth Underwear",
+     "pdp_views": 570,
+     "atc": 53,
+     "sessions": 518,
+     "units": 12,
+     "units_wow": 39,
+     "orders": 15,
+     "net": 727.6,
+     "inventory_today": null
+    }
+   ]
+  },
+  "bundles_no_units": [
+   "3 Pack - Blow Me Flavor Pack",
+   "3 Pack - Doritos & Cheetos Snack Pack",
+   "3 Pack - Candy Haul",
+   "3 Pack - Fright Night"
+  ],
+  "image_urls": {
+   "Ghost Face - Dark|Youth Underwear": "https://cdn.shopify.com/s/files/1/1044/2132/files/423280013_MUL_1.webp?v=1692303392",
+   "Solids - Black|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/321180118-BLK_1.webp?v=1791330546",
+   "Solids 3 Pack - Black|Standard Length - Cotton": "https://cdn.shopify.com/s/files/1/1044/2132/products/322180160_BLK_1.webp?v=1678482823",
+   "Ghost Face - After Hours|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/326180028-MUL_1.webp?v=1787698877",
+   "Friday the 13th - Jason Lives|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/326180030-MUL_1.webp?v=1787698879",
+   "Ghost Face - Dark|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/423180095_MUL_1_e0887680-6207-452c-9338-ab951748808a.webp?v=1729285835",
+   "Keep a Breast - I Heart Boobies|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/324180336-MUL_1.webp?v=1787690014",
+   "Ghost Face - After Hours|Youth Underwear": "https://cdn.shopify.com/s/files/1/1044/2132/files/326280007-MUL_1.webp?v=1787690000",
+   "Half Skelly|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/326180106-MUL_1.webp?v=1787689985",
+   "Keep a Breast - Haute Hearted|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/326180003-MUL_1.webp?v=1787689975",
+   "PSD Sinner Black|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/324180051_MUL_1.webp?v=1726255050",
+   "Marvel - Miles Morales Pop|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/424180013_MUL_1.webp?v=1727299955",
+   "Pixel Bills|Youth Underwear": "https://cdn.shopify.com/s/files/1/1044/2132/files/425280019-MUL_1.webp?v=1759181903",
+   "Benji Heat|Youth Underwear": "https://cdn.shopify.com/s/files/1/1044/2132/files/425280040-MUL_1.webp?v=1759181937",
+   "Blue Cash|Youth Underwear": "https://cdn.shopify.com/s/files/1/1044/2132/files/425280041-MUL_1.webp?v=1759181939",
+   "SpongeBob SquarePants - SpongeBob Fit|Boy Short": "https://cdn.shopify.com/s/files/1/1044/2132/files/326480012-MUL_1.webp?v=1787689954",
+   "Money Blossom|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/326180060-MUL_1.webp?v=1782247186",
+   "3 Pack - The Blues|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/125180216_MUL_1.webp?v=1735850918",
+   "6 Pack - Tropic Rush|Youth Underwear": "https://cdn.shopify.com/s/files/1/1044/2132/files/226280064-MUL_1.webp?v=1773854694",
+   "Realtree - Edge Blue|Standard Length": "https://cdn.shopify.com/s/files/1/1044/2132/files/326180001-MUL_1.webp?v=1782247169"
+  },
+  "entry": {
+   "note": "entry = landing_page_path of sessions whose page_paths_in_session contains /products/<handle> (NOTCONTAINS /products/<handle>-); source = custom_5984 share of PDP views. Polar can't break PDP views down by the page viewed just before.",
+   "rows": {
+    "PSD Sinner Black|Standard Length": {
+     "handle": "heart-psd-multi",
+     "sessions": 8424,
+     "entry": [
+      [
+       "/products/heart-psd-multi",
+       7806
+      ],
+      [
+       "/",
+       235
+      ]
+     ],
+     "source": [
+      "Paid Social",
+      6394
+     ]
+    },
+    "Marvel - Miles Morales Pop|Standard Length": {
+     "handle": "miles-morales-pop-multi",
+     "sessions": 1119,
+     "entry": [
+      [
+       "/products/miles-morales-pop-multi",
+       723
+      ],
+      [
+       "/products/spider-man-3pk-multi",
+       85
+      ]
+     ],
+     "source": [
+      "Direct",
+      1446
+     ]
+    },
+    "Benji Heat|Youth Underwear": {
+     "handle": "benji-heath-yth-multi",
+     "sessions": 951,
+     "entry": [
+      [
+       "/products/benji-heath-yth-multi",
+       881
+      ],
+      [
+       "/",
+       15
+      ]
+     ],
+     "source": [
+      "Paid Search",
+      928
+     ]
+    },
+    "Blue Cash|Youth Underwear": {
+     "handle": "blue-cash-yth-multi",
+     "sessions": 857,
+     "entry": [
+      [
+       "/products/blue-cash-yth-multi",
+       761
+      ],
+      [
+       "/",
+       19
+      ]
+     ],
+     "source": [
+      "Paid Search",
+      859
+     ]
+    },
+    "Pixel Bills|Youth Underwear": {
+     "handle": "pixel-bills-yth-multi",
+     "sessions": 874,
+     "entry": [
+      [
+       "/products/pixel-bills-yth-multi",
+       841
+      ],
+      [
+       "/",
+       7
+      ]
+     ],
+     "source": [
+      "Paid Search",
+      903
+     ]
+    },
+    "SpongeBob SquarePants - SpongeBob Fit|Boy Short": {
+     "handle": "spongebob-fit-bs-multi",
+     "sessions": 1518,
+     "entry": [
+      [
+       "/products/spongebob-fit-bs-multi",
+       1075
+      ],
+      [
+       "/",
+       190
+      ]
+     ],
+     "source": [
+      "Paid Social",
+      952
+     ]
+    },
+    "Money Blossom|Standard Length": {
+     "handle": "money-blossom-multi",
+     "sessions": 1762,
+     "entry": [
+      [
+       "/products/money-blossom-multi",
+       1536
+      ],
+      [
+       "/",
+       82
+      ]
+     ],
+     "source": [
+      "Paid Social",
+      1231
+     ]
+    },
+    "Realtree - Edge Blue|Standard Length": {
+     "handle": "rt-edge-blu-multi",
+     "sessions": 1153,
+     "entry": [
+      [
+       "/products/rt-edge-blu-multi",
+       979
+      ],
+      [
+       "/",
+       50
+      ]
+     ],
+     "source": [
+      "Paid Social",
+      809
+     ]
+    }
+   }
+  }
+ },
+ "app": {
+  "source": "Shopify via Polar, PSD Web view, custom_5794 = Mobile App (Tapcart)",
+  "cy": {
+   "orders": 1427,
+   "net": 112284.29,
+   "aov": 81.51
+  },
+  "wow": {
+   "orders": 1356,
+   "net": 110701.13,
+   "aov": 87.07
+  }
+ },
+ "search": {
+  "pixel": {
+   "cy": {
+    "sessions": 11690,
+    "pdp": 6496,
+    "atc": 3011,
+    "cc": 715
+   },
+   "wow": {
+    "sessions": 14109,
+    "pdp": 5989,
+    "atc": 2822,
+    "cc": 652
+   },
+   "filter": "page_paths_in_session exact match /search"
+  },
+  "searchspring": {
+   "source": "Searchspring dashboard (screenshots)",
+   "zero_result_searches": {
+    "value": "3.14K",
+    "per_day": 449,
+    "range": "9/28–10/4"
+   },
+   "unique_searches_week": {
+    "value": "7.27K",
+    "range": "week of 9/28 (weekly trend card)"
+   },
+   "popular_rank": [
+    "spongebob",
+    "playboy",
+    "camo",
+    "spiderman",
+    "underwear",
+    "money",
+    "youth",
+    "cotton",
+    "3 pack",
+    "halloween"
+   ],
+   "refined_rank": [
+    "playboy",
+    "spongebob",
+    "underwear",
+    "sports bra",
+    "camo",
+    "cotton",
+    "men's underwear",
+    "money",
+    "simpsons",
+    "youth"
+   ],
+   "popular_range_note": "Popular and refinement panels cover 7 days that include 10/5 (9.89K unique searches = 7.27K week of 9/28 + 2.63K week of 10/5), not 9/28–10/4",
+   "missing": [
+    "Popular searches with counts for 9/28–10/4",
+    "Search click-through and conversion by term"
+   ],
+   "zero_result_terms": [
+    [
+     "hooters",
+     82
+    ],
+    [
+     "mystery",
+     58
+    ],
+    [
+     "10 pack",
+     19
+    ],
+    [
+     "hooter",
+     16
+    ],
+    [
+     "blow pop",
+     15
+    ],
+    [
+     "711",
+     13
+    ],
+    [
+     "liquid death",
+     11
+    ],
+    [
+     "modelo",
+     11
+    ],
+    [
+     "mystery box",
+     11
+    ],
+    [
+     "pa",
+     11
+    ]
+   ]
+  }
+ }
+}

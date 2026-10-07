@@ -58,7 +58,7 @@ to upload them (screenshot or export) and skips the section if you don't have th
 ## Quick per-agent view
 
 - **Every agent:** Polar (required).
-- **Weekly agents** (`/ecom-review`, `/ecom-ads`, `/ecom-retention`, `/ecom-merch`,
+- **Weekly agents** (`/ecom-review`, `/ecom-ads`, `/ecom-retention`,
   `/ecom-pricing`, `/ecom-cro`, `/ecom-finance`): a mounted folder for saves/logs;
   Asana only if you opt in when offered.
 - **`/ecom-returns`:** Polar (`loop-returns` connector) for the settled economics (§1–4)
@@ -75,6 +75,14 @@ to upload them (screenshot or export) and skips the section if you don't have th
   cross-check) + **GA4 via Polar** (for the onsite YoY, since the Polar Pixel has no last
   year) — **no new connector beyond what's already listed**. Daily (T-1), **files-only**:
   it hands back HTML + PDF into the chat and never pushes, publishes, or emails; no Asana.
+- **`/ecom-merch`** (weekly merch deck): Polar (pixel, Shopify, GA4) + **Shopify**
+  (collection titles, product images, inventory snapshot) + **Klaviyo** (email sends) —
+  all required. Manual uploads at intake: Microsoft Clarity area exports + click maps,
+  AfterSell export + order-browser and test screenshots, Searchspring exports, the Asana
+  marketing-calendar screenshot, homepage screenshots. Missing uploads are flagged on
+  their slide, never filled in. Needs Node (`pptxgenjs`, installed on first run) and,
+  for product thumbnails, network access to `cdn.shopify.com`. Output: a .pptx saved to
+  `reports/ecom-merch/<week>/`; no Asana.
 - **`/ecom-forecast`:** Polar + the "PSD - Polar Targets" sheet; outputs Excel (no Asana).
 - **`/ecom-sale-recap`:** Polar + user-supplied AfterSell/Rokt/Tapcart; in-chat only
   (no Asana).
