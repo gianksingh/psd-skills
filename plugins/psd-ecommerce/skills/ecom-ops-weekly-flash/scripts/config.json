@@ -1,0 +1,40 @@
+{
+  "_doc": "Ecom Ops Weekly Flash settings. Edit thresholds here, never inside a run.",
+  "timezone": "America/Los_Angeles",
+  "forecast": {"tab": "Daily Forecast", "header_row": 3},
+  "loop_tab_fallback": "Loop Returns data (all time)",
+  "web_channels": ["Online Store", "Mobile App", "Shop App", "Fermat", "Facebook"],
+  "tts_channel": "TikTok Shop",
+  "sla": {"business_hours": [7, 15], "ticket_hours": 8, "sms_hours": 2, "exclude_channels": ["phone"],
+          "_doc": "First reply within 8 business hours (SMS within 2). Business hours Mon-Fri 7am-3pm PT. Gorgias export assumed PT."},
+  "retently": {"csat_campaign": "CSAT: Ticket Solved - Email", "delivery_campaign": "DSAT: US Delivery Service Experience"},
+  "gorgias": {
+    "date_format": "%m/%d/%Y %H:%M",
+    "reason_map": {
+      "noise_reason": "SPAM|NO NEED TO RESPOND|POSTSCRIPT|SOLICITATION",
+      "noise_tags": "solicitation_spam|auto-close|non-support-related",
+      "delivery": [
+        ["Where is my order", ["TRACKING INFORMATION", "STATUS OF ORDER", "DELAY::"]],
+        ["Delivered, not received", ["DELIVERED NOT RECEIVED", "DELIVERED::NOT RECEIVED"]],
+        ["Lost in transit", ["LOST IN TRANSIT"]],
+        ["Missing items", ["MISSING", "PARTIAL SHIPMENT"]],
+        ["Wrong item / size", ["WRONG"]],
+        ["Damaged", ["DAMAGED"]]
+      ]
+    }
+  },
+  "thresholds": {
+    "_doc": "[amber, red]. 'lo' = lower is worse, 'hi' = higher is worse. Ratios are vs last year (0.25 = 25% above).",
+    "orders_vs_plan_pct": ["lo", -5, -15],
+    "tickets_vs_plan_pct": ["hi", 10, 20],
+    "order_contact_rate_vs_ly": ["hi", 0.10, 0.25],
+    "human_sla_pct": ["lo", 95, 90],
+    "order_to_fulfill_hrs": ["hi", 24, 48],
+    "unfulfilled_2bd": ["hi", 50, 200],
+    "order_to_delivery_days_vs_ly": ["hi", 1, 2],
+    "delivery_rate_vs_ly": ["hi", 0.10, 0.25],
+    "nps_pts_vs_ly": ["lo", -5, -10],
+    "csat_pts_vs_ly": ["lo", -5, -10],
+    "returns_days_to_process": ["hi", 9, 10]
+  }
+}

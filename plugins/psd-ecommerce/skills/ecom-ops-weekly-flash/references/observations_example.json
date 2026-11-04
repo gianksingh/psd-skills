@@ -1,0 +1,40 @@
+{
+  "_doc": "Written by the run after compute.py (SKILL.md §4). exec_items: exactly 3. headlines/callouts: optional overrides keyed by slide id (tripwires, volume, fulfillment, cs, voc, returns, return_trends, issues). notes: bulleted speaker notes per slide id, facts then interpretation, each under 260 characters. issues_extra: watch items for the log. last_week_open: carried items from intake.",
+  "exec_items": [
+    {"head": "Tickets ran 24% over plan while orders ran 26% under it", "body": "Web order contact rate is 13.6% (same week LY: 9.8%); TikTok Shop is 6.5% (3.4%). At this pace Thanksgiving week lands near 2,433 tickets vs 1,755 planned.", "slide": "SLIDES 03, 05"},
+    {"head": "Web where-is-my-order rate is 1.48% of orders vs 0.84% LY (+76%)", "body": "The DC ships in a median 21 hours (LY: 20), but delivery takes 7 days vs 6. The missing + wrong-item rate nearly doubled (0.46% vs 0.24%).", "slide": "SLIDE 04"},
+    {"head": "NPS is 48 over 4 weeks vs 73 LY, and the drop sits in online-store orders", "body": "Online-store orders scored 25 (was 62), first-time and repeat alike; app orders held at 89. Customers who contacted CS scored -8. Delivery time did not change.", "slide": "SLIDE 06"}
+  ],
+  "headlines": {
+    "volume": "Tickets ran 24% over plan on 26% fewer orders; at this pace Thanksgiving week needs ~2,433 tickets handled vs 1,755 planned"
+  },
+  "callouts": {},
+  "notes": {
+    "tripwires": ["Thresholds: same week or same 4 weeks LY, plus fixed targets in config.json. Pending ops sign-off.",
+                  "Where-is-my-order row is web only, adjusted for the share of tickets with a reason (92% labeled now vs 78% LY).",
+                  "Order to delivery is amber, not red: the delivery-time distribution barely moved year over year (see slide 04 notes)."],
+    "volume": ["TikTok Shop forecast is a flat 345 orders/day; the Oct 5–18 TikTok spike (4.9K and 4.4K orders/week) was never in the plan.",
+               "Nov 1 promo: 1,204 web orders vs 2,563 planned (47%). Mon–Sat web ran 26% under plan, so the miss is not only the promo day.",
+               "Interpretation: ticket demand is running ahead of order volume; staffing is planned on orders."],
+    "fulfillment": ["All-channel where-is-my-order (1.25% vs 0.49%, 2.6x) overstates the jump: TikTok Shop WISMO 16 to 168 as its Gorgias volume doubled; 20% of LY tickets unlabeled vs 7% now.",
+                    "Like-for-like (web only, labeling-adjusted): 1.48% vs 0.84%, +76%. Still a real increase.",
+                    "95% of where-is-my-order contacts arrive before delivery, a median 6 days after the order ships.",
+                    "Fulfillment to first carrier scan is about 1 day, so tracking shows nothing the first day after the ship email.",
+                    "Delivery speed barely moved: deliveries over 7 days 29.8% vs 26.2% LY; over 9 days 6.2% vs 6.0%.",
+                    "Mail Innovations is ~39% of shipments but 65% of delivery-complaint orders and 81% of lost-in-transit.",
+                    "Interpretation: customers expect faster than the 6–7 day Standard reality; check what the site and ship email promise."],
+    "cs": ["Chat where-is-my-order tickets 160 vs 68 LY; the AI agent closes 44% of them without a human.",
+           "Human reply time after an AI handoff is not in the ticket export; handoff tickets carry the lowest CSAT (40%)."],
+    "voc": ["Order mix of online-store respondents did not change: youth share, mystery packs, discount codes, upsells, order value, delivery time.",
+            "Shift is promoters to detractors (online: detractors 15% to 33%, passives flat): one-off bad experiences.",
+            "Customer Service topic share among online responses 12% to 27%; respondents who contacted CS scored -8 (n=13)."],
+    "returns": ["254 return labels expired in the last 35 days without being shipped back."],
+    "return_trends": ["Wrong-item returns rising while total returns fall lines up with the missing + wrong-item ticket rate (0.46% vs 0.24%)."]
+  },
+  "issues_extra": [
+    {"text": "Delivered-not-received tickets close with no outcome recorded (Resolution field empty)", "slide": "04"},
+    {"text": "3,513 fulfillments (42%) carry no shipping service in Shopify, so delivery time by service is incomplete", "slide": "04"},
+    {"text": "92 returns delivered to the DC and not processed", "slide": "07"}
+  ],
+  "last_week_open": []
+}
