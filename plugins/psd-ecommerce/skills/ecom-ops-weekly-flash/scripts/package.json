@@ -1,0 +1,6 @@
+{
+  "name": "ecom-ops-weekly-flash-deck",
+  "private": true,
+  "description": "Renderer dependency for the /ecom-ops-weekly-flash deck",
+  "dependencies": { "pptxgenjs": "4.0.1" }
+}

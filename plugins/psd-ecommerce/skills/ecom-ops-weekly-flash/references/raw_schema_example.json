@@ -1,0 +1,478 @@
+{
+ "orders_weekly_cy": {
+  "2026-08-31": {
+   "web": 6274,
+   "tts": 1928
+  },
+  "2026-09-07": {
+   "web": 5657,
+   "tts": 1549
+  },
+  "2026-09-14": {
+   "web": 6418,
+   "tts": 1864
+  },
+  "2026-09-21": {
+   "web": 6055,
+   "tts": 1935
+  },
+  "2026-09-28": {
+   "web": 6498,
+   "tts": 2369
+  },
+  "2026-10-05": {
+   "web": 5932,
+   "tts": 4906
+  },
+  "2026-10-12": {
+   "web": 6100,
+   "tts": 4365
+  },
+  "2026-10-19": {
+   "web": 5888,
+   "tts": 2484
+  },
+  "2026-10-26": {
+   "web": 6346,
+   "tts": 2533
+  }
+ },
+ "orders_weekly_ly": {
+  "2025-09-01": {
+   "web": 7862,
+   "tts": 1762
+  },
+  "2025-09-08": {
+   "web": 6115,
+   "tts": 2385
+  },
+  "2025-09-15": {
+   "web": 6038,
+   "tts": 2848
+  },
+  "2025-09-22": {
+   "web": 5983,
+   "tts": 2735
+  },
+  "2025-09-29": {
+   "web": 6860,
+   "tts": 3206
+  },
+  "2025-10-06": {
+   "web": 7009,
+   "tts": 2928
+  },
+  "2025-10-13": {
+   "web": 6845,
+   "tts": 3284
+  },
+  "2025-10-20": {
+   "web": 6373,
+   "tts": 3196
+  },
+  "2025-10-27": {
+   "web": 7107,
+   "tts": 2986
+  },
+  "2025-11-03": {
+   "web": 8829,
+   "tts": 2616
+  },
+  "2025-11-10": {
+   "web": 9027,
+   "tts": 2011
+  },
+  "2025-11-17": {
+   "web": 16156,
+   "tts": 2117
+  },
+  "2025-11-24": {
+   "web": 31940,
+   "tts": 2722
+  }
+ },
+ "orders_daily_week": {
+  "2026-10-26": {
+   "web": 745,
+   "tts": 290
+  },
+  "2026-10-27": {
+   "web": 893,
+   "tts": 354
+  },
+  "2026-10-28": {
+   "web": 752,
+   "tts": 355
+  },
+  "2026-10-29": {
+   "web": 996,
+   "tts": 414
+  },
+  "2026-10-30": {
+   "web": 847,
+   "tts": 443
+  },
+  "2026-10-31": {
+   "web": 907,
+   "tts": 352
+  },
+  "2026-11-01": {
+   "web": 1204,
+   "tts": 325
+  }
+ },
+ "fulfillment_weekly": {
+  "_cols": "orders_fulfilled, median_hours_order_to_fulfillment, median_days_order_to_delivery, orders_delivered_fast_rate",
+  "cy": {
+   "2026-09-07": [
+    8377,
+    37,
+    7,
+    0.193
+   ],
+   "2026-09-14": [
+    8277,
+    19,
+    7,
+    0.273
+   ],
+   "2026-09-21": [
+    7926,
+    20,
+    6,
+    0.418
+   ],
+   "2026-09-28": [
+    7787,
+    20,
+    6,
+    0.386
+   ],
+   "2026-10-05": [
+    10199,
+    29,
+    6,
+    0.324
+   ],
+   "2026-10-12": [
+    10446,
+    31,
+    7,
+    0.25
+   ],
+   "2026-10-19": [
+    10052,
+    33,
+    7,
+    0.209
+   ],
+   "2026-10-26": [
+    8434,
+    21,
+    7,
+    0.347
+   ]
+  },
+  "ly": {
+   "2025-09-08": [
+    7643,
+    15,
+    7,
+    0.234
+   ],
+   "2025-09-15": [
+    9178,
+    22,
+    6,
+    0.381
+   ],
+   "2025-09-22": [
+    8752,
+    19,
+    6,
+    0.321
+   ],
+   "2025-09-29": [
+    9150,
+    31,
+    6,
+    0.317
+   ],
+   "2025-10-06": [
+    10112,
+    36,
+    7,
+    0.253
+   ],
+   "2025-10-13": [
+    9638,
+    23,
+    7,
+    0.28
+   ],
+   "2025-10-20": [
+    10079,
+    25,
+    6,
+    0.316
+   ],
+   "2025-10-27": [
+    8718,
+    20,
+    6,
+    0.312
+   ]
+  }
+ },
+ "fulfillment_by_service_week": [
+  {
+   "service": "UPS Mail Innovations Expedited",
+   "fulfilled": 3081,
+   "hrs": 22,
+   "days": 6
+  },
+  {
+   "service": "UPS Ground Saver",
+   "fulfilled": 1647,
+   "hrs": 19,
+   "days": 7
+  },
+  {
+   "service": "UPS Next Day Air",
+   "fulfilled": 69,
+   "hrs": 15,
+   "days": 1
+  },
+  {
+   "service": "UPS 2nd Day Air",
+   "fulfilled": 49,
+   "hrs": 15,
+   "days": 4
+  },
+  {
+   "service": "USPS Priority Mail",
+   "fulfilled": 36,
+   "hrs": 14.5,
+   "days": 5
+  },
+  {
+   "service": "UPS Ground + other",
+   "fulfilled": 39,
+   "hrs": 52,
+   "days": 7
+  },
+  {
+   "service": "Service not recorded in Shopify",
+   "fulfilled": 3513,
+   "hrs": 22,
+   "days": 6
+  }
+ ],
+ "loop_reason_amount_4wk": {
+  "cy": {
+   "Item Did Not Fit": 19345.91,
+   "Other": 6900.69,
+   "I Didn't Like The Item": 4637.07,
+   "Received Wrong Item": 1815.85,
+   "Item Is Damaged": 75.84
+  },
+  "ly": {
+   "Item Did Not Fit": 29862.58,
+   "Other": 9586.7,
+   "I Didn't Like The Item": 6660.95,
+   "Received Wrong Item": 1188.56,
+   "Item Is Damaged": 338.86
+  }
+ },
+ "loop_cohort_return_rate": {
+  "cy": {
+   "orders": 31666,
+   "returned": 797,
+   "rate": 0.02517,
+   "unit_rate": 0.01743
+  },
+  "ly": {
+   "orders": 35699,
+   "returned": 806,
+   "rate": 0.02258,
+   "unit_rate": 0.01768
+  },
+  "_window": "orders placed Sep 7 - Oct 4 2026 vs Sep 8 - Oct 5 2025"
+ },
+ "loop_top_products": [
+  [
+   "Solids 3 Pack - Black",
+   66,
+   1666
+  ],
+  [
+   "Ghost Face - Dark",
+   31,
+   1487
+  ],
+  [
+   "Solids - Black",
+   27,
+   1376
+  ],
+  [
+   "Ghost Face - After Hours",
+   22,
+   1004
+  ],
+  [
+   "Modal Solids - Black",
+   20,
+   449
+  ],
+  [
+   "6 Pack - Tropic Rush",
+   19,
+   668
+  ],
+  [
+   "Scooby-Doo - Fright",
+   17,
+   671
+  ],
+  [
+   "Half Skelly",
+   16,
+   492
+  ],
+  [
+   "Solids 6 Pack - Dark Tones",
+   16,
+   897
+  ],
+  [
+   "Ghost Face - Call Me",
+   14,
+   458
+  ]
+ ],
+ "tickets_weekly_polar": {
+  "_note": "Polar Gorgias connector, tickets created; web = all channels except tiktok-shop",
+  "cy": {
+   "2026-09-07": [
+    842,
+    214
+   ],
+   "2026-09-14": [
+    925,
+    208
+   ],
+   "2026-09-21": [
+    863,
+    142
+   ],
+   "2026-09-28": [
+    841,
+    163
+   ],
+   "2026-10-05": [
+    847,
+    153
+   ],
+   "2026-10-12": [
+    868,
+    222
+   ],
+   "2026-10-19": [
+    928,
+    203
+   ],
+   "2026-10-26": [
+    865,
+    165
+   ]
+  },
+  "ly": {
+   "2025-09-29": [
+    808,
+    173
+   ],
+   "2025-10-06": [
+    835,
+    78
+   ],
+   "2025-10-13": [
+    699,
+    98
+   ],
+   "2025-10-20": [
+    681,
+    97
+   ],
+   "2025-10-27": [
+    693,
+    101
+   ],
+   "2025-11-03": [
+    797,
+    97
+   ],
+   "2025-11-10": [
+    805,
+    71
+   ],
+   "2025-11-17": [
+    1136,
+    68
+   ],
+   "2025-11-24": [
+    1686,
+    137
+   ],
+   "2025-12-01": [
+    1906,
+    89
+   ]
+  }
+ },
+ "shipping_chosen_week": [
+  {
+   "svc": "Standard",
+   "orders": 8200,
+   "ships_as": "UPS Mail Innovations, Ground Saver",
+   "ship": "19\u201322h",
+   "deliver": "6\u20137d"
+  },
+  {
+   "svc": "Express",
+   "orders": 535,
+   "ships_as": "UPS 2nd Day Air",
+   "ship": "15h",
+   "deliver": "4d"
+  },
+  {
+   "svc": "Next-Day",
+   "orders": 85,
+   "ships_as": "UPS Next Day Air",
+   "ship": "15h",
+   "deliver": "1d"
+  },
+  {
+   "svc": "International",
+   "orders": 57,
+   "ships_as": "UPS Worldwide Expedited",
+   "ship": "n/a",
+   "deliver": "n/a"
+  }
+ ],
+ "fulfilled_total_week": 8434,
+ "unfulfilled_open": {
+  "count": 15,
+  "asof": "2026-11-04",
+  "_doc": "open orders unfulfilled 2+ business days (created before the last 2 business days), Shopify ordersCount by created_at window"
+ },
+ "loop_open_stage": {
+  "label_not_shipped": 274,
+  "in_transit": 61,
+  "delivered_awaiting_processing": 92,
+  "no_label": 5,
+  "expired_last_35d": 254,
+  "asof": "2026-11-04"
+ },
+ "_doc": "Example raw pulls for week 2026-10-26 (real values). Keys and nesting are the contract compute.py reads. Week keys are Monday dates. web = Online Store + Mobile App + Shop App + Fermat + Facebook (Polar custom_5794); tts = TikTok Shop."
+}
