@@ -28,7 +28,7 @@ OW = [WK0 - timedelta(weeks=i) for i in range(3, -1, -1)]    # the 4 week starts
 raw = json.load(open(need(f"{RUN}/data/raw_{WS}.json")))
 for k in ["orders_weekly_cy", "orders_weekly_ly", "orders_daily_week", "tickets_weekly_polar", "fulfillment_weekly",
           "fulfillment_by_service_week", "fulfilled_total_week", "shipping_chosen_week", "unfulfilled_open", "loop_open_stage",
-          "loop_reason_amount_4wk", "loop_cohort_return_rate", "loop_top_products"]:
+          "loop_reason_amount_4wk", "loop_cohort_return_rate", "loop_top_products", "loop_at_dc"]:
     if k not in raw: die(f"raw_{WS}.json is missing key '{k}'")
 M = {"week_start": WS, "week_end": str(WK1.date()), "issues": [], "missing": []}
 def r1(x, n=1):
@@ -260,6 +260,33 @@ M["ret_weekly"] = [{"wk": key(w), **{k: v for k, v in ret_block(w, w + timedelta
 asof = pd.Timestamp(raw["loop_open_stage"]["asof"])
 op = L[L.proc.isna() & (L["sub"] >= asof - timedelta(days=30))].copy(); op["age"] = (asof - op["sub"]).dt.days
 M["ret_age"] = {"0-7 days": int((op.age <= 7).sum()), "8-14 days": int(op.age.between(8, 14).sum()), "15-22 days": int(op.age.between(15, 22).sum()), "23-30 days": int(op.age.between(23, 30).sum())}
+
+# Returns delivered to the DC and not processed: aging by days since RECEIVED when inputs/dc_received.csv exists,
+# else by days since submitted (Loop exposes no received date via export, MCP or Polar). Flagged = held for review in Loop.
+ad = pd.DataFrame(raw["loop_at_dc"]["rows"]); asof_dc = pd.Timestamp(raw["loop_at_dc"]["asof"])
+ad["created"] = pd.to_datetime(ad["created"]); ad["flagged"] = ad["flagged"].astype(bool)
+rcv_p = f"{RUN}/inputs/dc_received.csv"; basis = "submitted"
+if os.path.exists(rcv_p):
+    rc = pd.read_csv(rcv_p); rc["Received Date"] = pd.to_datetime(rc["Received Date"], errors="coerce")
+    k = "Return ID" if "Return ID" in rc.columns and "id" in ad.columns else "Order Name"
+    ad["_k"] = ad["id"].astype(str) if k == "Return ID" else ad["order"].astype(str)
+    ad = ad.merge(rc.assign(_k=rc[k].astype(str))[["_k", "Received Date"]], on="_k", how="left")
+    if ad["Received Date"].notna().mean() >= 0.8: basis = "received"
+    else: M["issues"].append(f"dc_received.csv matched only {ad['Received Date'].notna().mean():.0%} of at-DC returns; aging uses days since submitted")
+    # days to process from receipt, for returns processed in the last 4 weeks
+    jk = "Order Name" if "Order Name" in rc.columns else "Return ID"
+    Lr = L.merge(rc[[jk, "Received Date"]], on=jk, how="left")
+    pr = Lr[(Lr.proc >= W4[0]) & (Lr.proc < W4[1] + timedelta(days=1)) & Lr["Received Date"].notna()]
+    M["ret_4w"]["days_from_received_med"] = r1(((pr.proc - pr["Received Date"]).dt.total_seconds() / 86400).median())
+ref = ad["Received Date"] if basis == "received" else ad["created"]
+ad["age"] = (asof_dc - ref).dt.days.clip(lower=0)
+bins = ([-1, 2, 5, 10, 9999], ["0-2 days", "3-5 days", "6-10 days", "11+ days"]) if basis == "received" else ([-1, 7, 14, 30, 9999], ["0-7 days", "8-14 days", "15-30 days", "31+ days"])
+ad["b"] = pd.cut(ad.age, bins[0], labels=bins[1])
+M["at_dc"] = {"basis": basis, "n": int(len(ad)), "flagged": int(ad.flagged.sum()), "asof": str(asof_dc.date()),
+              "buckets": [{"label": lb, "waiting": int(((ad.b == lb) & ~ad.flagged).sum()), "flagged": int(((ad.b == lb) & ad.flagged).sum())} for lb in bins[1]],
+              "oldest_label": bins[1][-1], "oldest_n": int((ad.b == bins[1][-1]).sum()), "oldest_flagged": int(((ad.b == bins[1][-1]) & ad.flagged).sum()),
+              "median_age": r1(ad.age.median(), 0)}
+if basis == "submitted": M["missing"].append("DC received dates (at-DC aging shown by days since submitted)")
 
 # ------------------------------------------------------------------ fulfillment (ShopifyQL)
 fc = raw["fulfillment_weekly"]["cy"]; fl = raw["fulfillment_weekly"]["ly"]

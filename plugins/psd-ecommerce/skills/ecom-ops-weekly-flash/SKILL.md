@@ -11,7 +11,7 @@ description: >
   Google Slides) with tripwires, What changed / Why / Next steps boxes, an ops-manager context box,
   an open-issues log, and bulleted speaker notes.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   agent_handle: ecom-ops-weekly-flash
 ---
 
@@ -24,7 +24,7 @@ metadata:
 
 - **Command:** `/ecom-ops-weekly-flash [week_start]` (Monday, YYYY-MM-DD; default = last full Mon–Sun week).
 - **Who runs it:** the CS & operations manager, Monday or Tuesday, for the last full week. Peak season (Q4) purpose: catch what needs fixing, investigating or escalating before it grows.
-- **Data:** Polar MCP (orders, Gorgias ticket volume, Loop reasons/products), Shopify MCP (ShopifyQL fulfillments, GraphQL customer lookup for NPS, unfulfilled counts), Loop MCP (open-return stages), plus four uploads (§1).
+- **Data:** Polar MCP (orders, Gorgias ticket volume, Loop reasons/products), Shopify MCP (ShopifyQL fulfillments, GraphQL customer lookup for NPS, unfulfilled counts), Loop MCP (open-return stages, returns at the DC), plus the uploads requested at intake (§1). Data pulls start only after the intake gate passes.
 - **What the run writes:** numbers, charts, one headline per slide, the three "things to know", speaker notes, issues. **What it never writes:** recommendations or action items on the slides. The What changed / Why / Next steps boxes and the ops-manager context box stay empty for the presenter.
 - **Definitions:** `references/metric-bible.md` is the source of truth. Read it in full before the first query.
 - **Shared protocol:** follow `${CLAUDE_PLUGIN_ROOT}/shared/run-protocol.md` §5 (save), §6 (log) and §7 (hand back), adapted to a .pptx. Skip §4 (HTML) and §8 (Asana).
@@ -42,20 +42,34 @@ cd "$SKILL/scripts" && [ -d node_modules/pptxgenjs ] || npm install --silent --n
 cd "$RUN"
 ```
 
-## 1. Intake (always first, one message, as a checklist)
+## 1. Intake gate (nothing else happens until this passes)
 
-Ask for everything below, wait, then confirm what arrived and what's missing.
+**Hard rule:** before the intake gate passes, do not call Polar, Shopify, Loop or any other data tool, do not run compute or build scripts, and do not draft headlines. The only things allowed are steps 1a–1d below. Never show a partial deck and then ask for data.
 
-1. **Reporting week** (Mon–Sun). Default the most recent full week; confirm dates.
-2. **Gorgias ticket export, this year** → `inputs/gorgias_cy.csv`. Ticket-level CSV covering the last 4 weeks **through Sunday** (columns as in Gorgias' standard export incl. Ticket Reason, AI Agent Outcome, Order Number, First response / Resolution time).
-3. **Gorgias ticket export, same 4 weeks last year** → `inputs/gorgias_ly.csv`.
-4. **Retently export** → `inputs/retently.csv`. All campaigns, response level, from 13 weeks before the week through Sunday, plus the same 4 weeks last year.
-5. **Q4 Staffing Forecast workbook** → `inputs/forecast.xlsx` (needs the `Daily Forecast` tab).
-6. **Loop returns export** → `inputs/loop_returns.csv` (or the `Loop Returns data (all time)` tab inside the forecast workbook).
-7. **Last week's open items** from the issues log (an empty list is fine). They go first in this week's log.
-8. **Anything to call out** (promos, outages, staffing changes). These go in speaker notes, not headlines.
+**1a. First reply = one intake message.** Work out the default week (most recent full Mon–Sun), run
+`python3 -I "$SKILL/scripts/check_inputs.py" "$RUN" <default week_start> --windows-only` and send ONE message containing:
 
-Missing items: carry on, record them in `observations.missing`, and they print on the summary and as INPUT MISSING pills. **Never guess or fill a number.**
+1. **Reporting week.** "I'll report on Mon <date> – Sun <date>. Confirm or give another Monday."
+2. **Reporting windows** (paste the script's windows table so the user sees exactly which dates each slide uses): this week vs plan and vs prior week; same week last year; last 4 weeks vs the same 4 weeks last year; NPS prior 4 weeks; 13-week survey trend; next 4 weeks for the outlook. Ask: "Keep these windows?" (They are fixed by the harness; if the user wants different windows, say which slides that would change and stop for a decision. Do not hand-edit numbers.)
+3. **Files to upload** (none of these are reachable through a connector). List them exactly like this:
+   - **Gorgias – ticket export, this year:** Statistics/Tickets export (CSV), one row per ticket, **created <last-4-weeks start> through Sunday <week end>**, all channels. Must include: Ticket id, Tags, Channel, Creation date, Closed date, First response time (s), Resolution time (s), Customer email, Created by an agent, Ticket Field: Ticket Reason, Order Number, AI Agent Outcome, Resolution.
+   - **Gorgias – ticket export, last year:** same export, **same 4 weeks last year (<dates>)**.
+   - **Retently – response export:** all campaigns in one CSV (NPS post-fulfillment, CSAT ticket-solved, DSAT delivery), response level, **from <13-week trend start> through Sunday, plus <same 4 weeks LY>** (one export from the earlier date to Sunday is fine). Must include Email, Campaign, Metric, Main rating, Response date (ISO), Topics, Main open-ended, ticket_id.
+   - **CS staffing / volume forecast:** the current Q4 Staffing Forecast workbook (.xlsx) with the `Daily Forecast` tab covering the last 4 weeks and the next 4 weeks.
+   - **Loop – returns export:** CSV/XLSX with Return ID, Order Name, Return Submitted Date, Return Processed Date, Exchange Order Name, Refund, Exchange Item Total, covering at least the same 4 weeks last year through today (or the `Loop Returns data (all time)` tab in the forecast workbook).
+   - **Optional – DC received dates:** a file from Full Circle (or Loop, if your Loop plan can export it) with Order Name or Return ID and **Received Date** for returns received at the DC. With it, slide 07 ages unprocessed returns by days since receipt; without it, by days since submission (flagged INPUT MISSING).
+4. **Last week's open items** (paste or upload the previous issues log; "none" is fine).
+5. **Anything to call out** this week (promos, outages, staffing, carrier issues). These go in speaker notes.
+
+Then stop and wait for the reply.
+
+**1b. Save uploads** to `inputs/` with these exact names: `gorgias_cy.csv`, `gorgias_ly.csv`, `retently.csv`, `forecast.xlsx`, `loop_returns.csv` (or `.xlsx`), `dc_received.csv`.
+
+**1c. Preflight.** `python3 -I "$SKILL/scripts/check_inputs.py" "$RUN" "$WS"`. It checks every file exists, has the columns the harness reads, and covers its dates.
+- **PASS:** confirm back in two or three lines (week, files received, any WARN items such as no DC received dates), then go to §2 without waiting.
+- **FAIL:** send one short message listing only the FAIL lines and what to re-export, then wait. Do not pull data or build.
+
+**1d. Proceeding without a file** happens only when the user says so explicitly for that file. Record it in `observations.missing`; the affected slide prints INPUT MISSING. **Never guess or fill a number.**
 
 ## 2. Pull the connector data → `data/raw_<WS>.json`
 
@@ -72,6 +86,7 @@ Match the keys and nesting of `${SKILL}/references/raw_schema_example.json` exac
 | `shipping_chosen_week` | Polar `total_orders` by `custom_5902` (+`shipping_method`) for the week, web + TikTok channels; add `ships_as`, `ship`, `deliver` from the ShopifyQL service medians |
 | `unfulfilled_open` | Shopify `ordersCount` per bible §2 → `{count, asof}` |
 | `loop_open_stage` | Loop MCP `list-returns-tool` totals per bible §6 (limit 1, read the "of N" total) → `{label_not_shipped, in_transit, delivered_awaiting_processing, no_label, expired_last_35d, asof}` |
+| `loop_at_dc` | Loop MCP `list-returns-tool` with `status: ["open"]`, `label_status: ["delivered"]`, `day_limit: 60`, `limit: 100`, every page → `{asof, rows: [{id, order, created, flagged}]}` (flagged = "Yes" in the Flagged column) |
 | `loop_reason_amount_4wk` | Polar `return_amount` by `parent_return_reason`, last 4 weeks vs same 4 weeks LY |
 | `loop_cohort_return_rate`, `loop_top_products` | Polar Loop rates for orders placed 8–5 weeks ago vs LY; top 10 products by units returned (300+ sold) |
 
@@ -110,7 +125,7 @@ NODE_PATH="$SKILL/scripts/node_modules:$RUN/node_modules" OPS_ASSETS="$SKILL/ass
   node "$SKILL/scripts/build_deck.js" "data/deck_$WS.json" "build/PSD_Ecom_Ops_Weekly_Flash_${WS}.pptx"
 ```
 
-Slides (fixed order): 01 summary (three things to know, tripwire count, missing inputs) · 02 peak tripwires + ops-manager context box · 03 volume, plan and outlook · 04 fulfillment and delivery (shipping-service-chosen table) · 05 customer service (total, then web vs TikTok Shop; AI vs human; CSAT) · 06 voice of the customer (13-week trend, NPS cuts) · 07 returns pipeline · 08 return trends · 09 open issues log.
+Slides (fixed order): 01 summary (three things to know, tripwire count, missing inputs) · 02 peak tripwires + ops-manager context box · 03 volume, plan and outlook · 04 fulfillment and delivery (shipping-service-chosen table) · 05 customer service (total, then web vs TikTok Shop; AI vs human; CSAT) · 06 voice of the customer (13-week trend, NPS cuts) · 07 returns pipeline (stages + returns at the DC by days since received, or since submitted without the DC file; flagged split) · 08 return trends · 09 open issues log.
 
 ## 6. Check, then deliver
 

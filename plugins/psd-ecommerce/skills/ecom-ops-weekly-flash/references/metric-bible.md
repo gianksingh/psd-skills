@@ -1,6 +1,7 @@
 # Ecom Ops Weekly Flash: Metric Bible
 
-Version 1.0 (2026-11-04). Validated on the week of Mon 10/26/26 to Sun 11/1/26.
+Version 1.1 (2026-11-05). Validated on the week of Mon 10/26/26 to Sun 11/1/26.
+Changes in 1.1: returns at the DC aged by days since received (DC file) instead of days since submitted for all open returns; flagged split; new tripwire for the oldest at-DC bucket.
 Every run follows this file. If a definition can't be produced, the run flags the slide (INPUT MISSING) and does not substitute another metric.
 
 ## 0. Global
@@ -54,8 +55,9 @@ Order Protection claim codes are new in 2026 and are folded into the matching re
 
 ## 6. Returns (Loop)
 - Pipeline stages from Loop MCP `list-returns-tool` totals (`status: open` × `label_status`, `day_limit: 35`): label created not shipped (new, pre_transit), in transit (in_transit, out_for_delivery), delivered not processed (delivered), no label (no_label, failure); expired = `status: expired`, `day_limit: 35`.
-- Submitted, processed, days to process (median submitted→processed), exchange share and $, refunds $ from the Loop export, last 4 weeks vs same 4 weeks LY. Unprocessed age buckets from submissions in the last 30 days with no processed date.
+- Submitted, processed, days to process (median submitted→processed), exchange share and $, refunds $ from the Loop export, last 4 weeks vs same 4 weeks LY. **Returns at the DC, not processed** = Loop MCP open returns with label status delivered (`day_limit: 60`, all pages). Aged by **days since received** (0–2, 3–5, 6–10, 11+) when `inputs/dc_received.csv` (Full Circle receiving log or a Loop export with the label delivered date) is supplied; otherwise by days since submitted (0–7, 8–14, 15–30, 31+) and the slide shows INPUT MISSING. Split waiting vs flagged in Loop (flagged = held for review, e.g. refund mismatch). Data limit: Loop's returns export, Loop MCP and Polar's Loop connector carry no received/delivered timestamp; the per-return timeline shows carrier updates without the status text.
 - Reasons and products from Polar's Loop connector: `generated_root_loop_returns.raw.return_amount` by `parent_return_reason` (by return date); `unit_return_rate`, `units_returned`, `units_sold` by `product_title` (orders placed 8–5 weeks ago, 300+ units sold). Product × reason: `product_title` + `parent_return_reason`.
 
 ## 7. Tripwires
+Tripwire `returns_at_dc_oldest` counts returns in the oldest at-DC bucket (amber 10+, red 25+).
 Thresholds live in `scripts/config.json` (`thresholds`), as [amber, red]. Change them there only, after ops sign-off. Order to delivery stays a day-difference vs LY rule.

@@ -52,7 +52,8 @@ rows = [
  dict(metric="Missing + wrong-item rate", value=p2(acc["cy"]), cmp=f"Same 4 wks LY: {p2(acc['ly'])}", rule="25%+ above LY", status=st("delivery_rate_vs_ly", ratio(acc["cy"], acc["ly"])), trend=[x["acc_r"] for x in M["deliv_weekly"]], slide="04"),
  dict(metric="NPS, rolling 4 weeks", value=f"{V['nps'][0]}", cmp=f"Same 4 wks LY: {V['nps_ly'][0]}", rule="10+ pts below LY", status=st("nps_pts_vs_ly", V["nps"][0] - V["nps_ly"][0]), trend=M["nps_r4"][-4:], slide="06"),
  dict(metric="CSAT, rolling 4 weeks", value=f"{V['csat'][0]}%", cmp=f"Same 4 wks LY: {V['csat_ly'][0]}%", rule="10+ pts below LY", status=st("csat_pts_vs_ly", V["csat"][0] - V["csat_ly"][0]), trend=M["csat_r4"][-4:], slide="06"),
- dict(metric="Returns: median days to process", value=f"{M['ret_4w']['days_med']}", cmp=f"Same 4 wks LY: {M['ret_4w_ly']['days_med']}", rule="Over 10 days", status=st("returns_days_to_process", M["ret_4w"]["days_med"]), trend=[x["days_med"] for x in M["ret_weekly"]], slide="07"),
+ dict(metric="Returns: median days to process", value=f"{M['ret_4w']['days_med']}", cmp=f"Same 4 wks LY: {M['ret_4w_ly']['days_med']} (from submission)", rule="Over 10 days", status=st("returns_days_to_process", M["ret_4w"]["days_med"]), trend=[x["days_med"] for x in M["ret_weekly"]], slide="07"),
+ dict(metric=f"Returns at the DC {M['at_dc']['oldest_label']} unprocessed", value=f"{M['at_dc']['oldest_n']}", cmp=f"{M['at_dc']['oldest_flagged']} flagged in Loop; {M['at_dc']['n']} at DC in total", rule="Over 25", status=st("returns_at_dc_oldest", M["at_dc"]["oldest_n"]), trend=[], slide="07"),
 ]
 nred, namb, ngrn = (sum(r["status"] == s for r in rows) for s in ("red", "amber", "green"))
 NC = M["nps_cuts"]; on_cut, app_cut = NC["Online store orders"], NC["App orders (Tapcart)"]
@@ -169,23 +170,24 @@ slides.append(dict(type="finding", id="voc", sec="05", kicker="Voice of the cust
   notes=OBS.get("notes", {}).get("voc", [])))
 
 # 7 returns pipeline
-stg = RAW["loop_open_stage"]; R4, RL, age = M["ret_4w"], M["ret_4w_ly"], M["ret_age"]
+stg = RAW["loop_open_stage"]; R4, RL, AD = M["ret_4w"], M["ret_4w_ly"], M["at_dc"]
+by_rcv = AD["basis"] == "received"
+dproc = f"{R4['days_from_received_med']} days from receipt" if by_rcv and R4.get("days_from_received_med") is not None else f"{R4['days_med']} days median (from submission)"
 slides.append(dict(type="finding", id="returns", sec="06", kicker="Returns pipeline", pill="WEB · LOOP", jamie=True,
-  headline=H.get("returns", f"Returns process in {R4['days_med']} days vs {RL['days_med']} LY; {stg['delivered_awaiting_processing']} returns sit at the DC unprocessed and {age['23-30 days']} labels are 23–30 days old"),
-  callout=CO.get("returns"), footer=foot(f"Loop returns export + Loop status by label stage, as of {pd.Timestamp(stg['asof']):%b %-d} · TikTok Shop returns are handled in TikTok"),
-  body=dict(layout="card_side", rsplit=0.46,
-   left=dict(kind="funnel", title=f"RETURNS BY STAGE · OPEN AS OF {pd.Timestamp(stg['asof']):%b %-d}, THEN LAST 4 WEEKS".upper(), rw=2.3, steps=[
+  missing=[] if by_rcv else ["DC received dates"],
+  headline=H.get("returns", f"{AD['n']} returns sit at the DC unprocessed; {AD['oldest_n']} have waited {AD['oldest_label']} since {'receipt' if by_rcv else 'submission'}, {AD['oldest_flagged']} of them flagged in Loop"),
+  callout=CO.get("returns"), footer=foot(f"Loop returns export + Loop status by label stage, as of {pd.Timestamp(AD['asof']):%b %-d} · TikTok Shop returns are handled in TikTok"),
+  body=dict(layout="two_cards", split=0.52,
+   left=dict(kind="funnel", title=f"RETURNS BY STAGE · OPEN AS OF {pd.Timestamp(AD['asof']):%b %-d}, THEN LAST 4 WEEKS".upper(), rw=2.3, steps=[
       {"label": "Label created, not shipped", "value": stg["label_not_shipped"], "display": f0(stg["label_not_shipped"]), "rate": "Customer has not sent it yet"},
       {"label": "In transit to DC", "value": stg["in_transit"], "display": f0(stg["in_transit"]), "rate": "On the way back"},
-      {"label": "Delivered to DC, not processed", "value": stg["delivered_awaiting_processing"], "display": f0(stg["delivered_awaiting_processing"]), "rate": "Waiting on the DC"},
-      {"label": "Processed, last 4 weeks", "value": R4["processed"], "display": f0(R4["processed"]), "rate": f"{R4['days_med']} days median"},
+      {"label": "Delivered to DC, not processed", "value": AD["n"], "display": f0(AD["n"]), "rate": f"{AD['flagged']} flagged in Loop"},
+      {"label": "Processed, last 4 weeks", "value": R4["processed"], "display": f0(R4["processed"]), "rate": dproc},
       {"label": "Expired labels, last 35 days", "value": stg["expired_last_35d"], "display": f0(stg["expired_last_35d"]), "rate": "Never shipped back"}]),
-   right=[dict(kind="statrow", title="LAST 4 WEEKS VS SAME 4 WEEKS LY", items=[
-             {"value": f"{R4['submitted']}", "label": "Submitted", "sub": f"LY: {RL['submitted']}"},
-             {"value": f"{R4['exch_share']:.0f}%", "label": "Exchanges", "sub": f"LY: {RL['exch_share']:.0f}%"},
-             {"value": f"${R4['refund_usd']/1000:.1f}K", "label": "Refunds", "sub": f"Exch. ${R4['exch_usd']/1000:.1f}K (LY ${RL['exch_usd']/1000:.1f}K)"}]),
-          dict(kind="hbars", title="NOT YET PROCESSED, BY DAYS SINCE SUBMITTED", items=[{"label": k, "value": v, "display": f0(v), "hl": k == "23-30 days"} for k, v in age.items()],
-               note="Labels expire 30 days after creation. Includes returns already at the DC.")]),
+   right=dict(kind="hbars", title=("AT THE DC, NOT PROCESSED · DAYS SINCE RECEIVED" if by_rcv else "AT THE DC, NOT PROCESSED · DAYS SINCE SUBMITTED"), legend=["Waiting on DC", "Flagged in Loop"],
+              items=[{"label": b["label"], "value": b["waiting"], "cmp": b["flagged"], "display": f"{b['waiting']} + {b['flagged']} flagged", "hl": b["label"] == AD["oldest_label"]} for b in AD["buckets"]],
+              note=(("Received date from the DC file. " if by_rcv else "No received date in Loop's export, MCP or Polar, so ages count from submission. ")
+                    + f"Flagged = held for review in Loop. Last 4 wks: {R4['submitted']} submitted (LY {RL['submitted']}), {R4['exch_share']:.0f}% exchanges (LY {RL['exch_share']:.0f}%), ${R4['refund_usd']/1000:.1f}K refunded."))),
   notes=OBS.get("notes", {}).get("returns", [])))
 
 # 8 return trends
