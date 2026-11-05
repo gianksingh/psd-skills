@@ -474,5 +474,596 @@
   "expired_last_35d": 254,
   "asof": "2026-11-04"
  },
- "_doc": "Example raw pulls for week 2026-10-26 (real values). Keys and nesting are the contract compute.py reads. Week keys are Monday dates. web = Online Store + Mobile App + Shop App + Fermat + Facebook (Polar custom_5794); tts = TikTok Shop."
+ "_doc": "Example raw pulls for week 2026-10-26 (real values). Keys and nesting are the contract compute.py reads. Week keys are Monday dates. web = Online Store + Mobile App + Shop App + Fermat + Facebook (Polar custom_5794); tts = TikTok Shop.",
+ "loop_at_dc": {
+  "asof": "2026-11-04",
+  "_doc": "Loop MCP list-returns-tool status=open, label_status=delivered, day_limit=60, all pages; one row per return: id, order, created (YYYY-MM-DD), flagged (bool). Example orders anonymized.",
+  "rows": [
+   {
+    "created": "2026-07-30",
+    "flagged": false,
+    "order": "EXAMPLE-1"
+   },
+   {
+    "created": "2026-08-18",
+    "flagged": false,
+    "order": "EXAMPLE-2"
+   },
+   {
+    "created": "2026-08-31",
+    "flagged": false,
+    "order": "EXAMPLE-3"
+   },
+   {
+    "created": "2026-09-01",
+    "flagged": false,
+    "order": "EXAMPLE-4"
+   },
+   {
+    "created": "2026-09-02",
+    "flagged": false,
+    "order": "EXAMPLE-5"
+   },
+   {
+    "created": "2026-09-03",
+    "flagged": false,
+    "order": "EXAMPLE-6"
+   },
+   {
+    "created": "2026-09-03",
+    "flagged": false,
+    "order": "EXAMPLE-7"
+   },
+   {
+    "created": "2026-09-07",
+    "flagged": false,
+    "order": "EXAMPLE-8"
+   },
+   {
+    "created": "2026-09-09",
+    "flagged": true,
+    "order": "EXAMPLE-9"
+   },
+   {
+    "created": "2026-09-12",
+    "flagged": false,
+    "order": "EXAMPLE-10"
+   },
+   {
+    "created": "2026-09-16",
+    "flagged": true,
+    "order": "EXAMPLE-11"
+   },
+   {
+    "created": "2026-09-17",
+    "flagged": true,
+    "order": "EXAMPLE-12"
+   },
+   {
+    "created": "2026-09-18",
+    "flagged": true,
+    "order": "EXAMPLE-13"
+   },
+   {
+    "created": "2026-09-21",
+    "flagged": false,
+    "order": "EXAMPLE-14"
+   },
+   {
+    "created": "2026-09-23",
+    "flagged": false,
+    "order": "EXAMPLE-15"
+   },
+   {
+    "created": "2026-09-23",
+    "flagged": false,
+    "order": "EXAMPLE-16"
+   },
+   {
+    "created": "2026-09-24",
+    "flagged": false,
+    "order": "EXAMPLE-17"
+   },
+   {
+    "created": "2026-09-24",
+    "flagged": true,
+    "order": "EXAMPLE-18"
+   },
+   {
+    "created": "2026-09-24",
+    "flagged": true,
+    "order": "EXAMPLE-19"
+   },
+   {
+    "created": "2026-09-24",
+    "flagged": true,
+    "order": "EXAMPLE-20"
+   },
+   {
+    "created": "2026-09-24",
+    "flagged": false,
+    "order": "EXAMPLE-21"
+   },
+   {
+    "created": "2026-09-25",
+    "flagged": true,
+    "order": "EXAMPLE-22"
+   },
+   {
+    "created": "2026-09-26",
+    "flagged": true,
+    "order": "EXAMPLE-23"
+   },
+   {
+    "created": "2026-09-26",
+    "flagged": true,
+    "order": "EXAMPLE-24"
+   },
+   {
+    "created": "2026-09-26",
+    "flagged": true,
+    "order": "EXAMPLE-25"
+   },
+   {
+    "created": "2026-09-26",
+    "flagged": true,
+    "order": "EXAMPLE-26"
+   },
+   {
+    "created": "2026-09-27",
+    "flagged": true,
+    "order": "EXAMPLE-27"
+   },
+   {
+    "created": "2026-09-28",
+    "flagged": false,
+    "order": "EXAMPLE-28"
+   },
+   {
+    "created": "2026-09-28",
+    "flagged": true,
+    "order": "EXAMPLE-29"
+   },
+   {
+    "created": "2026-09-29",
+    "flagged": true,
+    "order": "EXAMPLE-30"
+   },
+   {
+    "created": "2026-09-29",
+    "flagged": true,
+    "order": "EXAMPLE-31"
+   },
+   {
+    "created": "2026-09-29",
+    "flagged": false,
+    "order": "EXAMPLE-32"
+   },
+   {
+    "created": "2026-09-30",
+    "flagged": true,
+    "order": "EXAMPLE-33"
+   },
+   {
+    "created": "2026-09-30",
+    "flagged": false,
+    "order": "EXAMPLE-34"
+   },
+   {
+    "created": "2026-09-30",
+    "flagged": true,
+    "order": "EXAMPLE-35"
+   },
+   {
+    "created": "2026-09-30",
+    "flagged": true,
+    "order": "EXAMPLE-36"
+   },
+   {
+    "created": "2026-09-30",
+    "flagged": false,
+    "order": "EXAMPLE-37"
+   },
+   {
+    "created": "2026-09-30",
+    "flagged": true,
+    "order": "EXAMPLE-38"
+   },
+   {
+    "created": "2026-09-30",
+    "flagged": true,
+    "order": "EXAMPLE-39"
+   },
+   {
+    "created": "2026-10-01",
+    "flagged": true,
+    "order": "EXAMPLE-40"
+   },
+   {
+    "created": "2026-10-01",
+    "flagged": true,
+    "order": "EXAMPLE-41"
+   },
+   {
+    "created": "2026-10-01",
+    "flagged": false,
+    "order": "EXAMPLE-42"
+   },
+   {
+    "created": "2026-10-01",
+    "flagged": true,
+    "order": "EXAMPLE-43"
+   },
+   {
+    "created": "2026-10-02",
+    "flagged": true,
+    "order": "EXAMPLE-44"
+   },
+   {
+    "created": "2026-10-02",
+    "flagged": false,
+    "order": "EXAMPLE-45"
+   },
+   {
+    "created": "2026-10-08",
+    "flagged": false,
+    "order": "EXAMPLE-46"
+   },
+   {
+    "created": "2026-10-09",
+    "flagged": false,
+    "order": "EXAMPLE-47"
+   },
+   {
+    "created": "2026-10-11",
+    "flagged": false,
+    "order": "EXAMPLE-48"
+   },
+   {
+    "created": "2026-10-11",
+    "flagged": false,
+    "order": "EXAMPLE-49"
+   },
+   {
+    "created": "2026-10-14",
+    "flagged": false,
+    "order": "EXAMPLE-50"
+   },
+   {
+    "created": "2026-10-15",
+    "flagged": false,
+    "order": "EXAMPLE-51"
+   },
+   {
+    "created": "2026-10-15",
+    "flagged": false,
+    "order": "EXAMPLE-52"
+   },
+   {
+    "created": "2026-10-15",
+    "flagged": false,
+    "order": "EXAMPLE-53"
+   },
+   {
+    "created": "2026-10-16",
+    "flagged": false,
+    "order": "EXAMPLE-54"
+   },
+   {
+    "created": "2026-10-18",
+    "flagged": false,
+    "order": "EXAMPLE-55"
+   },
+   {
+    "created": "2026-10-19",
+    "flagged": false,
+    "order": "EXAMPLE-56"
+   },
+   {
+    "created": "2026-10-19",
+    "flagged": false,
+    "order": "EXAMPLE-57"
+   },
+   {
+    "created": "2026-10-21",
+    "flagged": false,
+    "order": "EXAMPLE-58"
+   },
+   {
+    "created": "2026-10-21",
+    "flagged": false,
+    "order": "EXAMPLE-59"
+   },
+   {
+    "created": "2026-10-21",
+    "flagged": false,
+    "order": "EXAMPLE-60"
+   },
+   {
+    "created": "2026-10-21",
+    "flagged": false,
+    "order": "EXAMPLE-61"
+   },
+   {
+    "created": "2026-10-21",
+    "flagged": false,
+    "order": "EXAMPLE-62"
+   },
+   {
+    "created": "2026-10-21",
+    "flagged": false,
+    "order": "EXAMPLE-63"
+   },
+   {
+    "created": "2026-10-22",
+    "flagged": false,
+    "order": "EXAMPLE-64"
+   },
+   {
+    "created": "2026-10-22",
+    "flagged": false,
+    "order": "EXAMPLE-65"
+   },
+   {
+    "created": "2026-10-22",
+    "flagged": false,
+    "order": "EXAMPLE-66"
+   },
+   {
+    "created": "2026-10-22",
+    "flagged": false,
+    "order": "EXAMPLE-67"
+   },
+   {
+    "created": "2026-10-22",
+    "flagged": false,
+    "order": "EXAMPLE-68"
+   },
+   {
+    "created": "2026-10-23",
+    "flagged": false,
+    "order": "EXAMPLE-69"
+   },
+   {
+    "created": "2026-10-23",
+    "flagged": false,
+    "order": "EXAMPLE-70"
+   },
+   {
+    "created": "2026-10-24",
+    "flagged": false,
+    "order": "EXAMPLE-71"
+   },
+   {
+    "created": "2026-10-24",
+    "flagged": false,
+    "order": "EXAMPLE-72"
+   },
+   {
+    "created": "2026-10-24",
+    "flagged": false,
+    "order": "EXAMPLE-73"
+   },
+   {
+    "created": "2026-10-24",
+    "flagged": false,
+    "order": "EXAMPLE-74"
+   },
+   {
+    "created": "2026-10-25",
+    "flagged": false,
+    "order": "EXAMPLE-75"
+   },
+   {
+    "created": "2026-10-25",
+    "flagged": false,
+    "order": "EXAMPLE-76"
+   },
+   {
+    "created": "2026-10-26",
+    "flagged": false,
+    "order": "EXAMPLE-77"
+   },
+   {
+    "created": "2026-10-26",
+    "flagged": false,
+    "order": "EXAMPLE-78"
+   },
+   {
+    "created": "2026-10-26",
+    "flagged": false,
+    "order": "EXAMPLE-79"
+   },
+   {
+    "created": "2026-10-26",
+    "flagged": false,
+    "order": "EXAMPLE-80"
+   },
+   {
+    "created": "2026-10-26",
+    "flagged": false,
+    "order": "EXAMPLE-81"
+   },
+   {
+    "created": "2026-10-27",
+    "flagged": false,
+    "order": "EXAMPLE-82"
+   },
+   {
+    "created": "2026-10-27",
+    "flagged": false,
+    "order": "EXAMPLE-83"
+   },
+   {
+    "created": "2026-10-27",
+    "flagged": true,
+    "order": "EXAMPLE-84"
+   },
+   {
+    "created": "2026-10-27",
+    "flagged": false,
+    "order": "EXAMPLE-85"
+   },
+   {
+    "created": "2026-10-27",
+    "flagged": false,
+    "order": "EXAMPLE-86"
+   },
+   {
+    "created": "2026-10-27",
+    "flagged": false,
+    "order": "EXAMPLE-87"
+   },
+   {
+    "created": "2026-10-27",
+    "flagged": false,
+    "order": "EXAMPLE-88"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-89"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-90"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-91"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-92"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-93"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-94"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-95"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-96"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-97"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-98"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-99"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-100"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-101"
+   },
+   {
+    "created": "2026-10-28",
+    "flagged": false,
+    "order": "EXAMPLE-102"
+   },
+   {
+    "created": "2026-10-29",
+    "flagged": false,
+    "order": "EXAMPLE-103"
+   },
+   {
+    "created": "2026-10-29",
+    "flagged": false,
+    "order": "EXAMPLE-104"
+   },
+   {
+    "created": "2026-10-29",
+    "flagged": false,
+    "order": "EXAMPLE-105"
+   },
+   {
+    "created": "2026-10-29",
+    "flagged": false,
+    "order": "EXAMPLE-106"
+   },
+   {
+    "created": "2026-10-29",
+    "flagged": false,
+    "order": "EXAMPLE-107"
+   },
+   {
+    "created": "2026-10-29",
+    "flagged": false,
+    "order": "EXAMPLE-108"
+   },
+   {
+    "created": "2026-10-30",
+    "flagged": false,
+    "order": "EXAMPLE-109"
+   },
+   {
+    "created": "2026-10-31",
+    "flagged": false,
+    "order": "EXAMPLE-110"
+   },
+   {
+    "created": "2026-10-31",
+    "flagged": false,
+    "order": "EXAMPLE-111"
+   },
+   {
+    "created": "2026-10-31",
+    "flagged": false,
+    "order": "EXAMPLE-112"
+   },
+   {
+    "created": "2026-11-01",
+    "flagged": false,
+    "order": "EXAMPLE-113"
+   },
+   {
+    "created": "2026-11-02",
+    "flagged": false,
+    "order": "EXAMPLE-114"
+   },
+   {
+    "created": "2026-11-02",
+    "flagged": false,
+    "order": "EXAMPLE-115"
+   },
+   {
+    "created": "2026-11-03",
+    "flagged": false,
+    "order": "EXAMPLE-116"
+   },
+   {
+    "created": "2026-11-04",
+    "flagged": false,
+    "order": "EXAMPLE-117"
+   }
+  ]
+ }
 }
