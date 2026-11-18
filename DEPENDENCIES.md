@@ -86,3 +86,6 @@ to upload them (screenshot or export) and skips the section if you don't have th
 - **`/ecom-forecast`:** Polar + the "PSD - Polar Targets" sheet; outputs Excel (no Asana).
 - **`/ecom-sale-recap`:** Polar + user-supplied AfterSell/Rokt/Tapcart; in-chat only
   (no Asana).
+- **`/mix-match-report`:** Polar only (PSD Web view), for the Gift Builder / Build Your
+  Outfit report. Output is a self-contained HTML dashboard plus an Excel workbook
+  (needs `openpyxl`); no Asana, no Shopify MCP.

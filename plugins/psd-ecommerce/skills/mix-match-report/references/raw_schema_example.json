@@ -1,0 +1,143 @@
+{
+ "meta": {
+  "period": {
+   "from": "2026-11-11",
+   "to": "2026-11-17"
+  },
+  "compare": {
+   "from": "2026-11-04",
+   "to": "2026-11-10"
+  },
+  "generated": "2026-11-18",
+  "notes": []
+ },
+ "cur": {
+  "lines": {
+   "tableData": [
+    {
+     "shopify_sales_main.raw.gross_sales": 62.0,
+     "shopify_sales_main.raw.discounts": -12.4,
+     "shopify_sales_main.computed.net_sales": 49.6,
+     "custom_60206": 1,
+     "order_line_properties": "[{\"key\":\"_fit_id\",\"value\":\"fit_8knz93czf4xh\"},{\"key\":\"_fit\",\"value\":\"us\"},{\"key\":\"_fit_division\",\"value\":\"men\"},{\"key\":\"_fit_slot\",\"value\":\"fit-3pk\"},{\"key\":\"_fit_name\",\"value\":\"Underwear 3-Pack + Shorts\"},{\"key\":\"_fit_icon\",\"value\":\"//www.psd.com/cdn/shop/files/fit-icon-us.svg\"},{\"key\":\"_fit_price\",\"value\":\"8800\"}]",
+     "order_id": "7304795532287",
+     "product_title": "3 Pack - Candy Cane Camo",
+     "purchase_type": "new",
+     "date": "2026-11-11"
+    },
+    {
+     "shopify_sales_main.raw.gross_sales": 48.0,
+     "shopify_sales_main.raw.discounts": -9.6,
+     "shopify_sales_main.computed.net_sales": 38.4,
+     "custom_60206": 1,
+     "order_line_properties": "[{\"key\":\"_fit_id\",\"value\":\"fit_8knz93czf4xh\"},{\"key\":\"_fit\",\"value\":\"us\"},{\"key\":\"_fit_division\",\"value\":\"men\"},{\"key\":\"_fit_slot\",\"value\":\"fit-shorts\"},{\"key\":\"_fit_name\",\"value\":\"Underwear 3-Pack + Shorts\"},{\"key\":\"_fit_icon\",\"value\":\"//www.psd.com/cdn/shop/files/fit-icon-us.svg\"},{\"key\":\"_fit_price\",\"value\":\"8800\"}]",
+     "order_id": "7304795532287",
+     "product_title": "Snow Leopard Active Short",
+     "purchase_type": "new",
+     "date": "2026-11-11"
+    }
+   ]
+  },
+  "orders": {
+   "tableData": [
+    {
+     "shopify_sales_main.raw.total_orders": 1,
+     "shopify_sales_main.raw.gross_sales": 0,
+     "shopify_sales_main.raw.discounts": 0,
+     "shopify_sales_main.computed.net_sales": 88.0,
+     "order_id": "7304795532287",
+     "date": "2026-11-11"
+    },
+    {
+     "shopify_sales_main.raw.total_orders": 1,
+     "shopify_sales_main.raw.gross_sales": 0,
+     "shopify_sales_main.raw.discounts": 0,
+     "shopify_sales_main.computed.net_sales": 82.0,
+     "order_id": "7304795532322",
+     "date": "2026-11-11"
+    }
+   ]
+  },
+  "web": {
+   "totalData": [
+    {
+     "shopify_sales_main.raw.total_orders": 7505,
+     "shopify_sales_main.computed.net_sales": 593242.94
+    }
+   ]
+  },
+  "traffic_daily": {
+   "tableData": [
+    {
+     "shopify_attribution_pixel.raw.polar_pixel_sessions": 1527,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_product_added_to_cart_sessions": 349,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_completed_sessions": 76,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_started_sessions": 152,
+     "date": "2026-11-11"
+    },
+    {
+     "shopify_attribution_pixel.raw.polar_pixel_sessions": 1725,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_product_added_to_cart_sessions": 357,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_completed_sessions": 85,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_started_sessions": 161,
+     "date": "2026-11-12"
+    }
+   ],
+   "totalData": [
+    {
+     "shopify_attribution_pixel.raw.polar_pixel_sessions": 11224,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_product_added_to_cart_sessions": 2503,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_started_sessions": 1073,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_completed_sessions": 582
+    }
+   ]
+  },
+  "traffic_landers": {
+   "totalData": [
+    {
+     "shopify_attribution_pixel.raw.polar_pixel_sessions": 4252,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_product_added_to_cart_sessions": 842,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_started_sessions": 363,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_completed_sessions": 250
+    }
+   ]
+  },
+  "traffic_channel": {
+   "tableData": [
+    {
+     "custom_5984": "Paid Social",
+     "shopify_attribution_pixel.raw.polar_pixel_sessions": 3876,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_product_added_to_cart_sessions": 701,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_started_sessions": 301,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_completed_sessions": 128
+    },
+    {
+     "custom_5984": "Email",
+     "shopify_attribution_pixel.raw.polar_pixel_sessions": 2106,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_product_added_to_cart_sessions": 737,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_started_sessions": 316,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_completed_sessions": 153
+    }
+   ]
+  },
+  "traffic_device": {
+   "tableData": [
+    {
+     "session_device_type": "mobile",
+     "shopify_attribution_pixel.raw.polar_pixel_sessions": 9016,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_product_added_to_cart_sessions": 1923,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_started_sessions": 826,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_completed_sessions": 352
+    },
+    {
+     "session_device_type": "desktop",
+     "shopify_attribution_pixel.raw.polar_pixel_sessions": 2246,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_product_added_to_cart_sessions": 792,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_started_sessions": 340,
+     "shopify_attribution_pixel.raw.polar_pixel_funnel_checkout_completed_sessions": 140
+    }
+   ]
+  }
+ },
+ "prev": "<same keys and shapes as cur>"
+}

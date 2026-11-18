@@ -1,0 +1,23 @@
+{
+  "report_title": "Gift Builder · Build Your Outfit",
+  "store": "psd.com",
+  "polar_view_id": "31552-mpfv58vy",
+  "polar_view_name": "PSD Web",
+  "discount_code": "Build Your Outfit",
+  "landing_path": "/pages/gift-builder",
+  "line_property_match": "\"key\":\"_fit_id\"",
+  "units_metric": "custom_60206",
+  "channel_dimension": "custom_5984",
+  "divisions": ["men", "youth"],
+  "slot_order": ["fit-3pk", "fit-shorts", "fit-tee", "fit-hoodie", "fit-pants"],
+  "slot_names": {"fit-3pk": "3-Pack", "fit-shorts": "Shorts", "fit-tee": "Tee", "fit-hoodie": "Hoodie", "fit-pants": "Pants"},
+  "kits": [
+    {"handle": "us",   "name": "Underwear 3-Pack + Shorts",                "slots": ["fit-3pk", "fit-shorts"],                           "price": {"men": 88,  "youth": 61},  "compare_at": {"men": 110, "youth": 76}},
+    {"handle": "uh",   "name": "Underwear 3-Pack + Hoodie",                "slots": ["fit-3pk", "fit-hoodie"],                           "price": {"men": 109, "youth": 74},  "compare_at": {"men": 137, "youth": 93}},
+    {"handle": "ut",   "name": "Underwear 3-Pack + Tee",                   "slots": ["fit-3pk", "fit-tee"],                              "price": {"men": 82,  "youth": 48},  "compare_at": {"men": 102, "youth": 60}},
+    {"handle": "uts",  "name": "Underwear 3-Pack + Shorts + Tee",          "slots": ["fit-3pk", "fit-shorts", "fit-tee"],                "price": {"men": 105, "youth": 69},  "compare_at": {"men": 150, "youth": 98}},
+    {"handle": "utsh", "name": "Underwear 3-Pack + Shorts + Tee + Hoodie", "slots": ["fit-3pk", "fit-shorts", "fit-tee", "fit-hoodie"], "price": {"men": 146, "youth": 113}, "compare_at": {"men": 225, "youth": 173}},
+    {"handle": "sp",   "name": "Shorts + Long Pants",                      "slots": ["fit-shorts", "fit-pants"],                         "price": {"men": 99,  "youth": 99},  "compare_at": {"men": 123, "youth": 123}}
+  ],
+  "kits_source": "Shopify Fit metaobject (type \"fit\"), read 2026-11-18. compute.py prefers the prices seen on the orders (_fit_price, line list prices) and falls back to these."
+}

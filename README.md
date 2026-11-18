@@ -43,18 +43,20 @@ P&L) is intentionally separate from a future `/fin-…` (corporate finance).
 | `/ecom-cro-cart-audit` | Cart & Checkout Audit | Ad-hoc cart→checkout→post-purchase **funnel** audit (web + Tapcart): finds where shoppers drop from the real Shopify Plus funnel, why (Clarity), and what's configured (Shopify), ranked by recovered revenue & AOV in USD. |
 | `/ecom-pdp-merchandising-audit` | PDP Merchandising Audit | Ad-hoc PDP **merchandising** audit: checks the persuasion architecture (Okendo social proof, price anchor, imagery, trust, CTA) against Shopify ground truth + Clarity seen-ness; ranks missing/buried levers. |
 | `/ecom-site-speed-audit` | Site Speed Audit | Ad-hoc **Core Web Vitals** / speed audit: real-user LCP/INP/CLS from Clarity + live Chrome observation → prioritized, Shopify-specific fixes with USD revenue sizing. |
+| `/mix-match-report` | Gift Builder | Gift Builder / Mix & Match ("Build Your Outfit") performance for a date range against a comparison range: orders, outfits, men's vs youth, kit × division, builder-page traffic, add-to-cart, and conversion. Polar only. A self-contained HTML dashboard plus an Excel workbook. The command has no `ecom-` prefix. |
 
 **Outputs & side effects:** the weekly reporting agents (plus the monthly
 `/ecom-returns`) produce a styled HTML report + PDF, save it to the project reports
 folder, and (if you opt in when prompted) log action items to Asana.
 `/ecom-merch` produces a PowerPoint deck. `/ecom-forecast` produces an Excel workbook. `/ecom-sale-recap` is in-chat only.
+`/mix-match-report` produces its own HTML dashboard and an Excel workbook.
 `/ecom-web-daily-flash` runs daily (T-1), is **files-only** (hands back HTML + PDF and
 publishes nothing), and is a daily companion to the weekly `/ecom-review`.
 The four `/ecom-*-audit` agents are **ad-hoc diagnostic deep-dives** (run on demand,
 not on a weekly cadence) and output the same unified HTML + PDF report. Note
 `/ecom-cro` is the **weekly** conversion report, while `/ecom-cro-page-audit` and
 `/ecom-cro-cart-audit` are **on-demand** deep dives.
-All reports share one house style (`shared-assets/report-template.html`).
+Styled HTML reports share one house style (`shared-assets/report-template.html`). `/mix-match-report` uses its own Shopify-admin dashboard template and Excel builder.
 
 ---
 
