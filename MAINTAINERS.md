@@ -43,8 +43,13 @@ To avoid maintaining N copies:
 
 ## Release / update flow
 
+**Use `AGENTS.md`** — Cowork description limits, version bumps, validate, and the
+required annotated git tag (`psd-ecommerce-vX.Y.Z`) + push. Cursor loads the same
+rules from `.cursor/rules/psd-plugin-release.mdc`.
+
 - Each plugin is versioned independently (semver in its `plugin.json`).
-- Tag releases in git, e.g. `psd-ecommerce-v0.5.0`.
+- Bump `.claude-plugin/marketplace.json` `metadata.version` on every plugin release.
+- Tag releases in git, e.g. `psd-ecommerce-v1.9.1`, and push the tag with `main`.
 - Users update through the marketplace update command. The exact commands to add a
   marketplace and install/update from it are a Claude Code / Cowork product detail
   that changes between releases — confirm current syntax at

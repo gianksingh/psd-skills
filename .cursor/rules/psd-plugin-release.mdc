@@ -1,0 +1,19 @@
+---
+description: PSD Skills plugin release — description limits, version bump, git tag
+alwaysApply: true
+---
+
+# PSD plugin releases
+
+Read `AGENTS.md` for the full checklist. On every plugin/skill change **before finishing**:
+
+1. **`python3 scripts/validate.py`** — must PASS (includes Cowork description limits).
+2. **Length limits:** `plugin.json` `description` ≤ **500** chars; each `SKILL.md`
+   frontmatter `description` ≤ **1024** chars (folded `>` counts as joined text).
+3. **Bump** `plugins/*/.claude-plugin/plugin.json` `version` (semver) and
+   `.claude-plugin/marketplace.json` `metadata.version` (patch).
+4. **Commit**, then **annotated tag** `psd-ecommerce-vX.Y.Z` matching `plugin.json`,
+   **`git push origin main`** and **`git push origin psd-ecommerce-vX.Y.Z`** — tag is
+   required for Cowork to pick up the release.
+
+Never ship a plugin update without the tag push. Do not commit `dist/*.plugin`.
